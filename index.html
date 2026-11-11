@@ -165,7 +165,7 @@
     <nav class="toc" aria-label="頁面目錄">
       <div class="wrap">
         <a href="#route">行程總覽</a>
-        <a href="#flights">機票比價</a>
+        <a href="#flights">機票比價</a><a href="#swap">對調分析</a>
         <a href="#hotels">酒店比價</a><a href="#channels">渠道比價</a><a href="#airbnb">Airbnb 整套</a>
         <a href="#value">性價比分析</a>
         <a href="#deals">優惠看板</a>
@@ -207,13 +207,13 @@
         <div class="grid c3" style="margin-top:14px">
           <div class="card">
             <h3>機票預算（5 張 · 三段三方案）</h3>
-            <div class="price">¥10,180 起 <small>方案 B 底價口徑 · 5 人</small></div>
-            <p class="meta">方案 A 全服務 ¥16,170／5 人；方案 B 均衡 ¥10,180（本頁推薦）；方案 C 預算 ¥7,080（未計托運費）。春節峰值現實區間見機票區三方案表。</p>
+            <div class="price">¥19,685 起 <small>方案 B 指定日期實查價 · 5 人</small></div>
+            <p class="meta">2026-11-11 携程／Ctrip 指定日期實查：方案 A 全服務 ¥5,354／人（5 人 ¥26,770）；方案 B 均衡 ¥3,937／人（本頁推薦）；方案 C 預算 ¥2,739／人（不含托運）。舊底價口徑（¥2,036／人）已被實查價取代，見機票區。</p>
           </div>
           <div class="card">
             <h3>住宿預算（7 人 · 全程）</h3>
-            <div class="price">¥38,944 起 <small>指定日期實查價合計</small></div>
-            <p class="meta">雙首選實查組合：清邁萬豪（Agoda 實查 ¥22,444／3 晚，免費取消至 1/31）＋曼谷 Grande Centre Point（官網實查 ¥16,500／4 晚，免費取消至 1/31）。清邁香格里拉 Deluxe 已實質售罄，首選改為萬豪。Airbnb：清邁 4 間全無檔期；曼谷僅 2 間有檔期有實價（¥6,150／¥12,814），見 Airbnb 專區。</p>
+            <div class="price">¥38,944 起 <small>連鎖雙首選 · 指定日期實查價合計</small></div>
+            <p class="meta">雙首選實查組合：清邁萬豪（Agoda ¥22,444／3 晚，再驗證 ¥22,618，免費取消至 1/31）＋曼谷 Grande Centre Point（官網 ¥16,500／4 晚；Agoda 4 間房 ¥14,804 更便宜）。清邁香格里拉 Deluxe 已實質售罄，首選為萬豪。新增精品層（Moose＋Berkeley ¥21,758）與 Airbnb 整棟層（約 ¥6,680）大幅更便宜，見酒店區。曼谷 Airbnb「只有 2 間有檔期」是舊查法的誤述——整棟房源兩個時段都有 1,000 間以上，已更正。</p>
           </div>
           <div class="card">
             <h3>匯率參考</h3>
@@ -226,219 +226,266 @@
       <!-- ============ 機票 ============ -->
       <section id="flights">
         <div class="sec-head"><h2>機票比價</h2><span class="tag">東航／上航／天合優先</span></div>
-        <p class="sec-sub">不只給一個地板價：下面先給 <b>3 個完整方案</b>（A 全服務／B 均衡／C 預算），再逐段列<b>不同航空公司 × 不同渠道</b>的價格、中轉方案評估與<b>鄰近日期比價證據</b>。開口程訂法：東航官網「多城市」一次訂 PVG→CNX＋BKK→PVG（同一訂單），清邁→曼谷另訂。5 人同一訂單（團體票通常 10 人起，不到門檻）。</p>
-        <div class="honest"><b>價格誠實標註：</b>每格價格都標了渠道與標籤——「月度底價」是 2 月最低價、不是指定日期價；「指示價」是日期未註明或近期樣本；只有標「日期核實」的才是某具體日期查到的價。MU205／9C8511 在 1/31、2/1、2/2、2/3 的逐日價<b>所有渠道都未查到</b>，本頁不編造。春節峰值一定高於底價，付款前必須按具體日期實查。<b>時刻更正：</b>回程 FM854／MU8614 經 Trip.com 與携程核實，2027-02-07 與 2027-02-08 均為 <b>09:25 素萬那普機場出發 → 14:35 抵達浦東 T1</b>（每週 4 班），11:50 → 17:10 並不存在。此為早班機，需提早到機場。</div>
+        <p class="sec-sub">2026-11-11 按要求重查：<b>全部改用指定日期實查價</b>（携程＋Ctrip／Trip.com 雙渠道逐班查價），不再只用月度底價。下面先給 <b>3 個完整方案</b>（A 全服務／B 均衡／C 預算），再逐段列雙渠道價、<b>A／B 兩種走法（清邁先 vs 曼谷先）總價對照</b>與<b>對調結論</b>。開口程訂法：東航官網「多城市」一次訂 PVG→CNX＋BKK→PVG（同一訂單），清邁→曼谷另訂。5 人同一訂單（團體票通常 10 人起，不到門檻）。</p>
+        <div class="honest"><b>價格口徑（2026-11-11 重查）：</b>本區價格為 <b>2027 年春節指定日期實查價</b>——2026-11-11 在携程與 Ctrip（Trip.com）逐班輸入 2/1、2/2 出發、2/4 國內段、2/7、2/8 回程查得，1 位成人經濟艙單程含稅；携程以 ¥ 計、Ctrip 以 US$ 計（US$1 ≈ ¥6.67 僅供對照）。<b>飛豬：</b>滑塊驗證未通過，本輪無數據，不編造價格。<b>去哪兒：</b>網頁版機票服務已停（只能走 App），本輪無價可比。價格浮動很快（PG216 當日 ¥441→¥442；MU7321 兩日價 ¥1,229→¥2,029），下單前再查一次。<b>渠道衝突已解決：</b>TG663（2/2）Ctrip 報 US$171、携程報 ¥3,191——以携程 ¥3,191 為準，US$171 不用。<b>時刻更正（維持）：</b>回程 FM854／MU8614 經 Trip.com 與携程核實，2027-02-07 與 02-08 均為 <b>09:25 素萬那普機場出發 → 14:35 抵達浦東 T1</b>（每週 4 班），11:50 → 17:10 並不存在。此為早班機，需提早到機場。</div>
 
-        <h3 style="margin:6px 0 10px;font-size:1.2rem">三個完整方案（先選方案，再看逐段比價）</h3>
+        <h3 style="margin:6px 0 10px;font-size:1.2rem">三個完整方案（指定日期實查價 · 2/1 出發）</h3>
         <div class="grid c3">
           <div class="card">
             <span class="badge gold">方案 A · 全服務舒適</span>
-            <div class="price" style="margin-top:8px">¥3,234 <small>／人 · 5 人 ¥16,170</small></div>
+            <div class="price" style="margin-top:8px">¥5,354 <small>／人 · 5 人 ¥26,770 · 携程實查價</small></div>
             <ul class="tight">
-              <li>去程 東航 MU205 10:10 → 14:20 直飛 — ¥1,424</li>
-              <li>國內段 曼谷航空 PG216 10:10 → 11:35 — ¥615（Omio 樣本價；官網促銷底價 ¥456）</li>
-              <li>回程 上航 FM854 09:25 → 14:35 直飛 — ¥1,195（早班機，需提早到機場）</li>
-              <li>長輩友善：最優。全白天、全服務、無紅眼無中轉；MU 含 1 件 23kg 托運（以出票艙位為準）</li>
-              <li>春節峰值預估：每人 ¥3,800–4,500；5 人 ¥19,000–22,500</li>
+              <li>去程 東航 MU205 10:10 → 14:20 直飛 — 携程 ¥3,129（23kg 含；Ctrip US$478）</li>
+              <li>國內段 曼谷航空 PG216 10:10 → 11:35 — 携程 ¥442（20kg 含；Ctrip US$66，雙渠道一致）</li>
+              <li>回程 上航 FM854 09:25 → 14:35 直飛 — 携程 ¥1,783（23kg 含；Ctrip US$263–271；2/7、2/8 同價）</li>
+              <li>長輩友善：最優。全白天、全服務、含托運＋餐食，無紅眼無中轉</li>
+              <li>2/2 出發：MU205 漲至 ¥3,629，全程 ¥5,854／人——2/1 出發便宜 ¥500／人</li>
             </ul>
           </div>
           <div class="card rec">
             <span class="badge first">方案 B · 均衡 ★ 本頁推薦</span>
-            <div class="price" style="margin-top:8px">¥2,036 <small>／人 · 5 人 ¥10,180</small></div>
+            <div class="price" style="margin-top:8px">¥3,937 <small>／人 · 5 人 ¥19,685 · 携程實查價</small></div>
             <ul class="tight">
-              <li>去程 春秋 9C8511 16:15 → 20:15 直飛 — ¥545</li>
-              <li>國內段 泰航 TG103 09:30 → 10:55 直飛 — ¥383</li>
-              <li>回程 曼谷航空 PG4841（泰航 TG664 代碼共享）10:35 → 15:50 — ¥1,108</li>
-              <li>長輩友善：良好。三段全直飛、全白天、無中轉；比 A 省 ¥5,990／5 人</li>
-              <li>唯一代價：9C 去程無免費托運（手提 7kg 免費，托運另購，2 月托運費未核實）</li>
-              <li>春節峰值預估：每人約 ¥2,800–3,500；5 人 ¥14,000–17,500</li>
+              <li>去程 春秋 9C8511 16:15 → 20:15 直飛 — 携程優選飛 ¥1,712（含 20kg 托運；超惠飛不含托運 ¥1,462；Ctrip US$228／含 20kg US$272）</li>
+              <li>國內段 曼谷航空 PG216 10:10 → 11:35 — ¥442（20kg 含）</li>
+              <li>回程 上航 FM854 09:25 → 14:35 直飛 — ¥1,783（23kg 含）</li>
+              <li>長輩友善：良好。三段全直飛、全白天、無中轉；比 A 省 ¥1,417／人（5 人 ¥7,085）</li>
+              <li>代價：去程春秋服務簡約（無免費餐食）；2/2 出發 9C8511 優選飛漲至 ¥2,212，全程 ¥4,437／人</li>
             </ul>
           </div>
           <div class="card">
-            <span class="badge warn">方案 C · 預算</span>
-            <div class="price" style="margin-top:8px">¥1,416 <small>／人 · 5 人 ¥7,080</small></div>
+            <span class="badge warn">方案 C · 預算（不含托運）</span>
+            <div class="price" style="margin-top:8px">¥2,739 <small>／人 · 5 人 ¥13,695 · 携程實查價</small></div>
             <ul class="tight">
-              <li>去程 春秋 9C8511 16:15 → 20:15 — ¥545</li>
-              <li>國內段 亞航 FD4101 08:55 → 10:10 — ¥215（<b>2/4 日期核實價</b>）</li>
-              <li>回程 春秋 9C7286 18:40 → 23:05 — ¥656</li>
-              <li>長輩友善：一般。回程 23:05 才到上海；9C／FD 均無免費托運，托運費另計後實際節省有限</li>
-              <li>春節峰值預估：每人約 ¥2,000–2,600；5 人 ¥10,000–13,000</li>
+              <li>去程 春秋 9C8979 19:55 → 23:55 — 携程 ¥1,262（不含托運；優選含 20kg ¥1,512）</li>
+              <li>國內段 亞航 FD4101 08:55 → 10:10 — ¥282（無托運、<b>不得退票</b>）</li>
+              <li>回程 春秋 9C7286 17:40 → 23:05 — ¥1,195（2/7 價、不含托運；2/8 漲至 ¥1,855）</li>
+              <li>絕對最低組合 ¥2,539／人：回程改 03:20 清晨班 9C7294（¥995）——長輩不建議，只作比價下限</li>
+              <li>長輩友善：一般。深夜抵達清邁＋晚到上海；三段皆無免費托運，加購托運後與 B 的差距收窄</li>
             </ul>
           </div>
         </div>
-        <p style="margin:12px 0 0;font-size:.95rem"><b>決策規則：</b>先查 9C8511 在 2/1 或 2/2 的實際報價——若高於 ¥1,000／人，方案 B 的節省消失，改選方案 A；若在 ¥545–800 區間，鎖定方案 B。方案 C 只在預算為硬約束時選。</p>
+        <p style="margin:12px 0 0;font-size:.95rem"><b>決策規則（實查價版）：</b>三方案已是 2027 春節指定日期實查價，不是底價估算。主選 B（¥3,937／人）；若 9C8511 優選飛售罄或漲逾 ¥2,200，切回 A。出發日定 <b>2/1</b>：MU205 與 9C8511 在 2/2 都各貴 ¥500，2/1 出發同時保住清邁玩滿與較低票價。方案 C 只在預算為硬約束時選。</p>
 
         <h3 style="margin:26px 0 10px;font-size:1.2rem">逐段首選明細</h3>
         <div class="grid c3">
           <div class="card">
             <span class="badge first">第一段</span>
             <h3 style="margin-top:8px">上海 PVG → 清邁 CNX</h3>
-            <p class="meta">2/1（一）或 2/2（二）· 直飛每日</p>
-            <div class="price">¥1,424 <small>／人 · 東航 MU205 月度底價（Airpaz）</small></div>
+            <p class="meta">2/1（一）或 2/2（二）· 直飛每日 · 携程／Ctrip 實查</p>
+            <div class="price">¥3,129 <small>／人 · 東航 MU205 2/1 實查價（携程）</small></div>
             <ul class="tight">
-              <li>MU205 10:10 → 14:20（5h10m），全服務含托運＋餐食，上午出發下午到</li>
-              <li>同班其他渠道：12go ¥1,212（指示價）；Airpaz 1 月底價 ¥1,422——渠道價差不大</li>
-              <li>預算選項：春秋 9C8511 16:15 → 20:15，¥545（Airpaz 2 月底價）；其 2/16、2/17 價 ¥623／¥558 是節後價，不代表春節</li>
-              <li>紅眼選項：吉祥 HO1363 20:15 → 00:30+1，¥767（Airpaz 底價）——長輩不建議</li>
+              <li>MU205 10:10 → 14:20（5h10m），全服務含 23kg 托運＋餐食：2/1 ¥3,129、2/2 ¥3,629（Ctrip US$478／US$554）</li>
+              <li>新發現同日第二班：MU7569 15:55 → 19:30，與 MU205 同價，下午出發傍晚到</li>
+              <li>預算選項：春秋 9C8511 16:15 → 20:15，2/1 ¥1,462（優選含 20kg ¥1,712；Ctrip US$228／US$272）；2/2 漲至 ¥1,962</li>
+              <li>深夜選項：9C8979 19:55 → 23:55，¥1,262 起；紅眼 HO1363 20:15 → 00:30+1，¥1,639（23kg 含）——長輩不建議</li>
             </ul>
           </div>
           <div class="card">
             <span class="badge first">第二段</span>
             <h3 style="margin-top:8px">清邁 CNX → 曼谷 BKK</h3>
             <p class="meta">2/4（四）· 直飛 1h25m · 務必降落 BKK 不是 DMK</p>
-            <div class="price">¥383–615 <small>／人 · 全服務區間</small></div>
+            <div class="price">¥442 <small>／人 · 曼谷航空 PG216 實查價（雙渠道一致）</small></div>
             <ul class="tight">
-              <li>曼谷航空 PG216 10:10 → 11:35：官網促銷底價 ¥456（฿2,280）；Omio 樣本 ¥615；含 20kg 托運＋餐食＋休息室</li>
-              <li>泰航 TG103 09:30 → 10:55：¥383（Airpaz 底價）；泰航官網往返 ฿4,700 起（適用期含 2/4）推算單程約 ¥470</li>
-              <li>泰航 TG107 14:05 → 15:25 同價族 ¥383–470，下午班可接廚藝課後出發</li>
-              <li>預算：亞航 FD4101 08:55 → 10:10 到 BKK，¥215 是 <b>2/4 日期核實價</b>；飛鳥 DD ¥294（2/4 核實）但到 DMK 廊曼，不便</li>
+              <li>曼谷航空 PG216 10:10 → 11:35：携程 ¥442、Ctrip US$66，兩渠道完全一致；含 20kg 托運＋餐食＋休息室；PG220 同價 ¥442</li>
+              <li>泰航 TG103 09:30 → 10:55：携程 ¥564（Ctrip US$79），23kg 含；TG121 ¥475、TG111／TG113 ¥494；TG107 14:05 下午班 ¥1,101 較貴</li>
+              <li>預算：亞航 FD4101 08:55 → 10:10 到 BKK，¥282（Ctrip US$44）——無托運、不得退票</li>
+              <li>越捷 ¥315 起、泰亞航（抵 BKK）¥327 起；另有 13 班泰亞航抵 DMK 廊曼，訂票勿選錯機場</li>
             </ul>
           </div>
           <div class="card">
             <span class="badge first">第三段</span>
             <h3 style="margin-top:8px">曼谷 BKK → 上海 PVG</h3>
             <p class="meta">2/7（日）或 2/8（一）· 白天直飛優先</p>
-            <div class="price">¥1,108 <small>／人起 · PG4841 月度底價（Airpaz）</small></div>
+            <div class="price">¥1,783 <small>／人 · 上航 FM854 實查價（2/7、2/8 同價）</small></div>
             <ul class="tight">
-              <li>上航 FM854／東航 MU8614：<b>09:25 → 14:35</b>（09:25 素萬那普機場出發、14:35 抵達浦東 T1，Trip.com 與携程已核實；每週 4 班，早班機需提早到機場），¥1,195（Airpaz 2 月底價）</li>
-              <li>曼谷航空 PG4841（TG664 代碼共享）10:35 → 15:50，¥1,108——與泰航 TG664 同一班，TG664 本尊 ¥1,222，代碼共享便宜 ¥114</li>
-              <li>上航 FM842 09:50 → 15:25（攜程時刻表），單獨價未查到，同 FM 系參考 ¥1,195 底價</li>
-              <li>預算：春秋 9C7286 18:40 → 23:05，¥656；南航 CZ 到虹橋 ¥980 是 <b>2/7 日期核實價</b>（HappyFares）</li>
+              <li>上航 FM854／東航 MU8614：<b>09:25 → 14:35</b>（素萬那普出發、浦東 T1 抵達，Trip.com 與携程已核實；每週 4 班，早班機需提早到機場），携程 2/7、2/8 皆 ¥1,783（Ctrip US$271／US$263），23kg 含</li>
+              <li>曼谷航空 PG4841 10:35 → 15:50：¥2,262（Ctrip US$336）——僅剩 4 張，5 人同價一班裝不下</li>
+              <li>預算：春秋 9C7286 17:40 → 23:05，2/7 ¥1,195、2/8 ¥1,855（不含托運）；9C7294 03:20 清晨班 2/7 ¥995 最便宜但長輩不建議</li>
+              <li>HO1358 ¥1,293 起（紅眼）；TG662 2/7 ¥1,409 有價，但時刻未核對，不列入推薦</li>
             </ul>
           </div>
         </div>
 
-        <div class="avoid" style="margin-top:14px"><b>避開這些航班：</b>紅眼班——吉祥 HO1363／東航 MU3973（20:15 → 00:30+1）、春秋 9C8979（19:55 → 00:55+1）、回程東航 MU548（02:10 出發）、上航 FM840（21:55 → 03:20+1）、春秋 9C8756（01:15）、吉祥 HO1358（01:50 → 06:25+1，底價 ¥987）、越捷 VZ3524（19:10 → 00:30+1，底價 ¥651）。長輩同行不適合半夜抵達或凌晨出發。泰航 TG662 時刻兩個來源互相衝突，未核實，不列入推薦。</div>
+        <div class="avoid" style="margin-top:14px"><b>避開這些航班：</b>紅眼／深夜班——去程吉祥 HO1363（20:15 → 00:30+1）、春秋 9C8979（19:55 → 23:55，深夜抵達）；回程春秋 9C7294（03:20 清晨出發）、9C8980（01:10 出發）、吉祥 HO1358／HO1364（01:30–01:50 出發）、東航 MU548（02:10 出發）、上航 FM840（21:55 → 03:20+1）、越捷 VZ3524（19:10 → 00:30+1）。這些班次實查價再便宜也不選：長輩同行不適合半夜抵達或凌晨出發。泰航 TG662 本輪查到 2/7 ¥1,409，但時刻未核對，不列入推薦。</div>
 
-        <h3 style="margin:26px 0 10px;font-size:1.2rem">逐段多渠道比價（同航班，不同渠道價不同）</h3>
-        <p class="sec-sub" style="margin-bottom:10px">第一段 上海 PVG → 清邁 CNX（2/1 或 2/2）</p>
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">逐段雙渠道比價（携程 ¥／Ctrip US$ · 指定日期實查）</h3>
+        <p class="sec-sub" style="margin-bottom:10px">第一段 上海 PVG → 清邁 CNX（2/1、2/2 兩日價並列）</p>
         <div class="tbl-wrap">
           <table>
-            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>直飛／中轉</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th class="num">携程（¥／人）</th><th class="num">Ctrip（US$／人）</th><th>備註</th></tr></thead>
             <tbody>
-              <tr><td><b>東航 MU205</b> <span class="badge first">方案 A</span></td><td>10:10 → 14:20</td><td>直飛 5h10m</td><td>Airpaz</td><td class="num">¥1,424</td><td>2 月月度底價</td></tr>
-              <tr><td>東航 MU205</td><td>同上</td><td>直飛</td><td>12go</td><td class="num">¥1,212</td><td>指示價（日期未註明）</td></tr>
-              <tr><td>東航 MU205</td><td>同上</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,422</td><td>1 月月度底價</td></tr>
-              <tr><td><b>春秋 9C8511</b> <span class="badge first">方案 B／C</span></td><td>16:15 → 20:15</td><td>直飛</td><td>Airpaz</td><td class="num">¥545</td><td>2 月月度底價</td></tr>
-              <tr><td>春秋 9C8511</td><td>同上</td><td>直飛</td><td>Skyscanner</td><td class="num">¥558–623</td><td>日期核實：2/16、2/17（節後價）</td></tr>
-              <tr><td>吉祥 HO1363</td><td>20:15 → 00:30+1</td><td>直飛 · 紅眼</td><td>Airpaz</td><td class="num">¥767</td><td>2 月月度底價 · 不建議</td></tr>
-              <tr><td>南航 CZ3549–CZ3033</td><td>06:35 → 18:50</td><td>廣州中轉約 7h</td><td>12go</td><td class="num">¥1,661</td><td>指示價 · 比直飛貴</td></tr>
-              <tr><td>東航系 FM9451–MU9619</td><td>09:15 → 16:25</td><td>昆明中轉約 3h，當日達</td><td>12go</td><td class="num">¥1,604</td><td>指示價 · 比直飛貴</td></tr>
-              <tr><td>東航系 MU8505／MU5437–MU9639</td><td>上午出發 → 次日 10:05</td><td>昆明中轉 · 次日到</td><td>12go</td><td class="num">¥1,147–1,297</td><td>指示價 · 不可用</td></tr>
-              <tr><td>亞航長途 XJ 經吉隆坡</td><td>01:35 出發，全程 14h35m</td><td>KUL 中轉 5h55m</td><td>AirAsia MOVE 日曆</td><td class="num">2/2 ¥2,624</td><td>日期核實 · 比直飛貴一倍以上</td></tr>
+              <tr><td><b>東航 MU205</b> <span class="badge first">方案 A</span></td><td>10:10 → 14:20</td><td class="num">2/1 ¥3,129 · 2/2 ¥3,629</td><td class="num">US$478 · US$554</td><td>直飛 5h10m，23kg 含</td></tr>
+              <tr><td>東航 MU7569（新發現）</td><td>15:55 → 19:30</td><td class="num">2/1 ¥3,129 · 2/2 ¥3,629</td><td class="num">US$478 · US$554</td><td>同日第二班東航直飛，與 MU205 同價，23kg 含</td></tr>
+              <tr><td><b>春秋 9C8511</b> <span class="badge first">方案 B</span></td><td>16:15 → 20:15</td><td class="num">2/1 ¥1,462（優選 ¥1,712）· 2/2 ¥1,962（優選 ¥2,212）</td><td class="num">US$228（20kg US$272）· US$307（US$352）</td><td>超惠飛僅手提；優選飛含 20kg</td></tr>
+              <tr><td>春秋 9C8979 <span class="badge first">方案 C</span></td><td>19:55 → 23:55</td><td class="num">2/1 ¥1,262（優選 ¥1,512）· 2/2 ¥1,462（優選 ¥1,712）</td><td class="num">US$196（US$240）· US$228（US$270）</td><td>深夜抵達，僅手提起價</td></tr>
+              <tr><td>吉祥 HO1363</td><td>20:15 → 00:30+1</td><td class="num">2/1 ¥1,639 · 2/2 ¥2,029</td><td class="num">US$256 · US$316</td><td>紅眼，23kg 含 · 不建議</td></tr>
+              <tr><td>吉祥 HO3519</td><td>—</td><td class="num">經濟艙售完</td><td class="num">—</td><td>僅剩公務艙</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="sec-sub" style="margin:18px 0 10px">第二段 清邁 CNX → 曼谷（2/4 週四）</p>
+        <p class="sec-sub" style="margin:18px 0 10px">第二段 清邁 CNX → 曼谷 BKK（2/4 週四 · 全部抵 BKK）</p>
         <div class="tbl-wrap">
           <table>
-            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>到達機場</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th class="num">携程（¥／人）</th><th class="num">Ctrip（US$／人）</th><th>備註</th></tr></thead>
             <tbody>
-              <tr><td><b>曼谷航空 PG216</b> <span class="badge first">方案 A</span></td><td>10:10 → 11:35</td><td>BKK</td><td>曼谷航空官網促銷頁</td><td class="num">¥456</td><td>月度底價</td></tr>
-              <tr><td>曼谷航空 PG216</td><td>同上</td><td>BKK</td><td>Omio</td><td class="num">¥615</td><td>指示價（樣本價）</td></tr>
-              <tr><td>曼谷航空 PG（最低單程）</td><td>—</td><td>BKK</td><td>Trip.com TW</td><td class="num">¥172</td><td>指示價（疑似促銷／近期價）</td></tr>
-              <tr><td><b>泰航 TG103</b> <span class="badge first">方案 B</span></td><td>09:30 → 10:55</td><td>BKK</td><td>Airpaz</td><td class="num">¥383</td><td>月度底價</td></tr>
-              <tr><td>泰航 TG103／TG101</td><td>09:30／08:05 出發</td><td>BKK</td><td>Omio</td><td class="num">¥429</td><td>指示價</td></tr>
-              <tr><td>泰航 TG（往返推算）</td><td>TG107 14:05 → 15:25 等</td><td>BKK</td><td>泰航官網</td><td class="num">約 ¥470</td><td>往返 ฿4,700 起推算單程，適用期含 2/4</td></tr>
-              <tr><td><b>亞航 FD4101</b> <span class="badge first">方案 C</span></td><td>08:55 → 10:10</td><td>BKK</td><td>Airpaz</td><td class="num">¥215</td><td><b>日期核實：2 月 4 日</b></td></tr>
-              <tr><td>飛鳥 Nok Air DD</td><td>—</td><td>DMK 廊曼</td><td>Skyscanner SG</td><td class="num">¥294</td><td>日期核實：2/4 · 到 DMK 不便</td></tr>
-              <tr><td>越捷 VZ115／VZ</td><td>09:40 → 11:00</td><td>BKK</td><td>Omio／AirAsia MOVE</td><td class="num">¥248–651</td><td>月度底價／11 月樣本</td></tr>
+              <tr><td><b>曼谷航空 PG216</b> <span class="badge first">方案 A／B</span></td><td>10:10 → 11:35</td><td class="num">¥442</td><td class="num">US$66</td><td>20kg 含；雙渠道一致</td></tr>
+              <tr><td>曼谷航空 PG220</td><td>—</td><td class="num">¥442</td><td class="num">—</td><td>與 PG216 同價備選，20kg 含</td></tr>
+              <tr><td>泰航 TG103</td><td>09:30 → 10:55</td><td class="num">¥564</td><td class="num">US$79</td><td>23kg 含</td></tr>
+              <tr><td>泰航 TG121</td><td>—</td><td class="num">¥475</td><td class="num">—</td><td>—</td></tr>
+              <tr><td>泰航 TG111／TG113</td><td>—</td><td class="num">¥494</td><td class="num">—</td><td>—</td></tr>
+              <tr><td>泰航 TG107</td><td>14:05 → 15:25</td><td class="num">¥1,101</td><td class="num">—</td><td>下午班，可接廚藝課後出發，但明顯較貴</td></tr>
+              <tr><td><b>亞航 FD4101</b> <span class="badge first">方案 C</span></td><td>08:55 → 10:10</td><td class="num">¥282</td><td class="num">US$44（20kg US$60）</td><td>無托運、不得退票</td></tr>
+              <tr><td>越捷 VZ</td><td>—</td><td class="num">¥315 起</td><td class="num">—</td><td>抵 BKK</td></tr>
+              <tr><td>泰亞航（抵 BKK 班次）</td><td>—</td><td class="num">¥327 起</td><td class="num">—</td><td>另 13 班 ¥270 起抵 DMK 廊曼，勿訂錯</td></tr>
             </tbody>
           </table>
         </div>
-        <p class="sec-sub" style="margin:18px 0 10px">第三段 曼谷 BKK → 上海（2/7 或 2/8）</p>
+        <p class="sec-sub" style="margin:18px 0 10px">第三段 曼谷 BKK → 上海 PVG（2/7、2/8 兩日價並列）</p>
         <div class="tbl-wrap">
           <table>
-            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>直飛／中轉</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th class="num">携程（¥／人）</th><th class="num">Ctrip（US$／人）</th><th>備註</th></tr></thead>
             <tbody>
-              <tr><td><b>上航 FM854／東航 MU8614</b> <span class="badge first">方案 A</span></td><td>09:25 → 14:35 · 每週 4 班</td><td>直飛 4h10m</td><td>Airpaz</td><td class="num">¥1,195</td><td>2 月月度底價</td></tr>
-              <tr><td><b>曼谷航空 PG4841</b>（TG664 代碼共享）<span class="badge first">方案 B</span></td><td>10:35 → 15:50</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,108</td><td>2 月月度底價</td></tr>
-              <tr><td>泰航 TG664（同班本尊）</td><td>10:35 → 15:50</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,222</td><td>2 月月度底價</td></tr>
-              <tr><td>東航 MU（BKK→PVG 最低）</td><td>—</td><td>直飛</td><td>Airpaz</td><td class="num">¥858</td><td>月度底價（航班未指定）</td></tr>
-              <tr><td>東航 MU（BKK→SHA 最低）</td><td>—</td><td>直飛</td><td>Trip.com TW</td><td class="num">¥665</td><td>指示價</td></tr>
-              <tr><td>南航 CZ（到虹橋 SHA）</td><td>—</td><td>直飛</td><td>HappyFares</td><td class="num">¥980</td><td><b>日期核實：2 月 7 日</b></td></tr>
-              <tr><td><b>春秋 9C7286</b> <span class="badge warn">方案 C</span></td><td>18:40 → 23:05</td><td>直飛 · 晚到</td><td>Airpaz</td><td class="num">¥656</td><td>2 月月度底價</td></tr>
-              <tr><td>春秋 9C（BKK→PVG）</td><td>—</td><td>直飛</td><td>Skyscanner SG</td><td class="num">¥1,007</td><td>日期核實：2/5 除夕（偏高）</td></tr>
-              <tr><td>東航 MU 促銷（往返）</td><td>—</td><td>直飛往返</td><td>東航泰國 FB 促銷帖</td><td class="num">約 ¥1,939 往返</td><td>含稅 23kg，旅行期至 2027 年 3 月（含春節），作開口程比價錨點</td></tr>
+              <tr><td><b>上航 FM854／東航 MU8614</b> <span class="badge first">方案 A／B</span></td><td>09:25 → 14:35 · 每週 4 班</td><td class="num">2/7 ¥1,783 · 2/8 ¥1,783</td><td class="num">US$271 · US$263</td><td>直飛 4h10m，23kg 含；兩日同價</td></tr>
+              <tr><td>曼谷航空 PG4841（泰航營運）</td><td>10:35 → 15:50</td><td class="num">¥2,262（兩日同價）</td><td class="num">US$336</td><td>23kg 含；僅剩 4 張，5 人同價裝不下</td></tr>
+              <tr><td><b>春秋 9C7286</b> <span class="badge warn">方案 C</span></td><td>17:40 → 23:05</td><td class="num">2/7 ¥1,195（優選 ¥1,315）· 2/8 ¥1,855（優選 ¥2,105）</td><td class="num">US$186（US$207）· US$290（US$335）</td><td>晚到；2/8 明顯漲價；起價僅手提</td></tr>
+              <tr><td>春秋 9C7294</td><td>03:20 → 08:45</td><td class="num">2/7 ¥995 · 2/8 ¥1,395</td><td class="num">US$153（US$171）· —</td><td>清晨班 · 長輩不建議</td></tr>
+              <tr><td>春秋 9C7290</td><td>08:50 → 14:15</td><td class="num">2/7 ¥1,095 · 2/8 ¥1,595</td><td class="num">US$170 · —</td><td>白天春秋，僅手提</td></tr>
+              <tr><td>吉祥 HO1358</td><td>01:50 → 06:25+1</td><td class="num">2/7 ¥1,293 · 2/8 ¥1,453</td><td class="num">—</td><td>紅眼 · 不建議</td></tr>
+              <tr><td>泰航 TG662</td><td>時刻未核對</td><td class="num">2/7 ¥1,409</td><td class="num">—</td><td>有價無核實時刻，不列入推薦</td></tr>
             </tbody>
           </table>
         </div>
 
-        <h3 style="margin:26px 0 10px;font-size:1.2rem">中轉方案評估（不一定要直飛——但這次中轉不划算）</h3>
+        <h3 id="swap" style="margin:26px 0 10px;font-size:1.2rem">A／B 兩種走法總價對照（現行 vs 對調 · 每人三段合計）</h3>
+        <p class="sec-sub" style="margin-bottom:10px">走法 A＝現行（上海→清邁→曼谷→上海）；走法 B＝對調（上海→曼谷→清邁→上海）。中段同為 2/4，回程 A 走 2/7 或 2/8、B 走清邁直飛上海。</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>渠道／口徑</th><th class="num">A 現行（先清邁）</th><th class="num">B 對調（先曼谷）</th><th>差額與說明</th></tr></thead>
+            <tbody>
+              <tr><td>携程 · 不含托運 · 2/1 出發</td><td class="num">¥2,539</td><td class="num">¥2,706</td><td>A 便宜 ¥167</td></tr>
+              <tr><td>携程 · 不含托運 · 2/2 出發</td><td class="num">¥3,139</td><td class="num">¥2,939</td><td>B 便宜 ¥200</td></tr>
+              <tr><td>携程 · 含托運 · 2/1 出發</td><td class="num">¥3,737</td><td class="num">¥3,090（可複製口徑 ¥3,290）</td><td>B 便宜 ¥647；但 B 的最低價 MU7321 ¥1,229 僅剩 1 張，5 人用不上——改用次便宜 FM847 ¥1,429 後 B＝¥3,290，仍便宜 <b>¥447</b></td></tr>
+              <tr><td>携程 · 含托運 · 2/2 出發</td><td class="num">¥3,937</td><td class="num">¥4,298</td><td>A 便宜 ¥361</td></tr>
+              <tr><td>Ctrip · 最便宜（多不含托運）· 2/1 出＋2/7 回</td><td class="num">US$393</td><td class="num">US$418</td><td>A 便宜 US$25</td></tr>
+              <tr><td>Ctrip · 含托運最便宜 · 2/1 出＋2/7 回</td><td class="num">US$471</td><td class="num">US$484</td><td>A 便宜 US$13；但 A 的最便宜組合全是紅眼／清晨廉航</td></tr>
+              <tr><td>Ctrip · 最便宜 · 2/2 出發</td><td class="num">US$425</td><td class="num">US$399</td><td>B 便宜 US$26</td></tr>
+              <tr><td>Ctrip · 白天全服務 · 2/1 出發</td><td class="num">US$815</td><td class="num">US$716</td><td>B 便宜 US$99（MU205 貴、泰航白天班便宜互相抵銷）</td></tr>
+              <tr><td>Ctrip · 白天全服務 · 2/2 出發</td><td class="num">US$891</td><td class="num">US$657</td><td>表面 B 便宜 US$234，但 B 用了 Ctrip 的 TG663 US$171——與携程 ¥3,191 衝突，以携程為準此行不成立，僅供參考</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">5 人合計：2/1 出發對調（携程含托運可複製口徑）省約 ¥2,235；2/2 出發對調貴約 ¥1,805。機票層面的對調差距每人只有 ¥167–647，遠小於酒店連鎖層的對調差距（見酒店區對調比較）。</p>
+
+        <p class="sec-sub" style="margin:18px 0 10px">對調走法 B 逐段實查價（上海→曼谷 2/1 或 2/2 · 曼谷→清邁 2/4 · 清邁→上海 2/7 或 2/8）</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>段／航班</th><th>時刻</th><th class="num">携程（¥／人）</th><th class="num">Ctrip（US$／人）</th><th>備註</th></tr></thead>
+            <tbody>
+              <tr><td>B1 東航 MU7321</td><td>23:15 → 02:45+1</td><td class="num">2/1 ¥1,229 · 2/2 ¥2,029（東航組）</td><td class="num">US$190</td><td>23kg 含；<b>僅剩 1 張</b>（下一檔 ¥1,479 亦僅 1 張），5 人用不上；紅眼</td></tr>
+              <tr><td>B1 上航 FM847／MU8653</td><td>—</td><td class="num">2/1 ¥1,429</td><td class="num">—</td><td>對調含托運「可複製口徑」用此班</td></tr>
+              <tr><td>B1 泰航 TG663</td><td>08:15 → 11:55</td><td class="num">2/1 ¥1,475 · 2/2 ¥3,191</td><td class="num">US$230 · US$171（衝突，不用）</td><td>23kg 含；2/2 以携程 ¥3,191 為準</td></tr>
+              <tr><td>B1 春秋 9C7293</td><td>—</td><td class="num">2/1 ¥1,262（優選 ¥1,512）· 2/2 ¥1,262</td><td class="num">US$228</td><td>僅手提起價</td></tr>
+              <tr><td>B1 吉祥 HO1357</td><td>—</td><td class="num">2/1 ¥1,379（剩 4 張）· 2/2 ¥1,839</td><td class="num">US$215（2/1）</td><td>托運含</td></tr>
+              <tr><td>B1 東航／上航白天組</td><td>多班</td><td class="num">2/1 ¥1,729 · 2/2 ¥2,029</td><td class="num">US$264 · 約 US$311</td><td>托運含</td></tr>
+              <tr><td>B1 曼谷航空 PG4840</td><td>—</td><td class="num">2/1 ¥2,302 · 2/2 ¥4,320</td><td class="num">—</td><td>各僅剩 4 張</td></tr>
+              <tr><td>B2 亞航 FD4100（BKK 出發）</td><td>—</td><td class="num">¥282</td><td class="num">US$44 起</td><td>無托運、不得退票</td></tr>
+              <tr><td>B2 泰航 TG102</td><td>—</td><td class="num">¥546</td><td class="num">TG US$67 起</td><td>23kg 含；限非泰國籍、單筆最多 5 人</td></tr>
+              <tr><td>B2 曼谷航空 PG215</td><td>—</td><td class="num">¥570</td><td class="num">PG US$85 起</td><td>20kg 含</td></tr>
+              <tr><td>B2 泰航 TG104／TG120</td><td>—</td><td class="num">¥681</td><td class="num">—</td><td>越捷 ¥650–701（剩 4 張）；DD 諾克携程無航班、Ctrip 未售</td></tr>
+              <tr><td>B3 東航 MU206</td><td>15:35 → 20:45</td><td class="num">2/7 ¥2,653 · 2/8 ¥3,063</td><td class="num">US$390 · US$452</td><td>全服務對調回程首選；2/8 各票價僅剩 1 張</td></tr>
+              <tr><td>B3 春秋 9C8512</td><td>09:30 → 14:45</td><td class="num">2/7 ¥1,595（優選 ¥1,845）· 2/8 ¥2,095（優選 ¥2,345）</td><td class="num">US$249（US$293）· US$327（US$370）</td><td>白天班；2/7 含托運價剩 5 張</td></tr>
+              <tr><td>B3 吉祥 HO1364</td><td>01:30 → 06:20</td><td class="num">2/7 ¥1,463 · 2/8 ¥1,723</td><td class="num">US$227 · US$269</td><td>紅眼，23kg 含</td></tr>
+              <tr><td>B3 春秋 9C8980</td><td>01:10 → 06:05</td><td class="num">2/7 ¥1,195（優選 ¥1,315）· 2/8 ¥1,395</td><td class="num">US$186 · US$218</td><td>紅眼</td></tr>
+              <tr><td>B3 東航 MU7570</td><td>20:30 → 01:30+1</td><td class="num">2/7 ¥2,243 · 2/8 ¥3,063</td><td class="num">US$331 · US$452</td><td>跨夜抵達，長輩不友好</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card rec" style="margin-top:16px">
+          <h3>對調結論：不對調，維持清邁先、曼谷後</h3>
+          <ul class="tight">
+            <li><b>機票：</b>2/1 出發對調（携程含托運）省約 ¥447／人（5 人 ¥2,235），但優勢部分依賴僅剩 1 張的 MU7321 ¥1,229；2/2 出發對調反而貴 ¥361／人（5 人 ¥1,805）。差距小且不穩定。</li>
+            <li><b>酒店：</b>連鎖層對調貴約 ¥19,000–20,000（清邁萬豪 2/4–2/8 漲到 ¥49,006 是主因）；精品 4 間房層對調貴約 ¥1,283、基本打平；混合與套房口徑對調便宜約 ¥2,000–2,400；Airbnb 層基本打平（詳見酒店區對調比較表）。價格上對調沒有決定性優勢。</li>
+            <li><b>除夕：</b>2/5 除夕留在曼谷——團圓飯短名單本來就是曼谷的餐廳，對調須整套重做。</li>
+            <li><b>回程：</b>FM854（¥1,783、全服務、23kg 含、09:25 → 14:35）比從清邁回的實用選項更好更便宜（MU206 ¥2,653 全服務；9C8512 ¥1,595 不含托運／優選 ¥1,845）。</li>
+            <li><b>結論：</b>維持現行順序。機票省的那約 ¥2,200，不夠抵酒店與行程的代價。</li>
+          </ul>
+        </div>
+        <div class="avoid" style="margin-top:14px"><b>供應警告（2026-11-11 查詢當下）：</b>MU7321 2/1 ¥1,229 僅剩 1 張；PG4840／PG4842／PG4841／PG4839 各僅剩 4 張——家庭要 5 張，PG 系列一班裝不下全家同價；HO1357 2/1 剩 4 張、FM841 剩 3 張；MU206 2/8 各票價僅剩 1 張；9C8512 2/7 剩 5 張。經濟艙售完：HO3519、HO3520、HO3515 僅剩公務艙。FD 最低價不得退票、無免費托運；春秋「超惠飛」無免費托運，「優選飛」約貴 ¥250–500。SL927 與部分泰亞航抵 DMK 不是 BKK，勿訂錯。</div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">中轉方案評估</h3>
         <div class="card">
           <ul class="tight" style="margin-top:0">
-            <li><b>廣州中轉</b>（南航 CZ，12go ¥1,661）：中轉約 7 小時、06:35 一早出發，比 MU205 直飛底價還貴 ¥237——不選。</li>
-            <li><b>昆明中轉當日達</b>（東航系 FM9451–MU9619，12go ¥1,604）：中轉約 3 小時、當日 16:25 到，比直飛貴 ¥180——只有直飛售罄時才考慮。</li>
-            <li><b>昆明中轉次日到</b>（¥1,147–1,297）、<b>曼谷 DMK 中轉 17 小時</b>（XJ761 ¥798）、<b>吉隆坡中轉</b>（XJ 2/2 ¥2,624）：便宜的要浪費一整天，貴的比直飛貴一倍——全部不可用。</li>
-            <li><b>結論：</b>去程只有 MU205 與 9C8511 兩個直飛是可用選項；中轉不省錢還折騰長輩，本頁不推薦。若日後直飛漲價超過中轉 ¥500 以上，再重新評估昆明當日達方案。</li>
+            <li>本輪重查只查<b>直飛指定日期價</b>。先前列的廣州／昆明中轉價（12go ¥1,604–1,661）是日期未註明的指示價，不能與實查直飛價直接比較，本頁不再據此下「中轉不划算」的結論。</li>
+            <li>現行直飛選擇充足（去程 MU205／MU7569／9C8511／9C8979、國內段 PG／TG、回程 FM854），中轉又折騰長輩——<b>維持不選中轉</b>。</li>
+            <li>若日後直飛大幅漲價或售罄，再按指定日期實查昆明當日達中轉作備案。</li>
           </ul>
         </div>
 
-        <h3 style="margin:26px 0 10px;font-size:1.2rem">鄰近日期比價（有證據的部分才寫數字）</h3>
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">鄰近日期比價（指定日期實查證據）</h3>
         <div class="grid c2">
           <div class="card">
-            <h3>去程：哪天出發較便宜？</h3>
+            <h3>去程：2/1 vs 2/2（携程實查）</h3>
             <ul class="tight">
-              <li>AirAsia MOVE 日曆（XJ 經吉隆坡，日期核實）：2/2 ¥2,624 ＜ 2/9 ¥2,515（節後）＜ 2/6 ¥3,183 ＜ <b>2/4 ¥3,278 最貴</b>；2/16 ¥564 是全月最低（節後）</li>
-              <li>方向性證據：價格峰值在 2/4–2/6（除夕前後），<b>2/1–2/2（週一、二）應便宜於 2/3</b>——與本行程 2/1 出發的安排吻合</li>
-              <li>但 MU205／9C8511 在 1/31、2/1、2/2、2/3 的逐日價<b>未查到</b>，無法給出這兩班的具體差價數字</li>
+              <li>MU205：2/1 ¥3,129 → 2/2 ¥3,629（貴 ¥500）；9C8511：¥1,462 → ¥1,962（貴 ¥500；優選飛 ¥1,712 → ¥2,212）；HO1363：¥1,639 → ¥2,029</li>
+              <li>Ctrip 交叉一致：MU205 US$478 → US$554，2/2 全面較貴</li>
+              <li><b>結論：2/1 全面便宜，且清邁玩滿——出發日定 2/1</b></li>
             </ul>
           </div>
           <div class="card">
-            <h3>回程：2/6、2/7、2/8 哪天便宜？</h3>
+            <h3>回程：2/7 vs 2/8（携程實查）</h3>
             <ul class="tight">
-              <li>LowCost.Club 分檔（日期核實）：2/4 約 ¥1,080；<b>2/5–2/16 同檔約 ¥1,267——2/6、2/7、2/8、2/9 在此來源上無差價</b></li>
-              <li>Skyscanner 日曆：DMK → PVG 2 月最便宜日是 <b>2/6（六，初一）</b>；FindMyFlight 亦顯示 2/6 起價約 ¥847（9C）</li>
-              <li>結論：回程 2/6 略便宜只有微弱證據；<b>2/7、2/8、2/9 之間無已核實差價</b>，不必為改期折騰行程——照原計劃 2/8 回即可</li>
-              <li>國內段 2/4 是週四工作日，AirAsia MOVE 指工作日通常比週末便宜，無需改期</li>
+              <li>FM854：<b>兩日同價 ¥1,783</b>——選全服務回程的話，回程日不影響票價，照原計劃 2/8 回即可</li>
+              <li>春秋 9C7286：2/7 ¥1,195 → 2/8 ¥1,855（漲 ¥660）；Ctrip 亦顯示 2/8 春秋與 MU206 明顯漲價——廉航回程選 2/7 才便宜</li>
+              <li>國內段 2/4 是週四：PG216 ¥442 雙渠道一致，無需改期</li>
             </ul>
           </div>
         </div>
 
         <div class="calc" style="margin-top:18px">
           <h3>機票組合試算（自己搭配，即時合計）</h3>
-          <p class="meta" style="color:var(--ink2);margin:0">預設已選方案 B（本頁推薦）。換任何一段即時重算；價格為底價口徑，廉航段不含托運費。實際下單價以指定日期實查為準。</p>
+          <p class="meta" style="color:var(--ink2);margin:0">預設已選方案 B（本頁推薦）。換任何一段即時重算；價格為 2026-11-11 携程指定日期實查價（2/1 出發、2/4 國內段；回程 FM854 兩日同價、9C7286 為 2/7 價）。價格浮動快，下單前再查一次。</p>
           <div class="grid c3" style="gap:10px">
             <div>
               <label for="f-leg1">第一段 上海 → 清邁</label>
               <select id="f-leg1">
-                <option value="1424">東航 MU205 直飛 — ¥1,424（方案 A）</option>
-                <option value="545" selected>春秋 9C8511 直飛 — ¥545（方案 B／C · 廉航）</option>
-                <option value="767">吉祥 HO1363 紅眼 — ¥767（不建議）</option>
-                <option value="1604">東航系昆明中轉當日達 — ¥1,604（指示價）</option>
+                <option value="3129">東航 MU205 直飛 — ¥3,129（方案 A · 2/1）</option>
+                <option value="1712" selected>春秋 9C8511 優選飛 — ¥1,712（方案 B · 含 20kg）</option>
+                <option value="1462">春秋 9C8511 超惠飛 — ¥1,462（不含托運）</option>
+                <option value="1262">春秋 9C8979 — ¥1,262（方案 C · 深夜到）</option>
+                <option value="1639">吉祥 HO1363 紅眼 — ¥1,639（不建議）</option>
               </select>
             </div>
             <div>
               <label for="f-leg2">第二段 清邁 → 曼谷</label>
               <select id="f-leg2">
-                <option value="615">曼谷航空 PG216 — ¥615（方案 A · Omio 樣本）</option>
-                <option value="456">曼谷航空 PG216 — ¥456（官網促銷底價）</option>
-                <option value="383" selected>泰航 TG103 — ¥383（方案 B）</option>
-                <option value="215">亞航 FD4101 — ¥215（方案 C · 2/4 核實價）</option>
+                <option value="442" selected>曼谷航空 PG216 — ¥442（方案 A／B · 20kg 含）</option>
+                <option value="564">泰航 TG103 — ¥564（23kg 含）</option>
+                <option value="282">亞航 FD4101 — ¥282（方案 C · 不得退票）</option>
               </select>
             </div>
             <div>
               <label for="f-leg3">第三段 曼谷 → 上海</label>
               <select id="f-leg3">
-                <option value="1195">上航 FM854 — ¥1,195（方案 A）</option>
-                <option value="1108" selected>曼谷航空 PG4841 — ¥1,108（方案 B）</option>
-                <option value="1222">泰航 TG664 — ¥1,222（與 PG4841 同班）</option>
-                <option value="980">南航 CZ 到虹橋 — ¥980（2/7 核實價）</option>
-                <option value="656">春秋 9C7286 — ¥656（方案 C · 23:05 到）</option>
+                <option value="1783" selected>上航 FM854 — ¥1,783（方案 A／B · 23kg 含）</option>
+                <option value="1195">春秋 9C7286 — ¥1,195（方案 C · 2/7 價）</option>
+                <option value="2262">曼谷航空 PG4841 — ¥2,262（僅剩 4 張）</option>
+                <option value="995">春秋 9C7294 — ¥995（03:20 清晨 · 不建議）</option>
               </select>
             </div>
           </div>
           <div class="out">
-            <div class="row"><span>每人合計（地板價）</span><b id="f-per">¥2,036</b></div>
-            <div class="row"><span>5 張來回票合計</span><b id="f-five">¥10,180</b></div>
-            <div class="row"><span>若 7 人都買（參考）</span><b id="f-seven">¥14,252</b></div>
-            <div style="margin-top:8px">春節高峰提醒：方案 B 現實區間約每人 ¥2,800–3,500，5 人預算抓 <span class="big" style="font-size:1.15rem">¥14,000–17,500</span>；若改走方案 A 則抓 ¥19,000–22,500。</div>
+            <div class="row"><span>每人合計（實查價）</span><b id="f-per">¥3,937</b></div>
+            <div class="row"><span>5 張來回票合計</span><b id="f-five">¥19,685</b></div>
+            <div class="row"><span>若 7 人都買（參考）</span><b id="f-seven">¥27,559</b></div>
+            <div style="margin-top:8px">以上已是春節指定日期實查價，不是底價估算：方案 B 5 人 <span class="big" style="font-size:1.15rem">¥19,685</span>、方案 A 5 人 ¥26,770。價格浮動快，下單前在携程／Ctrip 再查一次。</div>
           </div>
           <ul class="tight">
             <li>3 位長輩：國際線未核實到東航老人折扣，不要按「長者票價」抓預算。</li>
             <li>輪椅協助一般可免費申請，訂票時備註，以航司確認為準。</li>
             <li>MU8614／FM854 每週只飛 4 班：訂票時先確認 2/7 或 2/8 當天有班，再鎖其他段。</li>
-            <li>春秋 9C 的托運行李費在 2027-02 日期未核實到報價，訂票頁以官網為準——5 人各托 1 件時，先把托運費加回去再判斷方案 B 是否仍划算。</li>
+            <li>春秋 9C8511 選「優選飛」（¥1,712）才含 20kg 托運；「超惠飛」（¥1,462）無免費托運——比較方案 B 與 A 時要用含托運口徑。</li>
             <li>其餘 2 位成員行程待定——本頁只按已確認的 5 張來回票計算，不假設另外 2 人的航段。</li>
           </ul>
         </div>
@@ -448,7 +495,7 @@
       <section id="hotels">
         <div class="sec-head"><h2>酒店比價</h2><span class="tag">7 人 · 4 間房／別墅</span></div>
         <p class="sec-sub">清邁住 Chang Klan 夜市一帶（吃飯、按摩、逛街都在步行範圍）；曼谷優先湄南河畔（除夕團聚氣氛好、有接駁船避開塞車）。本區順序：酒店選項 → <b>同酒店多渠道比價</b> → <b>Airbnb 整套專區</b>（全家住一起、評分與距離）→ 環境打分與性價比排名在下一區。全部附長輩要點：電梯、樓層、噪音、接駁台階先講清楚。</p>
-        <div class="honest"><b>價格誠實標註（2026-11-11 01:49 CST 實查更新）：</b>以下 7 間酒店已逐渠道輸入指定日期實查——清邁 2027-02-01 入住、02-04 退房（3 晚，4 間房、7 位成人）；曼谷 02-04 入住、02-08 退房（4 晚，7 位成人）。每格標明渠道、原幣別總價、折合人民幣、含稅、含早與免費取消截止日；人民幣按 USD 6.67／SGD 5.15／THB 0.20 換算，下單以原幣別頁面為準。<b>Booking.com 七間全部無房</b>，本次行程不可用。<b>Marriott 官網一次最多訂 3 間房</b>，4 間房須分開預訂或電話訂房，官網格只列 3 間房參考價。<b>清邁首選更正：</b>香格里拉 Deluxe 實質售罄（Trip.com 僅剩 3 間、其餘渠道全無房），首選改為<b>清邁萬豪</b>；曼谷首選維持 <b>Grande Centre Point</b>（官網實查 ¥16,500 最便宜）。房價與房況為查詢當下即時價，可能變動。</div>
+        <div class="honest"><b>價格誠實標註（2026-11-11 01:49 CST 實查更新）：</b>以下 7 間酒店已逐渠道輸入指定日期實查——清邁 2027-02-01 入住、02-04 退房（3 晚，4 間房、7 位成人）；曼谷 02-04 入住、02-08 退房（4 晚，7 位成人）。每格標明渠道、原幣別總價、折合人民幣、含稅、含早與免費取消截止日；人民幣按 USD 6.67／SGD 5.15／THB 0.20 換算，下單以原幣別頁面為準。<b>Booking.com 七間全部無房</b>，本次行程不可用。<b>Marriott 官網一次最多訂 3 間房</b>，4 間房須分開預訂或電話訂房，官網格只列 3 間房參考價。<b>清邁首選更正：</b>香格里拉 Deluxe 實質售罄（Trip.com 僅剩 3 間、其餘渠道全無房），首選改為<b>清邁萬豪</b>；曼谷首選維持 <b>Grande Centre Point</b>（官網實查 ¥16,500；擴大實查另見 Agoda 4 間房 ¥14,804 更便宜）。<b>2026-11-11 擴大重查補充：</b>新增精品層與 Airbnb 整棟層實查（見下方專區與對調比較表）；曼谷 Airbnb「只有 2 間有檔期」的舊說法已更正——兩個時段整棟房源都有 1,000 間以上，清邁亦找到有檔期的新整棟房源。房價與房況為查詢當下即時價，可能變動。</div>
 
         <div class="chips" role="group" aria-label="切換城市">
           <button class="chip-btn" id="tab-cm" aria-pressed="true">清邁（入住 2/1 或 2/2 · 退房 2/4）</button>
@@ -465,6 +512,7 @@
               <li>Agoda SGD 4,358（含稅）≈ ¥22,444；Trip.com US$3,392（含稅）≈ ¥22,625——兩渠道接近、皆可訂，免費取消至 2027-01-31</li>
               <li>不含早餐（Agoda 每人另加 S$75；Trip.com 可加 US$22.77）</li>
               <li>每人每晚約 ¥1,069–1,078；Booking.com 無房；官網一次最多訂 3 間房（3 間參考：會員彈性價 ฿9,021／間／晚含稅）</li>
+              <li>2026-11-11 再驗證：Agoda ¥22,618（與首查 ¥22,444 接近）；<b>若改 2/4–2/8 入住漲至 ¥49,006</b>（含早 ¥52,399），性價比極差——這是酒店對調不划算的主因，見下方對調比較表</li>
               <li>長輩要點：電梯直達；訂高樓層山景房，避開臨街低樓層（夜市噪音）</li>
             </ul>
           </div>
@@ -493,13 +541,13 @@
             </ul>
           </div>
           <div class="card">
-            <span class="badge gold">CM-4 別墅舊錨點</span>
-            <h3 style="margin-top:8px">4 房私人泳池別墅（Santitham 區）</h3>
-            <p class="meta">距古城約 10 分鐘車程 · Airbnb 類整棟出租</p>
-            <div class="price">無檔期 <small>清邁 Airbnb 指定日期不可行</small></div>
+            <span class="badge gold">CM-4 整棟 Airbnb（擴大搜尋後有房）</span>
+            <h3 style="margin-top:8px">清邁 Airbnb 整棟（2026-11-11 新查房源）</h3>
+            <p class="meta">古城／寧曼一帶 · 整棟住 7 人 · Airbnb</p>
+            <div class="price">約 ¥2,480 起 <small>／3 晚 · 整棟 · 擴大搜尋實查價</small></div>
             <ul class="tight">
-              <li>2026-11-11 實查：清邁 4 間已核實 Airbnb 整套在 2027-02-01–04 <b>全部無檔期</b>，清邁這段走酒店，不列 Airbnb 選項</li>
-              <li>逐間檔期、評分實查值與預訂連結見下方 <a href="#airbnb">Airbnb 專區</a></li>
+              <li>先前逐間核實的 4 間舊房源在 2/1–2/4 仍全部無檔期；但擴大搜尋找到<b>有檔期的新房源</b>：8/4th House（4.93 ★）SGD 468 ≈ ¥2,480／3 晚、Le Ping 2 House（4.97 ★）≈ ¥2,491、Ningman 3-bed house（4.86 ★）≈ ¥2,624</li>
+              <li>共通限制：不含早餐、獨棟多樓梯、電梯未確認——長輩須住一樓臥室；逐間明細見下方 <a href="#airbnb">Airbnb 專區</a></li>
               <li>舊錨點起價 $117／晚與「春節 ¥2,000–3,000／晚」均未核實，不要按舊錨點抓預算</li>
             </ul>
           </div>
@@ -550,6 +598,7 @@
             <ul class="tight">
               <li>官網合併總價 ฿82,500（含稅）≈ ¥16,500：Two-Bedroom Balcony Suite ฿11,000／晚（4 晚 ฿44,000）＋Family One Bedroom ฿9,625／晚（4 晚 ฿38,500），皆 Special Discount - Room Only 最優價（原價五折）</li>
               <li>免費取消至 2027-01-31（退款扣 3% 銀行手續費、需 100% 預付）；含早方案：Family ฿11,125／晚、Two-Bedroom ฿12,500／晚</li>
+              <li>擴大實查補充：<b>Agoda 4 間房總價 ¥14,804，比官網 ¥16,500 更便宜</b>；另有三臥套房（131㎡，2 大床＋2 單人床）住 7 人方案 ¥15,751 起（2/1–2/4 為 ¥10,558 起；早餐未含時 THB 800／人；有電梯）</li>
               <li>每人每晚約 ¥589——曼谷 4 間酒店實查最便宜；Trip.com／Agoda 未取得兩房型合併總價（單房型價見渠道比價表）；Booking.com 無房</li>
               <li>長輩要點：帶廚房、洗衣機適合長住；BTS 在門口；無河景；要求高樓層安靜房，避開 BTS 側</li>
             </ul>
@@ -572,6 +621,135 @@
         </div>
         <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">以上為 2026-11-11 指定日期實查價（含稅口徑逐格見酒店卡與渠道比價表）；房價與房況會變動，下單前以同一渠道重新確認。渠道分類：連鎖酒店走酒店官網／Trip.com／Agoda 比價（逐格明細在下方渠道比價區）；Booking.com 本次七間全無房；Airbnb 走房源頁查價。</p>
 
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">精品層（2026-11-11 擴大實查新增 · 4 間房口徑）</h3>
+        <p class="sec-sub" style="margin-bottom:10px">連鎖太貴時的替代層：評分 9.0 以上、價格約連鎖一半。兩個時段都列（現行時段＋對調時段），方便對照下方對調比較表。</p>
+        <p class="sec-sub" style="margin-bottom:10px">清邁精品（入住時段價）</p>
+        <div class="grid c2">
+          <div class="card rec">
+            <span class="badge first">精品 · 清邁首選</span>
+            <h3 style="margin-top:8px">Moose Hotel Nimman</h3>
+            <p class="meta">尼曼區 · 近 One Nimman／Maya 商場 · Agoda 9.1 分（6,961 則）</p>
+            <div class="price">¥12,733 <small>／3 晚 · 4 間高級大床房 · 含早（Agoda）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：4 間房 ¥12,733，免費取消至 2027-01-12；2/4–2/8：¥16,978／4 晚，免費取消至 2027-01-15</li>
+              <li>家庭套房口徑：1 間 75㎡（2 大床＋上下舖＋單人床、2 衛浴、住 7 人）¥8,489／3 晚、¥11,320／4 晚，含早</li>
+              <li>長輩要點：<b>有電梯</b>、輪椅友善——精品層裡長輩條件最完整</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">精品 · 尼曼路</span>
+            <h3 style="margin-top:8px">U Nimman Chiang Mai</h3>
+            <p class="meta">尼曼路 · One Nimman 旁 · Agoda 9.2 分（15,244 則）／Trip 9.4 分（989 則）</p>
+            <div class="price">¥12,089 起 <small>／3 晚 · 4 間頂級豪華房 36㎡ · 含早（Agoda）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：¥12,089（不可退款）或 ¥13,839（免費取消至 2027-01-30）；房型可連通、最多 3 人／間</li>
+              <li>2/4–2/8：¥32,441——每晚單價高出一倍，疑似平價房型售完，對調時段不划算</li>
+              <li>長輩要點：有電梯（7 層）；對面酒吧夜間有噪音、隔音較差，須要求高樓層安靜房</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">精品 · 懷凱區</span>
+            <h3 style="margin-top:8px">SYN Boutique Hotel</h3>
+            <p class="meta">懷凱區 · 近寧曼路 · Trip 9.0 分（327 則）</p>
+            <div class="price">約 ¥11,741 <small>／3 晚 · 4 間雙床房 · 含早（Trip.com TWD 52,836）</small></div>
+            <ul class="tight">
+              <li>2/4–2/8：TWD 77,980 ≈ ¥17,329／4 晚（光影設計大床房）</li>
+              <li>電梯未核對、免費取消截止日未核對——下單前在房型頁確認</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">精品 · 古城附近</span>
+            <h3 style="margin-top:8px">Bella Nara Hotel</h3>
+            <p class="meta">古城附近 · Trip 9.0 分（1,063 則）</p>
+            <div class="price">約 ¥11,888 <small>／3 晚 · 4 間房 · 含早（Trip.com TWD 53,496）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4 價，Trip 標示可免費取消（截止日未明示）；2/4–2/8 本輪未查到價</li>
+              <li>電梯未核對——下單前確認</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">精品 · 夜市區（僅限成人）</span>
+            <h3 style="margin-top:8px">Hotel Loy Chiang Mai</h3>
+            <p class="meta">夜市區 · 近古城 · Trip 9.1 分（462 則）· 僅限成人入住</p>
+            <div class="price">約 ¥11,637 <small>／3 晚 · 4 間雙床房（Trip.com TWD 52,368）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4 價；早餐清單未註明、電梯未核對</li>
+              <li>本團 7 位皆成人，符合入住限制；仍須在房型頁確認取消條款</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="sec-sub" style="margin:18px 0 10px">曼谷精品（入住時段價）</p>
+        <div class="grid c2">
+          <div class="card rec">
+            <span class="badge first">精品 · 曼谷最佳性價比</span>
+            <h3 style="margin-top:8px">The Berkeley Hotel Pratunam</h3>
+            <p class="meta">Pratunam · 近 Erawan 四面佛 · Trip 9.0 分（2,408 則）</p>
+            <div class="price">約 ¥9,025 <small>／4 晚 · 4 間 North Tower Premier（2 單人床）· 含早（Trip.com US$1,353）</small></div>
+            <ul class="tight">
+              <li>2/4–2/8：US$1,353 ≈ ¥9,025，<b>此價僅剩 5 間</b>；2/1–2/4：US$909 ≈ ¥6,063／3 晚</li>
+              <li>有電梯（高層雙塔）；可免費取消（截止日未明示，房型頁確認）</li>
+              <li>購物、交通便利，是對調比較的精品層曼谷代表</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">精品 · 最便宜飯店</span>
+            <h3 style="margin-top:8px">Baiyoke Sky Hotel</h3>
+            <p class="meta">Pratunam 水門市場區 · 88 層塔樓 · Trip 9.0 分（3,425 則）</p>
+            <div class="price">約 ¥5,740 <small>／4 晚 · 4 間 Superior Room（Trip.com US$861 含稅）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：US$646 ≈ ¥4,310／3 晚——兩時段都是最便宜的飯店選項</li>
+              <li>有電梯；此價早餐未明示、免費取消未明示，下單前確認</li>
+              <li>長輩要點：水門市場區較嘈雜擁擠，安靜度扣分</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">服務式公寓 · Thong Lo</span>
+            <h3 style="margin-top:8px">Grande Centre Point Sukhumvit 55</h3>
+            <p class="meta">Sukhumvit 55 · Thong Lo 區 · Agoda 9.0 分（24,795 則）</p>
+            <div class="price">¥13,439 <small>／4 晚 · 4 間房（Agoda 含稅）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：¥8,409／3 晚；有電梯</li>
+              <li>早餐與免費取消列表頁未明示，選房型時確認；餐飲、購物便利</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">服務式公寓 · Silom</span>
+            <h3 style="margin-top:8px">Grande Centre Point Surawong</h3>
+            <p class="meta">Surawong · 近 BTS Surasak · Agoda 9.3 分（15,265 則）</p>
+            <div class="price">¥16,239 <small>／4 晚 · 4 間房（Agoda 含稅）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：¥11,460／3 晚；有電梯</li>
+              <li>早餐與免費取消列表頁未明示，選房型時確認</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新開業 · Embassy 區</span>
+            <h3 style="margin-top:8px">Grande Centre Point Lumphini</h3>
+            <p class="meta">Embassy 區 · 近 Lumphini 公園 · 2025 年新開 · Agoda 9.3 分（7,697 則）／Trip 9.5 分（1,933 則）</p>
+            <div class="price">¥13,266 <small>／3 晚 · 4 間房（Agoda 含稅；Trip US$1,864）</small></div>
+            <ul class="tight">
+              <li>此為 2/1–2/4 對調時段價；2/4–2/8 本輪未查到價</li>
+              <li>有電梯；環境清靜，是 GCP 系列裡氛圍最安靜的一間</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">酒店對調比較（三層＋混合＋套房口徑）</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>層級／口徑</th><th class="num">現行（清邁先）</th><th class="num">對調（曼谷先）</th><th>差額與說明</th></tr></thead>
+            <tbody>
+              <tr><td><b>連鎖層</b>（清邁萬豪＋GCP Ploenchit，Agoda）</td><td class="num">¥37,422（22,618＋14,804）</td><td class="num">¥57,559（8,553＋49,006）</td><td><b>對調貴約 ¥19,000–20,000</b>（用 GCP 官網 ¥16,500 算則貴 ¥18,615）；主因是清邁萬豪 2/4–2/8 漲到 ¥49,006——該價本身就不值得選，第二時段應改 Moose 或其他</td></tr>
+              <tr><td><b>精品 4 間房層</b>（Moose＋Berkeley，含早、有電梯）</td><td class="num">¥21,758（12,733＋9,025）</td><td class="num">¥23,041（6,063＋16,978）</td><td>對調貴約 ¥1,283，<b>基本打平</b></td></tr>
+              <tr><td><b>混合</b>（Moose 4 間房＋GCP 4 間房，皆 Agoda）</td><td class="num">¥27,537（12,733＋14,804）</td><td class="num">¥25,531（8,553＋16,978）</td><td>對調便宜 ¥2,006</td></tr>
+              <tr><td><b>套房口徑</b>（Moose 家庭套房＋GCP 三臥套房）</td><td class="num">¥24,240（8,489＋15,751）</td><td class="num">¥21,878（10,558＋11,320）</td><td>對調便宜 ¥2,362；但 GCP 套房為「起」價、早餐另計 THB 800／人，且 7 人同住一間套房，舒適度要取捨</td></tr>
+              <tr><td><b>Airbnb 整棟層</b>（8/4th House＋Adore House，含稅估算）</td><td class="num">約 ¥6,680（2,480＋約 4,200）</td><td class="num">約 ¥6,836（約 3,200＋3,636）</td><td><b>基本打平</b>（差約 ¥150，在誤差內）</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">其他對調參考（Trip.com 最便宜總價）：曼谷先住時段——曼谷香格里拉 US$2,529、喜來登 US$2,310、希爾頓 US$3,222（最後 1 間）；清邁後住時段——清邁香格里拉 US$6,666（2/4–2/8 有房）、安納塔拉 US$11,712。最便宜對調連鎖組合 GCP＋清邁香格里拉約 US$7,886 ≈ ¥52,600，仍遠貴於現行。綜合機票與除夕因素，結論<b>不對調</b>（見機票區對調分析）。</p>
+
         <div class="calc" style="margin-top:18px">
           <h3>酒店組合試算</h3>
           <div class="grid c2" style="gap:10px">
@@ -580,6 +758,7 @@
               <select id="h-cm">
                 <option value="7481.33" selected>萬豪 4 間 — ¥7,481／晚（Agoda 實查 · 清邁首選）</option>
                 <option value="7541.67">萬豪 4 間 — ¥7,542／晚（Trip.com 實查）</option>
+                <option value="4244.33">Moose 4 間房 — ¥4,244／晚（Agoda 實查 · 精品層含早）</option>
                 <option value="6961.33">香格里拉 4 間 — ¥6,961／晚（Trip.com 實查 · 僅剩 3 間，不夠 4 間）</option>
                 <option value="13620">安納塔拉 4 間 — ¥13,620／晚（Trip.com 實查 · 不可退）</option>
               </select>
@@ -590,6 +769,9 @@
               <label for="h-bkk">曼谷住宿</label>
               <select id="h-bkk">
                 <option value="4125" selected>Grande Centre Point 兩套房 — ¥4,125／晚（官網實查 · 曼谷首選）</option>
+                <option value="3701">Grande Centre Point 4 間房 — ¥3,701／晚（Agoda 實查）</option>
+                <option value="2256.25">Berkeley Pratunam 4 間 — ¥2,256／晚（Trip.com 實查 · 精品層含早）</option>
+                <option value="1435">Baiyoke Sky 4 間 — ¥1,435／晚（Trip.com 實查 · 最便宜飯店）</option>
                 <option value="5068">曼谷香格里拉 4 間 — ¥5,068／晚（官網實查）</option>
                 <option value="5795">皇家蘭花喜來登 4 間 — ¥5,795／晚（Agoda 實查）</option>
                 <option value="6764.5">千禧希爾頓 2 間套房 — ¥6,765／晚（Agoda 實查 · 不可退）</option>
@@ -601,7 +783,7 @@
           <div class="out">
             <div class="row"><span>住宿總計（實查價）</span><b id="h-total">¥38,944</b></div>
             <div class="row"><span>平均每人每晚</span><b id="h-ppn">¥795</b></div>
-            <div style="margin-top:6px;font-size:.9rem">預設為雙首選組合（清邁萬豪 Agoda 實查＋Grande Centre Point 官網實查）。以上是 2026-11-11 指定日期實查價、已含稅，不是估算；但房價與房況會變動，下單前以同一渠道重新確認價格與取消政策。Airbnb 未納入試算：清邁全無檔期；曼谷 BK-2／BK-3 實查總價 ¥6,150／¥12,814（4 晚）可自行與曼谷酒店段換算比較。</div>
+            <div style="margin-top:6px;font-size:.9rem">預設為雙首選組合（清邁萬豪 Agoda 實查＋Grande Centre Point 官網實查）。以上是 2026-11-11 指定日期實查價、已含稅，不是估算；但房價與房況會變動，下單前以同一渠道重新確認價格與取消政策。Airbnb 整棟未納入試算：清邁 8/4th House 約 ¥2,480／3 晚、曼谷 Adore House 含稅估算約 ¥4,200／4 晚，另 BK-2／BK-3 實查總價 ¥6,150／¥12,814（4 晚），逐間見 Airbnb 專區。</div>
           </div>
         </div>
       </section>
@@ -662,10 +844,10 @@
       <!-- ============ Airbnb 整套 ============ -->
       <section id="airbnb">
         <div class="sec-head"><h2>Airbnb 整套專區</h2><span class="tag">全家住一起 · 7 人</span></div>
-        <p class="sec-sub">酒店要 4 間房才住得下 7 人；Airbnb 整套一棟住全家，有客廳、廚房，長輩不用分樓層跑。以下 8 間已於 2026-11-11 逐間點開房源頁、選指定日期＋7 位房客實查：檔期、實價（有檔期者）、評分實查值、免費取消截止日、距離、隱藏收費與長輩條件全部照實查寫明，附原始預訂連結。頭號結論：清邁 4 間全部無檔期，曼谷僅 2 間有檔期。</p>
-        <div class="photo-gap"><b>實查結果與照片缺口：</b>價格缺口已部分補齊——清邁 4 間在 2027-02-01–04 <b>全部無檔期</b>（無價可報）；曼谷 BK-2、BK-3 有檔期有實價（見各卡），BK-1、BK-4 無檔期。照片直連仍未取得：8 間房源的照片在房源頁以圖片形式顯示，實查未能取得圖片原始網址，本頁不猜網址、不貼假照片——看照片請點各房源的預訂連結進房源頁。</div>
+        <p class="sec-sub">酒店要 4 間房才住得下 7 人；Airbnb 整套一棟住全家，有客廳、廚房，長輩不用分樓層跑。本區分兩批：先前逐間點開房源頁實查的 8 間（指定日期＋7 位房客，附預訂連結），以及 2026-11-11 <b>擴大搜尋新查到</b>的整棟房源。<b>更正：</b>先前「曼谷只有 2 間有檔期」的說法不成立——那只是當時查的 4 間特定房源中有 2 間有檔期；實際上 Airbnb 整棟在兩個時段都顯示 <b>1,000 間以上</b>房源，清邁擴大搜尋後亦找到多間有檔期的新房源（見下方新增區）。</p>
+        <div class="photo-gap"><b>實查結果與照片缺口：</b>先前 8 間中，清邁 4 間在 2027-02-01–04 <b>全部無檔期</b>（無價可報）；曼谷 BK-2、BK-3 有檔期有實價（見各卡），BK-1、BK-4 無檔期。擴大搜尋的新房源（8/4th House、Adore House 等）有檔期有價，列於各城「擴大搜尋新增」區。照片直連仍未取得：房源照片在房源頁以圖片形式顯示，實查未能取得圖片原始網址，本頁不猜網址、不貼假照片——看照片請點各房源的預訂連結進房源頁（新增房源未逐間取得連結，先在 Airbnb 以名稱搜尋）。</div>
 
-        <h3 style="margin:14px 0 10px;font-size:1.2rem">清邁（3 晚 · 2027-02-01–04）</h3>
+        <h3 style="margin:14px 0 10px;font-size:1.2rem">清邁（3 晚 · 2027-02-01–04）— 先前逐間核實的 4 間（皆無檔期）</h3>
         <div class="grid c2">
           <div class="card">
             <span class="badge warn">CM-1 · 指定日期無檔期</span>
@@ -723,7 +905,73 @@
         </div>
         <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">已排除：Hillmont Villa（頁面 403）；San Phi Suea 4BR（泳池是小區會所共用，非私人泳池）；Pa Phai 私人泳池別墅（4.78 ★，但距寧曼 30 分鐘車程）。</p>
 
-        <h3 style="margin:22px 0 10px;font-size:1.2rem">曼谷（4 晚 · 2027-02-04–08）</h3>
+        <h3 style="margin:22px 0 10px;font-size:1.2rem">擴大搜尋新增 · 清邁（有檔期 · 2026-11-11 實查）</h3>
+        <div class="grid c2">
+          <div class="card rec">
+            <span class="badge first">新增 · 兩段都有房</span>
+            <h3 style="margin-top:8px">8/4th House</h3>
+            <p class="meta">古城區 · 整棟 3 臥室、5 床、3.5 衛浴 · 住 7 人</p>
+            <div class="price">4.93 ★ <small>／5 · 80 則評價 · 2/1–2/4 SGD 468 ≈ ¥2,480／3 晚</small></div>
+            <ul class="tight">
+              <li>2/4–2/8：SGD 686 ≈ ¥3,636／4 晚；兩段可連住 7 晚——對調比較的 Airbnb 層清邁代表</li>
+              <li>不含早餐；免費取消清單有標示（截止日未核對）</li>
+              <li>長輩：電梯未確認（獨棟多樓梯），須安排長輩住一樓臥室，下單前向房東確認</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 近夜市</span>
+            <h3 style="margin-top:8px">Le Ping 2 House</h3>
+            <p class="meta">近夜市 · 整棟 4 臥室、5 床、4.5 衛浴</p>
+            <div class="price">4.97 ★ <small>／5 · 119 則評價 · 2/1–2/4 SGD 470 ≈ ¥2,491／3 晚</small></div>
+            <ul class="tight">
+              <li>不含早餐；免費取消清單有標示（截止日未核對）</li>
+              <li>長輩：電梯未確認（獨棟多樓梯），一樓臥室安排下單前確認</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 寧曼區</span>
+            <h3 style="margin-top:8px">Ningman 3-bed house</h3>
+            <p class="meta">寧曼區 · 近古城 · 整棟 3 臥室、7 床、2.5 衛浴</p>
+            <div class="price">4.86 ★ <small>／5 · 105 則評價 · 2/1–2/4 SGD 495 ≈ ¥2,624／3 晚</small></div>
+            <ul class="tight">
+              <li>不含早餐；電梯未確認（獨棟多樓梯）</li>
+              <li>床數充足（7 床），適合不想擠床的家庭分房睡法</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 2/4–2/8 時段</span>
+            <h3 style="margin-top:8px">Heimish</h3>
+            <p class="meta">Suthep 區 · 近機場（約 10 分鐘）· 整棟 3 臥室、6 床、2.5 衛浴</p>
+            <div class="price">4.89 ★ <small>／5 · 123 則評價 · 2/4–2/8 SGD 577 ≈ ¥3,058／4 晚</small></div>
+            <ul class="tight">
+              <li>此為對調時段（清邁後住）的房源；位置較偏，進古城要搭車</li>
+              <li>不含早餐；電梯未確認（獨棟多樓梯）</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 2/4–2/8 時段 · 泳池別墅</span>
+            <h3 style="margin-top:8px">Moonlight Sky Pool Villa</h3>
+            <p class="meta">近機場 · 整棟 4 臥室、4 床、2 衛浴 · 私人泳池</p>
+            <div class="price">4.88 ★ <small>／5 · 134 則評價 · 2/4–2/8 SGD 965 ≈ ¥5,115／4 晚</small></div>
+            <ul class="tight">
+              <li>不含早餐；電梯未確認</li>
+              <li>衛浴只有 2 間，7 人共用要排隊——設施扣分項</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 2/4–2/8 時段 · 古城區</span>
+            <h3 style="margin-top:8px">Old town 3-bed apartment</h3>
+            <p class="meta">古城區 · 整棟 3 臥室、4 床、4 衛浴</p>
+            <div class="price">4.95 ★ <small>／5 · 82 則評價 · 2/4–2/8 SGD 1,031 ≈ ¥5,464／4 晚</small></div>
+            <ul class="tight">
+              <li>不含早餐；電梯未確認</li>
+              <li>衛浴 4 間是新增房源中最寬裕的配置；位置在古城內</li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">Airbnb 共通限制：整棟房源均不含早餐、獨棟多樓梯、電梯多未確認；價格為含附加費的顯示價（曼谷房源為稅前，見下方）。長輩宜選有一樓臥室的房源，下單前向房東確認樓層與電梯。</p>
+
+        <h3 style="margin:22px 0 10px;font-size:1.2rem">曼谷（4 晚 · 2027-02-04–08）— 先前逐間核實的 4 間</h3>
         <div class="grid c2">
           <div class="card">
             <span class="badge warn">BK-1 · 指定日期無檔期</span>
@@ -781,6 +1029,64 @@
           </div>
         </div>
         <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">其他備選：The Lodge Bangkok Poolvilla（4.85 ★／53 則，車程 5 分鐘到 Thonglor-Ekkamai、30 分鐘內到大皇宮／IconSiam；房源頁曾顯示 2027-02-03–08 有檔期，價格未查到）；Serviced 4 Bed Pool Villa（Ekkamai／Thonglor，4.71 ★／204 則，未找到房源編號，未列入）。清邁舊錨點的 Santitham 別墅不是本輪逐間核實的房源，其起價已不作準。</p>
+
+        <h3 style="margin:22px 0 10px;font-size:1.2rem">擴大搜尋新增 · 曼谷（有檔期 · 2026-11-11 實查）</h3>
+        <p class="sec-sub" style="margin-bottom:10px">曼谷整棟房源在 2/1–2/4 與 2/4–2/8 兩個時段都顯示 1,000 間以上，以下是評分達標、住得下 7 人的代表房源。<b>注意：Airbnb 搜尋頁價為稅前總價，結帳另計稅費</b>，與 Agoda／Trip 的含稅價不可直接比數字。</p>
+        <div class="grid c2">
+          <div class="card rec">
+            <span class="badge first">新增 · 超讚房東 · 1 樓有臥室</span>
+            <h3 style="margin-top:8px">Adore House</h3>
+            <p class="meta">Khlong San（吞武里）· 步行可到 ICONSIAM · 整棟 3 臥、4 張 1.8m 雙人床＋沙發 · 住 8 人</p>
+            <div class="price">4.99 ★ <small>／5 · 87 則評價 · 2/4–2/8 SGD 763 稅前 ≈ ¥3,720 稅前（含稅估算約 ¥4,200）</small></div>
+            <ul class="tight">
+              <li>2/1–2/4：SGD 584 稅前 ≈ ¥2,850 稅前（含稅估算約 ¥3,200）——對調比較的 Airbnb 層曼谷代表</li>
+              <li>免費取消至 2027-01-30（2/4–2/8 區間）；不含早餐，廚房設備齊全</li>
+              <li>長輩：無電梯（3 層獨棟），但 <b>1 樓有 1 間臥室</b>，長輩可住 1 樓；河邊老城區、街頭美食多</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 唐人街旁</span>
+            <h3 style="margin-top:8px">Hua Lamphong House</h3>
+            <p class="meta">近華藍蓬火車站／唐人街 · MRT 附近 · 整棟 4 臥、8 床</p>
+            <div class="price">4.81 ★ <small>／5 · 157 則評價 · 2/4–2/8 SGD 771 稅前 ≈ ¥3,762 稅前</small></div>
+            <ul class="tight">
+              <li>7 人寬鬆（8 床）；不含早餐；免費取消未明示</li>
+              <li>長輩：未見電梯標示，獨棟樓梯，下單前向房東確認一樓臥室</li>
+              <li>位置在老城區，除夕去唐人街看燈飾最近</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · Ekkamai</span>
+            <h3 style="margin-top:8px">Loft Watthana 三臥複式</h3>
+            <p class="meta">Watthana · 近 BTS Ekkamai · 12 分鐘到 Siam Square · 3 臥、4 張 1.8m 雙人床 · 住 7–8 人</p>
+            <div class="price">4.89 ★ <small>／5 · 85 則評價 · 2/4–2/8 SGD 1,044 稅前 ≈ ¥5,095 稅前</small></div>
+            <ul class="tight">
+              <li>不含早餐；列表頁標示可免費取消（截止日未明示）</li>
+              <li>長輩：複式樓梯、未見電梯標示——慎選</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 最便宜但床位緊</span>
+            <h3 style="margin-top:8px">Phra Khanong 三臥複式</h3>
+            <p class="meta">Phra Khanong · 近 BTS · 住宅區安靜 · 3 臥、6 床</p>
+            <div class="price">4.63 ★ <small>／5 · 210 則評價 · 2/4–2/8 SGD 598 稅前 ≈ ¥2,918 稅前</small></div>
+            <ul class="tight">
+              <li>7 人床位偏緊，須向房東確認睡法；評分低於其他新增房源</li>
+              <li>不含早餐；免費取消未明示；複式樓梯、未見電梯標示，長者慎選</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">新增 · 其他高分房源（未逐間核價）</span>
+            <h3 style="margin-top:8px">同輪發現的其他整棟房源</h3>
+            <ul class="tight">
+              <li>Thonglor 四層現代藝術別墅：4.97 ★（116 則）</li>
+              <li>prani A. Ploenchit 四臥頂層公寓：4.93 ★（58 則），4 晚 SGD 1,965，近 BTS Ploenchit／Chit Lom；大樓型理論上有電梯，但未核對，不直接假定</li>
+              <li>Courtyard69 唐人街六臥：4.99 ★（77 則）；Pool Villa Thonglor 五臥：5.0 ★（23 則）</li>
+              <li>已排除：wari A. Ploenchit（4.86 ★）僅住 6 人，不符 7 人</li>
+              <li>長輩原則：獨棟／複式／聯排都要爬樓梯；行動不便優先選有電梯的飯店（Berkeley、GCP 系列、Baiyoke），或訂前向房東確認電梯與一樓臥室</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <!-- ============ 性價比分析 ============ -->
@@ -790,13 +1096,15 @@
 
         <h3 style="margin:14px 0 6px;font-size:1.15rem">住宿組合總價（實查價 · 越短越省）</h3>
         <div class="card">
+          <div class="bar-row"><span>Airbnb 整棟層（8/4th＋Adore，含稅估算）</span><div class="bar-track"><div class="bar-fill" style="width:12%"></div></div><span class="bar-val">約 ¥6,680</span></div>
+          <div class="bar-row"><span>精品層（Moose＋Berkeley）</span><div class="bar-track"><div class="bar-fill" style="width:38%"></div></div><span class="bar-val">¥21,758</span></div>
           <div class="bar-row"><span>酒店＋Airbnb 混合（萬豪＋BK-3）</span><div class="bar-track"><div class="bar-fill" style="width:61%"></div></div><span class="bar-val">¥35,258</span></div>
           <div class="bar-row"><span>萬豪＋Grande（雙首選）</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="bar-val">¥38,944</span></div>
           <div class="bar-row"><span>萬豪＋曼谷香格里拉</span><div class="bar-track"><div class="bar-fill gold" style="width:74%"></div></div><span class="bar-val">¥42,716</span></div>
           <div class="bar-row"><span>萬豪＋喜來登</span><div class="bar-track"><div class="bar-fill gold" style="width:80%"></div></div><span class="bar-val">¥45,624</span></div>
           <div class="bar-row"><span>萬豪＋希爾頓套房</span><div class="bar-track"><div class="bar-fill gold" style="width:86%"></div></div><span class="bar-val">¥49,502</span></div>
           <div class="bar-row"><span>安納塔拉＋Grande</span><div class="bar-track"><div class="bar-fill red" style="width:100%"></div></div><span class="bar-val">¥57,360</span></div>
-          <p class="meta" style="color:var(--ink2);font-size:.86rem;margin:8px 0 0">清邁 3 晚＋曼谷 4 晚，2026-11-11 指定日期實查價（含稅口徑見各卡）。混合線最便宜但 BK-3 長輩條件扣分；雙首選是可訂＋可取消＋長輩友善的最穩組合。</p>
+          <p class="meta" style="color:var(--ink2);font-size:.86rem;margin:8px 0 0">清邁 3 晚＋曼谷 4 晚，2026-11-11 指定日期實查價（含稅口徑見各卡；Airbnb 層為含稅估算）。2026-11-11 擴大實查後，精品層與 Airbnb 整棟層大幅低於連鎖組合：精品層含早＋有電梯，是省錢與長輩友善的平衡點；Airbnb 最便宜但無早餐、多樓梯。雙首選仍是可訂＋可取消＋最穩的連鎖組合。</p>
         </div>
 
         <h3 style="margin:22px 0 6px;font-size:1.15rem">環境打分總表（位置距離／環境安靜／設施／長輩友善）</h3>
@@ -831,16 +1139,16 @@
           </div>
           <div class="card rec">
             <h3>曼谷首選：Grande Centre Point Ploenchit（維持）</h3>
-            <p style="margin:4px 0;font-size:.93rem">環境分最高（4.50），且實查後仍是曼谷最便宜：官網兩房型合併總價 ฿82,500（含稅）≈ <b>¥16,500／4 晚</b>，每人每晚約 ¥589，免費取消至 2027-01-31（退款扣 3% 銀行手續費、需 100% 預付、Room Only 不含早）。執行要點：走官網訂（Trip.com／Agoda 沒有合併總價），要求高樓層避 BTS 側安靜房。若全家想要河景＋除夕客廳團聚，改選千禧希爾頓 2 間 Family Suite（Agoda 實查 ¥27,058 起、不可退；可退改版 ¥28,948 起，環境 4.00）。</p>
+            <p style="margin:4px 0;font-size:.93rem">環境分最高（4.50），且實查後仍是曼谷最便宜：官網兩房型合併總價 ฿82,500（含稅）≈ <b>¥16,500／4 晚</b>（擴大實查另見 Agoda 4 間房總價 ¥14,804 更便宜），每人每晚約 ¥589，免費取消至 2027-01-31（退款扣 3% 銀行手續費、需 100% 預付、Room Only 不含早）。執行要點：走官網訂（Trip.com／Agoda 沒有合併總價），要求高樓層避 BTS 側安靜房。若全家想要河景＋除夕客廳團聚，改選千禧希爾頓 2 間 Family Suite（Agoda 實查 ¥27,058 起、不可退；可退改版 ¥28,948 起，環境 4.00）。</p>
           </div>
         </div>
 
-        <h3 style="margin:22px 0 6px;font-size:1.15rem">機票三方案對比（每人 · 底價口徑）</h3>
+        <h3 style="margin:22px 0 6px;font-size:1.15rem">機票三方案對比（每人 · 指定日期實查價口徑）</h3>
         <div class="card">
-          <div class="bar-row"><span>方案 C 預算／人</span><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div><span class="bar-val">¥1,416</span></div>
-          <div class="bar-row"><span>方案 B 均衡／人 ★推薦</span><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><span class="bar-val">¥2,036</span></div>
-          <div class="bar-row"><span>方案 A 全服務／人</span><div class="bar-track"><div class="bar-fill gold" style="width:100%"></div></div><span class="bar-val">¥3,234</span></div>
-          <p style="margin:8px 0 0;font-size:.93rem">B 比 A 每人省 ¥1,198（5 人 ¥5,990），且三段同樣全直飛、全白天、無紅眼無中轉——對 3 位長輩的友善度與 A 基本同級，差別只在去程春秋無免費托運。C 比 B 再省 ¥620／人，但回程 23:05 到上海＋兩段托運費另計，實際節省有限。<b>本頁結論：主方案用 B；9C8511 實查價高於 ¥1,000 就切回 A。</b>底價口徑，as-of 2026-11-11。</p>
+          <div class="bar-row"><span>方案 C 預算／人（不含托運）</span><div class="bar-track"><div class="bar-fill" style="width:51%"></div></div><span class="bar-val">¥2,739</span></div>
+          <div class="bar-row"><span>方案 B 均衡／人 ★推薦</span><div class="bar-track"><div class="bar-fill" style="width:74%"></div></div><span class="bar-val">¥3,937</span></div>
+          <div class="bar-row"><span>方案 A 全服務／人</span><div class="bar-track"><div class="bar-fill gold" style="width:100%"></div></div><span class="bar-val">¥5,354</span></div>
+          <p style="margin:8px 0 0;font-size:.93rem">B 比 A 每人省 ¥1,417（5 人 ¥7,085），且三段同樣全直飛、全白天、無紅眼無中轉——對 3 位長輩的友善度與 A 基本同級，差別只在去程春秋服務較簡約（優選飛已含 20kg 托運）。C 比 B 再省 ¥1,198／人，但三段皆不含托運、FD 不得退票、去回都是深夜／晚到班次。<b>本頁結論：主方案用 B；9C8511 優選飛售罄或漲逾 ¥2,200 就切回 A。</b>携程指定日期實查價，as-of 2026-11-11。</p>
         </div>
       </section>
 
@@ -860,12 +1168,12 @@
           <article class="card deal" data-cat="flight">
             <span class="status st-ok">實查完成</span>
             <h3 style="margin-top:8px">指定日期實查機票價（2026-11-11 攜程實查）</h3>
-            <p style="margin:4px 0;font-size:.93rem">MU205 上海浦東→清邁：2/1 含稅 ¥3,129、2/2 含稅 ¥3,629；PG216 清邁→曼谷：2/4 含稅 ¥441；MU8614／FM854 曼谷→上海：2/7 含稅 ¥1,783、2/8 含稅 ¥1,783。以上皆為 1 位成人經濟艙單程含稅實時價。</p>
+            <p style="margin:4px 0;font-size:.93rem">MU205 上海浦東→清邁：2/1 含稅 ¥3,129、2/2 含稅 ¥3,629；PG216 清邁→曼谷：2/4 含稅 ¥442（當日曾由 ¥441 浮動至 ¥442）；MU8614／FM854 曼谷→上海：2/7 含稅 ¥1,783、2/8 含稅 ¥1,783。以上皆為 1 位成人經濟艙單程含稅實時價。</p>
             <div class="dl">
-              <span>來源：攜程 flights.ctrip.com（查詢時間 2026-11-11 09:43–09:47 CST）</span>
-              <span>價值對照：三段合計（2/1 出＋2/8 回）每人 ¥5,353、5 人 ¥26,765；錨點地板合計每人 ¥3,088，實查價高出約 73%，且高於先前春節峰值預估（每人 ¥3,800–4,500）；2/1 比 2/2 便宜 ¥500／人，回程 2/7 與 2/8 同價</span>
+              <span>來源：攜程 flights.ctrip.com（2026-11-11 上午首查、中午復核；Ctrip 交叉核對一致）</span>
+              <span>價值對照：三段合計（2/1 出＋2/8 回）每人 ¥5,354、5 人 ¥26,770，即機票區方案 A；2/1 比 2/2 便宜 ¥500／人，回程 2/7 與 2/8 同價</span>
               <span>適用條件：東航／上航優先、全服務含托運</span>
-              <span>隱藏條件：錨點是 2 月地板價、不是指定日期價，實查價隨售隨變，下單前再查一次；PG216 僅 ¥441，比錨點 ¥456 只低 3.3%，未達 5% 門檻，不算有性價比</span>
+              <span>隱藏條件：實查價隨售隨變，下單前再查一次；舊底價口徑（每人 ¥3,088）已被實查價取代，不再作預算依據；飛豬本輪無數據、去哪兒網頁版已停服，見機票區標註</span>
               <span>狀態：實查完成</span>
             </div>
           </article>
@@ -892,27 +1200,27 @@
             </div>
           </article>
           <article class="card deal" data-cat="flight">
-            <span class="status st-ok">可執行 · 底價口徑</span>
-            <h3 style="margin-top:8px">① 機票方案 B（均衡）¥2,036／人</h3>
-            <p style="margin:4px 0;font-size:.93rem">春秋 9C8511＋泰航 TG103＋曼谷航空 PG4841，三段全直飛、全白天。5 人合計 ¥10,180（底價口徑），比全服務方案 A 省 ¥5,990／5 人。</p>
+            <span class="status st-ok">可執行 · 指定日期實查價</span>
+            <h3 style="margin-top:8px">① 機票方案 B（均衡）¥3,937／人</h3>
+            <p style="margin:4px 0;font-size:.93rem">春秋 9C8511 優選飛（含 20kg）＋曼谷航空 PG216＋上航 FM854，三段全直飛、全白天。5 人合計 ¥19,685（2026-11-11 携程實查價），比全服務方案 A 省 ¥7,085／5 人。</p>
             <div class="dl">
-              <span>來源：Airpaz／航司官網價（2026-11-11 機票矩陣調研）</span>
-              <span>優惠價值：比方案 A 每人省 ¥1,198；春節峰值預估每人 ¥2,800–3,500</span>
-              <span>適用條件：去程 2/1 或 2/2、國內段 2/4、回程 2/7 或 2/8；5 人同訂單</span>
-              <span>隱藏條件：9C 去程無免費托運，托運費另計（2 月費率未核實）；決策規則——9C 實查價逾 ¥1,000／人即改選方案 A</span>
-              <span>截止：票價隨售隨變，無固定截止日——以指定日期實查價為準</span>
+              <span>來源：携程指定日期實查（2026-11-11 重查；Ctrip 交叉核對）</span>
+              <span>優惠價值：比方案 A 每人省 ¥1,417</span>
+              <span>適用條件：去程 2/1、國內段 2/4、回程 2/7 或 2/8（FM854 兩日同價 ¥1,783）；5 人同訂單</span>
+              <span>隱藏條件：9C8511 須選「優選飛」才含 20kg 托運（超惠飛 ¥1,462 不含）；2/2 出發全程漲至 ¥4,437／人；決策規則——優選飛售罄或漲逾 ¥2,200 即改選方案 A</span>
+              <span>截止：票價隨售隨變，無固定截止日——下單前再查一次</span>
             </div>
           </article>
                     <article class="card deal soon" data-cat="hotel">
-            <span class="status st-soon">實查完成 · 清邁全無檔期</span>
-            <h3 style="margin-top:8px">② Airbnb 整套 8 間（全家住一起）</h3>
-            <p style="margin:4px 0;font-size:.93rem">2026-11-11 指定日期實查結論：清邁 4 間全部無檔期，Airbnb 在清邁不可行；曼谷僅 BK-2（¥6,150／4 晚）與 BK-3（¥12,814／4 晚）有檔期有實價，但 BK-2 三層無電梯（環境分 3.00）、BK-3 四層樓未提電梯，長輩條件都不過關——兩間都不取代酒店首選，僅作預算備選。</p>
+            <span class="status st-soon">實查完成 · 擴大搜尋已更正</span>
+            <h3 style="margin-top:8px">② Airbnb 整棟（全家住一起）</h3>
+            <p style="margin:4px 0;font-size:.93rem">2026-11-11 擴大搜尋更正：先前「清邁全無檔期、曼谷只有 2 間」是舊查法的誤述——曼谷整棟兩個時段都有 1,000 間以上房源；清邁新房源 8/4th House（4.93 ★）約 ¥2,480／3 晚有檔期，曼谷 Adore House（4.99 ★、1 樓有臥室）含稅估算約 ¥4,200／4 晚。整棟層全程約 ¥6,680，是連鎖組合的零頭；代價是無早餐、多樓梯。先前實查的 BK-2（¥6,150）／BK-3（¥12,814）仍有實價，但無電梯，長輩條件不過關。</p>
             <div class="dl">
-              <span>來源：Airbnb 房源頁逐間實查（2026-11-11 01:10 CST，指定日期＋7 位房客）</span>
-              <span>優惠價值：BK-2 每人每晚約 ¥220、BK-3 約 ¥458，都比曼谷酒店便宜；省下的錢要扣長輩爬樓成本</span>
-              <span>適用條件：僅曼谷段可考慮 BK-2／BK-3；清邁段直接訂酒店</span>
-              <span>隱藏條件：BK-2 超 6 人每晚加收 ฿600、BK-3 超 5 人每晚加收 ฿900，是否已含在總價內未確認（總價或至 ¥6,630／¥13,534）；照片直連仍未取得，看照片點房源連結</span>
-              <span>關鍵日期：BK-2 免費取消至 2027-01-30、BK-3 至 01-29；無檔期的 6 間不再追蹤</span>
+              <span>來源：Airbnb 房源頁逐間實查（2026-11-11 01:10 CST）＋擴大搜尋實查（同日）</span>
+              <span>優惠價值：整棟層約 ¥6,680／全程，比精品層（¥21,758）再省約 ¥15,000；省下的錢要扣長輩爬樓成本</span>
+              <span>適用條件：長輩須住一樓臥室（8/4th 下單前向房東確認；Adore 1 樓有臥室）</span>
+              <span>隱藏條件：Airbnb 價多為稅前、結帳另計稅費；BK-2 超 6 人每晚加收 ฿600、BK-3 超 5 人每晚加收 ฿900，是否已含在總價內未確認；照片直連仍未取得，看照片點房源連結</span>
+              <span>關鍵日期：Adore 免費取消至 2027-01-30；BK-2 至 01-30、BK-3 至 01-29</span>
             </div>
           </article>
                     <article class="card deal" data-cat="hotel">
@@ -929,13 +1237,13 @@
           </article>
                     <article class="card deal" data-cat="flight">
             <span class="status st-soon">比價下限 · 謹慎選</span>
-            <h3 style="margin-top:8px">④ 機票方案 C（預算）¥1,416／人</h3>
-            <p style="margin:4px 0;font-size:.93rem">春秋＋亞航拼湊的最低組合（5 人 ¥7,080），只作比價下限參考；回程 23:05 到上海，不建議作長輩主組合。</p>
+            <h3 style="margin-top:8px">④ 機票方案 C（預算）¥2,739／人</h3>
+            <p style="margin:4px 0;font-size:.93rem">春秋 9C8979＋亞航 FD4101＋春秋 9C7286（2/7）的實查最低組合（5 人 ¥13,695，不含托運），只作比價下限參考；去程深夜抵達、回程 23:05 到上海，不建議作長輩主組合。</p>
             <div class="dl">
-              <span>來源：廉航官網地板價（2026-11-11 調研）</span>
-              <span>優惠價值：比全服務每人省約 ¥1,600，但行李費另計</span>
+              <span>來源：携程指定日期實查（2026-11-11 重查）</span>
+              <span>優惠價值：比方案 B 每人再省 ¥1,198，但三段托運費另計後差距收窄</span>
               <span>適用條件：輕裝、能接受晚班機與分開出票</span>
-              <span>隱藏條件：無免費托運；分段出票銜接風險自擔；退改幾乎不可行</span>
+              <span>隱藏條件：無免費托運；FD4101 不得退票；分段出票銜接風險自擔；絕對最低 ¥2,539 須搭 03:20 清晨班 9C7294，長輩不建議</span>
               <span>截止：廉航促銷艙位售完即止</span>
             </div>
           </article>
@@ -991,12 +1299,12 @@
               <tr><td>性價比優先展示、優惠價值計算</td><td><span class="status st-ok">本頁已實現</span></td><td>上方看板已按性價比排序，每條附價值換算（總價／每人／每晚三口徑）</td></tr>
               <tr><td>資格要求與隱藏條件識別</td><td><span class="status st-ok">本頁已實現</span></td><td>每條優惠與每個酒店選項都附適用條件與隱藏條件欄</td></tr>
               <tr><td>截止日期提取、過期自動歸檔</td><td><span class="status st-ok">本頁已實現</span></td><td>關鍵日期寫入每條項目；歸檔區已設，目前無過期項目（as-of 2026-11-11）</td></tr>
-              <tr><td>每日自動檢查新訊息</td><td><span class="status st-wait">站外排程執行</span></td><td>由 Muse 的每日排程任務負責檢查並重建本頁；<b>本頁本身不會自動爬取</b>。上次檢查：2026-11-11（指定日期機票實查價＋Agoda 特賣＋香格里拉促銷已入頁）；下次檢查：2026-11-12</td></tr>
+              <tr><td>每日自動檢查新訊息</td><td><span class="status st-wait">站外排程執行</span></td><td>由 Muse 的每日排程任務負責檢查並重建本頁；<b>本頁本身不會自動爬取</b>。上次檢查：2026-11-11（携程／Ctrip 機票重查＋酒店擴大實查＋A／B 對調分析已入頁）；下次檢查：2026-11-12</td></tr>
               <tr><td>重複優惠識別、不重複推送</td><td><span class="status st-wait">站外排程執行</span></td><td>去重在每日檢查時按「渠道＋航段／酒店＋價格」比對，本頁只展示去重後的結果</td></tr>
               <tr><td>酒店指定日期實時價（7 間 × 各渠道）</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 01:49 CST 逐渠道輸入指定日期實查完畢（清邁 2/1–2/4、曼谷 2/4–2/8），實查價已取代指示價（見酒店卡與渠道比價表）。剩餘限制：Booking.com 七間全無房；Marriott 官網一次最多訂 3 間房；Grande 的 Trip.com／Agoda 兩房型合併總價未查到（官網合併總價 ¥16,500 已取得）；房價房況會變動，下單前重查</td></tr>
-              <tr><td>Airbnb 指定日期檔期與實價</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 01:10 CST 逐間實查完畢：清邁 4 間全部無檔期；曼谷 BK-2（SGD 1,194 ≈ ¥6,150）、BK-3（SGD 2,488 ≈ ¥12,814）有檔期有實價，BK-1、BK-4 無檔期；評分已按實查值更正。剩餘缺口：照片直連未取得（房源頁未提供圖片原始網址），看照片請點房源連結；BK-2／BK-3 清潔費、服務費未單獨列出</td></tr>
-              <tr><td>機票逐日價（1/31–2/3、2/7 vs 2/8）</td><td><span class="status st-soon">待 live 瀏覽器補齊</span></td><td>三方案與多渠道底價、鄰近日期方向性證據已齊（見機票區）；MU205／9C8511 逐日價所有渠道只給月度底價，須按日期實查後才能給出確切差價</td></tr>
-              <tr><td>攜程／飛豬／去哪兒即時庫存價</td><td><span class="status st-soon">需要人工實查</span></td><td>這些平台沒有開放給本頁的連接器或 API，無法自動抓取即時價；下單前用瀏覽器按指定日期實查，或請主對話代查後更新本頁</td></tr>
+              <tr><td>Airbnb 指定日期檔期與實價</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 逐間實查＋擴大搜尋完畢：先前 8 間（清邁 4 間無檔期；曼谷 BK-2 ¥6,150、BK-3 ¥12,814 有實價）之外，兩城新增多間有檔期整棟房源（清邁 8/4th 約 ¥2,480 起、曼谷 Adore 含稅估算約 ¥4,200 起）；曼谷整棟兩個時段都有 1,000 間以上房源，「只有 2 間」的舊說法已更正。剩餘缺口：新房源照片直連未取得；Airbnb 價多為稅前，結帳另計稅費</td></tr>
+              <tr><td>機票指定日期實查價（2/1、2/2、2/7、2/8）</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 携程＋Ctrip 雙渠道逐班實查完畢，三方案已改為實查價口徑，A／B 走法對照與對調結論已入頁（見機票區）。剩餘：1/31、2/3 出發價未查；價格浮動快，下單前重查</td></tr>
+              <tr><td>飛豬／去哪兒價格</td><td><span class="status st-soon">本輪無數據</span></td><td>飛豬：2026-11-11 實查時滑塊驗證未通過，未取得任何票價，本輪無數據、不編造；去哪兒：網頁版機票服務已停，只能走 App，本輪無價可比。携程已於 2026-11-11 實查入頁；下單前可用 App 再比一次飛豬價</td></tr>
               <tr><td>多人登入的雲端需求系統</td><td><span class="status st-soon">尚未實現</span></td><td>公開靜態頁面存不了別人的輸入。下方需求表是「每人自己裝置填寫＋匯出彙整」的替代方案；真正的多人共用需另建共用表單（見需求區說明）</td></tr>
             </tbody>
           </table>
@@ -1053,7 +1361,7 @@
             <h3>泰式廚藝課 → 飛曼谷</h3>
             <ul>
               <li>08:30–13:30 泰式廚藝課半日＋市場導覽（約 1,000–1,500 泰銖／人；報名時註明 3 位長輩安排坐著備料）</li>
-              <li>下午飛曼谷：若想廚藝課後從容出發，選泰航 TG107 14:05 → 15:25（同價族 ¥383–470）；趕早到曼谷則選上午 PG216／TG103</li>
+              <li>下午飛曼谷：若想廚藝課後從容出發，選泰航 TG107 14:05 → 15:25（携程實查 ¥1,101，下午班較貴）；趕早到曼谷則選上午 PG216（¥442）／TG103（¥564）</li>
               <li>晚上 ICONSIAM 河畔散步＋晚餐，早休息迎接除夕</li>
               <li>若改 2/2 才抵達清邁：2/3 上午素帖山＋古城、下午 Warorot；2/4 在大象園半日遊與廚藝課中二選一——建議優先保證 2/1 到</li>
             </ul>
@@ -1166,11 +1474,11 @@
             <li>中國駐泰使館領事保護熱線：<b>未核實</b>，出行前到外交部領事司官網查詢後補上</li>
           </ul></div>
           <div class="card"><h3>尚未核實清單（不要當已確認）</h3><ul class="tight">
-            <li>所有機票的指定日期實時價（酒店指定日期價已於 2026-11-11 實查，見酒店區）</li>
+            <li>機票與酒店指定日期價已於 2026-11-11 實查（携程／Ctrip／Agoda／Trip.com），但價格浮動快，下單前必須重查；飛豬本輪無數據（滑塊驗證未通過）、去哪兒網頁版機票服務已停</li>
             <li>酒店最短住宿要求；實查價為 2026-11-11 當下價，房價與房況可能變動（退改條款已逐格實查標明）</li>
-            <li>Airbnb 照片直連（未取得）；BK-2／BK-3 的 7 人附加費是否已含在總價內（未確認）；無檔期的 6 間無價可報</li>
+            <li>Airbnb 照片直連（未取得）；新查房源價格多為稅前、含稅金額為估算；BK-2／BK-3 的 7 人附加費是否已含在總價內（未確認）；無檔期的 6 間無價可報</li>
             <li>Booking.com 7 間酒店價格（實查為全部無房，本次不可用）；Grande 的 Trip.com／Agoda 兩房型合併總價未查到；喜來登舊錨點 ¥900 已證偽，勿再引用</li>
-            <li>MU205／9C8511 在 1/31–2/3 的逐日價；FM854 在 2/7 與 2/8 的逐日價差</li>
+            <li>1/31、2/3 出發的逐班價（本輪只查 2/1、2/2）；FM854 2/7 與 2/8 携程同價 ¥1,783 已核實</li>
             <li>2027 春節餐廳套餐內容與總價（未公布）</li>
             <li>東航長者折扣（未核實到，不按此抓預算）</li>
             <li>泰航 TG662 時刻（兩來源衝突，已剔除）</li>
@@ -1218,7 +1526,7 @@
       </section>
 
       <footer>
-        <p><b>資料口徑：</b>本頁價格與資訊來自 2026-11-11 調研：機票比價矩陣（多航司 × 多渠道＋三方案＋鄰近日期證據）、酒店多渠道比價＋指定日期實查（7 間酒店逐渠道，01:49 CST）、Airbnb 逐間核實＋指定日期實查（8 間，01:10 CST，含環境打分）、行程與餐廳底稿。酒店與 Airbnb 每格註明渠道、原幣別、含稅／含早／免費取消截止日；機票每格註明渠道與標籤（月度底價／指示價／日期核實），指定日期實時價未查到的部分均已在頁內標明，不以估算冒充。Airbnb 照片直連未取得。付款／訂位前請按具體日期實查。匯率：1 泰銖 ≈ ¥0.20、US$1 ≈ ¥6.67（2026-11-10/11 中間價）。照片：清邁素帖山雙龍寺、帕辛寺、大象自然公園、曼谷大皇宮、鄭王廟、唐人街實景照片；Airbnb 房源照片請點房源連結查看。</p>
+        <p><b>資料口徑：</b>本頁價格與資訊來自 2026-11-11 調研與同日重查：機票改以携程＋Ctrip（Trip.com）指定日期實查價（2/1、2/2 出發、2/4 國內段、2/7、2/8 回程逐班查價；飛豬因滑塊驗證未通過本輪無數據、去哪兒網頁版機票服務已停，均如實標註不編造）、A／B 兩種走法總價對照與對調結論、酒店多渠道比價＋指定日期實查（7 間酒店逐渠道，01:49 CST）＋擴大實查（精品層與 Airbnb 整棟層新房源）、Airbnb 逐間核實（8 間，01:10 CST，含環境打分）、行程與餐廳底稿。酒店與 Airbnb 每格註明渠道、原幣別、含稅／含早／免費取消截止日；Airbnb 搜尋價多為稅前，含稅金額標為估算。Airbnb 照片直連未取得。付款／訂位前請按具體日期實查。匯率：1 泰銖 ≈ ¥0.20、US$1 ≈ ¥6.67（2026-11-10/11 中間價）。照片：清邁素帖山雙龍寺、帕辛寺、大象自然公園、曼谷大皇宮、鄭王廟、唐人街實景照片；Airbnb 房源照片請點房源連結查看。</p>
         <p>FU family 2027 春節泰國之旅 · 清邁 2/1–2/4 · 曼谷 2/4–2/8 · 除夕 2/5</p>
       </footer>
     </main>
