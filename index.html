@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href="data:," />
+    <title>2027春節FU family泰國旅遊</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet" />
+    <style>
+      button, [role="button"], select, summary, input:not([type="checkbox"], [type="radio"]), textarea, a.btn { min-height: 2.25rem; }
+      :root{
+        --bg:#f6f4ee; --surface:#ffffff; --surface2:#efece2; --ink:#1d2a23; --ink2:#4c5a51;
+        --line:#ddd6c4; --green:#0e5a43; --green-d:#0a4231; --gold:#a4760d; --gold-bg:#f7ecd2;
+        --red:#b03327; --red-bg:#fbe9e5; --teal:#0f6d6d; --chip:#e9e4d3;
+        --shadow:0 2px 10px rgba(29,42,35,.08);
+        color-scheme: light dark;
+      }
+      @media (prefers-color-scheme: dark){
+        :root{
+          --bg:#131917; --surface:#1d2622; --surface2:#242f2a; --ink:#eef2ec; --ink2:#b3c0b6;
+          --line:#37443c; --green:#4cc49b; --green-d:#7fd8ba; --gold:#e0b34e; --gold-bg:#3a3018;
+          --red:#f08a7d; --red-bg:#40231f; --teal:#5fc6c0; --chip:#2a352f;
+          --shadow:0 2px 10px rgba(0,0,0,.35);
+        }
+      }
+      *{box-sizing:border-box}
+      html{scroll-behavior:smooth}
+      body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans TC",system-ui,sans-serif;line-height:1.65;font-size:16px}
+      h1,h2,h3{font-family:"Noto Serif TC","Noto Sans TC",serif;line-height:1.3;margin:0}
+      a{color:var(--green)}
+      .wrap{max-width:1120px;margin:0 auto;padding:0 16px}
+      /* hero */
+      .hero{position:relative;color:#fff;overflow:hidden}
+      .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+      .hero .scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,26,20,.38) 0%,rgba(8,26,20,.55) 55%,rgba(8,26,20,.86) 100%)}
+      .hero .inner{position:relative;padding-top:56px;padding-bottom:34px}
+      .hero .kicker{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:.85rem;padding:4px 12px;border-radius:999px;letter-spacing:.04em}
+      .hero h1{font-size:clamp(1.9rem,5.2vw,3.1rem);font-weight:900;margin:14px 0 8px;text-shadow:0 2px 14px rgba(0,0,0,.4)}
+      .hero p.lede{font-size:clamp(1rem,2.4vw,1.2rem);max-width:46rem;margin:0 0 18px;color:#f3efe2}
+      .facts{display:flex;flex-wrap:wrap;gap:8px}
+      .fact{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px);border-radius:10px;padding:8px 14px;font-size:.92rem}
+      .fact b{color:#ffd873}
+      .countdown{margin-top:18px;display:inline-flex;gap:14px;background:rgba(0,0,0,.32);border:1px solid rgba(255,255,255,.28);border-radius:12px;padding:10px 18px;flex-wrap:wrap}
+      .countdown .n{font-size:1.5rem;font-weight:900;font-variant-numeric:tabular-nums;line-height:1.1}
+      .countdown .u{font-size:.78rem;color:#e8e2cd}
+      /* nav */
+      nav.toc{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+      nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+      nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:700;font-size:.92rem;padding:8px 12px;border-radius:8px;display:inline-flex;align-items:center}
+      nav.toc a:hover{background:var(--surface2)}
+      /* sections */
+      section{padding:38px 0 6px}
+      .sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:6px}
+      .sec-head h2{font-size:clamp(1.45rem,3.4vw,1.9rem);font-weight:900}
+      .sec-head .tag{font-size:.8rem;font-weight:700;color:var(--gold);border:1px solid var(--gold);border-radius:999px;padding:2px 10px}
+      .sec-sub{color:var(--ink2);margin:0 0 18px;max-width:60rem}
+      .honest{background:var(--gold-bg);border:1px solid var(--gold);border-radius:12px;padding:12px 16px;font-size:.92rem;margin:0 0 18px}
+      .honest b{color:var(--gold)}
+      /* route */
+      .route{display:grid;grid-template-columns:1fr;gap:10px}
+      @media(min-width:760px){.route{grid-template-columns:repeat(4,1fr)}}
+      .leg-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+      .leg-card .city{font-family:"Noto Serif TC",serif;font-size:1.25rem;font-weight:900}
+      .leg-card .date{color:var(--red);font-weight:900;font-size:.9rem}
+      .leg-card p{margin:6px 0 0;color:var(--ink2);font-size:.92rem}
+      .arrow{display:none}
+      /* cards grid */
+      .grid{display:grid;grid-template-columns:1fr;gap:14px}
+      @media(min-width:700px){.grid.c2{grid-template-columns:repeat(2,1fr)} .grid.c3{grid-template-columns:repeat(3,1fr)}}
+      .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+      .card h3{font-size:1.12rem;font-weight:900;margin-bottom:4px}
+      .card .meta{color:var(--ink2);font-size:.88rem}
+      .price{font-size:1.55rem;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums}
+      .price small{font-size:.85rem;color:var(--ink2);font-weight:500}
+      .badge{display:inline-block;font-size:.75rem;font-weight:700;border-radius:999px;padding:2px 9px;background:var(--chip);color:var(--ink);vertical-align:2px}
+      .badge.first{background:var(--green);color:#fff}
+      .badge.warn{background:var(--red-bg);color:var(--red)}
+      .badge.gold{background:var(--gold-bg);color:var(--gold)}
+      ul.tight{margin:8px 0 0;padding-left:1.15em}
+      ul.tight li{margin:3px 0;font-size:.93rem}
+      .avoid{background:var(--red-bg);border:1px solid var(--red);border-radius:12px;padding:12px 16px;font-size:.92rem}
+      /* tables */
+      .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);box-shadow:var(--shadow)}
+      table{border-collapse:collapse;width:100%;min-width:640px;font-size:.93rem}
+      th,td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+      th{background:var(--surface2);font-weight:900;white-space:nowrap}
+      td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+      tr:last-child td{border-bottom:none}
+      .total-row td{font-weight:900;background:var(--gold-bg)}
+      /* calculator */
+      .calc{background:var(--surface);border:2px solid var(--green);border-radius:16px;padding:20px;box-shadow:var(--shadow)}
+      .calc h3{font-size:1.2rem;margin-bottom:10px}
+      .calc label{display:block;font-weight:700;font-size:.9rem;margin:12px 0 4px}
+      .calc select{width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:1rem}
+      .calc .out{margin-top:16px;background:var(--surface2);border-radius:12px;padding:14px 16px}
+      .calc .out .big{font-size:1.7rem;font-weight:900;color:var(--green);font-variant-numeric:tabular-nums}
+      .calc .row{display:flex;justify-content:space-between;gap:10px;padding:3px 0;font-variant-numeric:tabular-nums}
+      /* bars */
+      .bar-row{display:grid;grid-template-columns:minmax(120px,220px) 1fr auto;gap:10px;align-items:center;margin:8px 0;font-size:.92rem}
+      .bar-track{background:var(--surface2);border-radius:6px;height:20px;overflow:hidden}
+      .bar-fill{height:100%;background:var(--green);border-radius:6px}
+      .bar-fill.gold{background:var(--gold)} .bar-fill.red{background:var(--red)}
+      .bar-val{font-weight:900;font-variant-numeric:tabular-nums;white-space:nowrap}
+      .stars{color:var(--gold);letter-spacing:2px;font-size:.95rem}
+      /* tabs & filters */
+      .chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}
+      .chip-btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:8px 16px;font-weight:700;cursor:pointer;font-size:.92rem}
+      .chip-btn[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
+      /* deal board */
+      .deal{border-left:5px solid var(--green)}
+      .deal.soon{border-left-color:var(--gold)} .deal.wait{border-left-color:var(--teal)}
+      .deal .dl{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.88rem;color:var(--ink2);margin-top:8px}
+      .status{font-weight:900;font-size:.8rem;border-radius:6px;padding:2px 8px}
+      .st-ok{background:#dcefe4;color:#0a4231}.st-soon{background:var(--gold-bg);color:var(--gold)}.st-wait{background:#ddeeed;color:#0c4a4a}.st-arch{background:var(--surface2);color:var(--ink2)}
+      @media (prefers-color-scheme: dark){.st-ok{background:#173d2c;color:#7fd8ba}.st-wait{background:#173a3a;color:#5fc6c0}}
+      /* itinerary */
+      .day{display:grid;grid-template-columns:1fr;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);margin-bottom:14px}
+      @media(min-width:760px){.day{grid-template-columns:250px 1fr}}
+      .day img{width:100%;height:100%;min-height:170px;object-fit:cover;display:block}
+      .day .body{padding:16px 18px}
+      .day .d-date{color:var(--red);font-weight:900;font-size:.88rem}
+      .day h3{font-size:1.15rem;margin:2px 0 6px}
+      .day ul{margin:6px 0 0;padding-left:1.15em}.day li{margin:3px 0;font-size:.93rem}
+      .rest{display:inline-block;background:var(--gold-bg);color:var(--gold);font-weight:700;font-size:.78rem;border-radius:6px;padding:1px 8px}
+      /* form */
+      form.req .f-row{margin-bottom:12px}
+      form.req label{display:block;font-weight:700;font-size:.9rem;margin-bottom:4px}
+      form.req input,form.req select,form.req textarea{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:1rem;font-family:inherit}
+      .btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:none;border-radius:10px;padding:10px 18px;font-weight:900;cursor:pointer;font-size:.95rem;text-decoration:none}
+      .btn.primary{background:var(--green);color:#fff}
+      .btn.ghost{background:var(--surface2);color:var(--ink);border:1px solid var(--line)}
+      .btn.danger{background:var(--red-bg);color:var(--red)}
+      .req-item{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:10px}
+      .req-item .who{font-weight:900}
+      .empty{color:var(--ink2);border:1px dashed var(--line);border-radius:12px;padding:18px;text-align:center}
+      footer{margin-top:44px;border-top:1px solid var(--line);padding:22px 0 40px;color:var(--ink2);font-size:.88rem}
+      .photo-credit{font-size:.75rem;color:#e8e2cd;margin-top:10px}
+      .sc{font-weight:900;color:var(--green);font-variant-numeric:tabular-nums;white-space:nowrap}
+      .photo-gap{border:1px dashed var(--gold);background:var(--gold-bg);border-radius:10px;padding:10px 14px;font-size:.9rem;margin:0 0 14px}
+      .env-avg{font-weight:900;color:var(--green);font-variant-numeric:tabular-nums}
+      .rec{outline:2px solid var(--green)}
+      .kbd{font-variant-numeric:tabular-nums}
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <img src="assets/hero-doi-suthep.jpg" alt="清邁素帖山雙龍寺金色佛塔與山下城市景色" />
+      <div class="scrim"></div>
+      <div class="wrap inner">
+        <span class="kicker">春節泰國之旅</span>
+        <h1>春節泰國之旅</h1>
+        <div class="countdown" aria-label="距離出發倒數">
+          <div><div class="n" id="cd-d">—</div><div class="u">天後出發（2/1）</div></div>
+          <div><div class="n" id="cd-count">7 人</div><div class="u">同行家人</div></div>
+          <div><div class="n">8 天</div><div class="u">2/1 – 2/8 全程</div></div>
+          <div><div class="n">¥2,036</div><div class="u">均衡方案每人地板價（方案 B）</div></div>
+        </div>
+        <p class="photo-credit">封面：清邁素帖山雙龍寺（Wat Phra That Doi Suthep）</p>
+      </div>
+    </header>
+
+    <nav class="toc" aria-label="頁面目錄">
+      <div class="wrap">
+        <a href="#route">行程總覽</a>
+        <a href="#flights">機票比價</a>
+        <a href="#hotels">酒店比價</a><a href="#channels">渠道比價</a><a href="#airbnb">Airbnb 整套</a>
+        <a href="#value">性價比分析</a>
+        <a href="#deals">優惠看板</a>
+        <a href="#workflow">自動檢查</a>
+        <a href="#itinerary">每日行程</a>
+        <a href="#dinner">除夕團圓飯</a>
+        <a href="#tips">實用資訊</a>
+        <a href="#requests">需求輸入</a>
+      </div>
+    </nav>
+
+    <main class="wrap">
+      <!-- ============ 行程總覽 ============ -->
+      <section id="route">
+        <div class="sec-head"><h2>行程總覽</h2><span class="tag">日期已核實</span></div>
+        <p class="sec-sub">2027 年春節：除夕 2/5（五）、初一 2/6（六）、初二 2/7（日）、初三 2/8（一）；中國官方春節假期 2/5–13（共 9 天）。節奏原則：每天不超過 2 個重點景點，13:00–15:00 最熱時段回酒店休息，長輩優先。</p>
+        <div class="route">
+          <div class="leg-card">
+            <div class="date">2/1（一）或 2/2（二）</div>
+            <div class="city">上海 → 清邁</div>
+            <p>東航 MU205 直飛 10:10 → 14:20（首選 2/1 出發，保證清邁玩滿）。清邁住 2–3 晚。</p>
+          </div>
+          <div class="leg-card">
+            <div class="date">2/4（四）</div>
+            <div class="city">清邁 → 曼谷</div>
+            <p>泰國國內線直飛約 1 小時 25 分，曼谷航空 PG216 首選。降落 BKK 素萬那普機場，不要去 DMK 廊曼。</p>
+          </div>
+          <div class="leg-card">
+            <div class="date">2/5（五）除夕</div>
+            <div class="city">曼谷過年</div>
+            <p>白天大皇宮＋臥佛寺，18:00 除夕團圓飯（餐廳清單見下方專區，12 月初就要訂位）。</p>
+          </div>
+          <div class="leg-card">
+            <div class="date">2/7（日）或 2/8（一）</div>
+            <div class="city">曼谷 → 上海</div>
+            <p>首選 2/8 上航 FM854 11:50 出發、17:10 到家（現行時刻，每週 4 班，訂票先確認當天有班），避開 2/7 返程最高峰。</p>
+          </div>
+        </div>
+        <div class="grid c3" style="margin-top:14px">
+          <div class="card">
+            <h3>機票預算（5 張 · 三段三方案）</h3>
+            <div class="price">¥10,180 起 <small>方案 B 底價口徑 · 5 人</small></div>
+            <p class="meta">方案 A 全服務 ¥16,170／5 人；方案 B 均衡 ¥10,180（本頁推薦）；方案 C 預算 ¥7,080（未計托運費）。春節峰值現實區間見機票區三方案表。</p>
+          </div>
+          <div class="card">
+            <h3>住宿預算（7 人 · 全程）</h3>
+            <div class="price">¥38,944 起 <small>指定日期實查價合計</small></div>
+            <p class="meta">雙首選實查組合：清邁萬豪（Agoda 實查 ¥22,444／3 晚，免費取消至 1/31）＋曼谷 Grande Centre Point（官網實查 ¥16,500／4 晚，免費取消至 1/31）。清邁香格里拉 Deluxe 已實質售罄，首選改為萬豪。Airbnb：清邁 4 間全無檔期；曼谷僅 2 間有檔期有實價（¥6,150／¥12,814），見 Airbnb 專區。</p>
+          </div>
+          <div class="card">
+            <h3>匯率參考</h3>
+            <div class="price">1 泰銖 ≈ ¥0.20</div>
+            <p class="meta">US$1 ≈ ¥6.67（2026-11-10/11 中間價）。泰國消費以泰銖現金為主，價格換算以此為準。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 機票 ============ -->
+      <section id="flights">
+        <div class="sec-head"><h2>機票比價</h2><span class="tag">東航／上航／天合優先</span></div>
+        <p class="sec-sub">不只給一個地板價：下面先給 <b>3 個完整方案</b>（A 全服務／B 均衡／C 預算），再逐段列<b>不同航空公司 × 不同渠道</b>的價格、中轉方案評估與<b>鄰近日期比價證據</b>。開口程訂法：東航官網「多城市」一次訂 PVG→CNX＋BKK→PVG（同一訂單），清邁→曼谷另訂。5 人同一訂單（團體票通常 10 人起，不到門檻）。</p>
+        <div class="honest"><b>價格誠實標註：</b>每格價格都標了渠道與標籤——「月度底價」是 2 月最低價、不是指定日期價；「指示價」是日期未註明或近期樣本；只有標「日期核實」的才是某具體日期查到的價。MU205／9C8511 在 1/31、2/1、2/2、2/3 的逐日價<b>所有渠道都未查到</b>，本頁不編造。春節峰值一定高於底價，付款前必須按具體日期實查。<b>時刻更正：</b>回程 FM854／MU8614 現行時刻為 <b>11:50 → 17:10</b>（每週 4 班），舊稿 09:25 時刻已作廢。</div>
+
+        <h3 style="margin:6px 0 10px;font-size:1.2rem">三個完整方案（先選方案，再看逐段比價）</h3>
+        <div class="grid c3">
+          <div class="card">
+            <span class="badge gold">方案 A · 全服務舒適</span>
+            <div class="price" style="margin-top:8px">¥3,234 <small>／人 · 5 人 ¥16,170</small></div>
+            <ul class="tight">
+              <li>去程 東航 MU205 10:10 → 14:20 直飛 — ¥1,424</li>
+              <li>國內段 曼谷航空 PG216 10:10 → 11:35 — ¥615（Omio 樣本價；官網促銷底價 ¥456）</li>
+              <li>回程 上航 FM854 11:50 → 17:10 直飛 — ¥1,195</li>
+              <li>長輩友善：最優。全白天、全服務、無紅眼無中轉；MU 含 1 件 23kg 托運（以出票艙位為準）</li>
+              <li>春節峰值預估：每人 ¥3,800–4,500；5 人 ¥19,000–22,500</li>
+            </ul>
+          </div>
+          <div class="card rec">
+            <span class="badge first">方案 B · 均衡 ★ 本頁推薦</span>
+            <div class="price" style="margin-top:8px">¥2,036 <small>／人 · 5 人 ¥10,180</small></div>
+            <ul class="tight">
+              <li>去程 春秋 9C8511 16:15 → 20:15 直飛 — ¥545</li>
+              <li>國內段 泰航 TG103 09:30 → 10:55 直飛 — ¥383</li>
+              <li>回程 曼谷航空 PG4841（泰航 TG664 代碼共享）10:35 → 15:50 — ¥1,108</li>
+              <li>長輩友善：良好。三段全直飛、全白天、無中轉；比 A 省 ¥5,990／5 人</li>
+              <li>唯一代價：9C 去程無免費托運（手提 7kg 免費，托運另購，2 月托運費未核實）</li>
+              <li>春節峰值預估：每人約 ¥2,800–3,500；5 人 ¥14,000–17,500</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">方案 C · 預算</span>
+            <div class="price" style="margin-top:8px">¥1,416 <small>／人 · 5 人 ¥7,080</small></div>
+            <ul class="tight">
+              <li>去程 春秋 9C8511 16:15 → 20:15 — ¥545</li>
+              <li>國內段 亞航 FD4101 08:55 → 10:10 — ¥215（<b>2/4 日期核實價</b>）</li>
+              <li>回程 春秋 9C7286 18:40 → 23:05 — ¥656</li>
+              <li>長輩友善：一般。回程 23:05 才到上海；9C／FD 均無免費托運，托運費另計後實際節省有限</li>
+              <li>春節峰值預估：每人約 ¥2,000–2,600；5 人 ¥10,000–13,000</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin:12px 0 0;font-size:.95rem"><b>決策規則：</b>先查 9C8511 在 2/1 或 2/2 的實際報價——若高於 ¥1,000／人，方案 B 的節省消失，改選方案 A；若在 ¥545–800 區間，鎖定方案 B。方案 C 只在預算為硬約束時選。</p>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">逐段首選明細</h3>
+        <div class="grid c3">
+          <div class="card">
+            <span class="badge first">第一段</span>
+            <h3 style="margin-top:8px">上海 PVG → 清邁 CNX</h3>
+            <p class="meta">2/1（一）或 2/2（二）· 直飛每日</p>
+            <div class="price">¥1,424 <small>／人 · 東航 MU205 月度底價（Airpaz）</small></div>
+            <ul class="tight">
+              <li>MU205 10:10 → 14:20（5h10m），全服務含托運＋餐食，上午出發下午到</li>
+              <li>同班其他渠道：12go ¥1,212（指示價）；Airpaz 1 月底價 ¥1,422——渠道價差不大</li>
+              <li>預算選項：春秋 9C8511 16:15 → 20:15，¥545（Airpaz 2 月底價）；其 2/16、2/17 價 ¥623／¥558 是節後價，不代表春節</li>
+              <li>紅眼選項：吉祥 HO1363 20:15 → 00:30+1，¥767（Airpaz 底價）——長輩不建議</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge first">第二段</span>
+            <h3 style="margin-top:8px">清邁 CNX → 曼谷 BKK</h3>
+            <p class="meta">2/4（四）· 直飛 1h25m · 務必降落 BKK 不是 DMK</p>
+            <div class="price">¥383–615 <small>／人 · 全服務區間</small></div>
+            <ul class="tight">
+              <li>曼谷航空 PG216 10:10 → 11:35：官網促銷底價 ¥456（฿2,280）；Omio 樣本 ¥615；含 20kg 托運＋餐食＋休息室</li>
+              <li>泰航 TG103 09:30 → 10:55：¥383（Airpaz 底價）；泰航官網往返 ฿4,700 起（適用期含 2/4）推算單程約 ¥470</li>
+              <li>泰航 TG107 14:05 → 15:25 同價族 ¥383–470，下午班可接廚藝課後出發</li>
+              <li>預算：亞航 FD4101 08:55 → 10:10 到 BKK，¥215 是 <b>2/4 日期核實價</b>；飛鳥 DD ¥294（2/4 核實）但到 DMK 廊曼，不便</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge first">第三段</span>
+            <h3 style="margin-top:8px">曼谷 BKK → 上海 PVG</h3>
+            <p class="meta">2/7（日）或 2/8（一）· 白天直飛優先</p>
+            <div class="price">¥1,108 <small>／人起 · PG4841 月度底價（Airpaz）</small></div>
+            <ul class="tight">
+              <li>上航 FM854／東航 MU8614：<b>11:50 → 17:10</b>（現行時刻，每週 4 班），¥1,195（Airpaz 2 月底價）</li>
+              <li>曼谷航空 PG4841（TG664 代碼共享）10:35 → 15:50，¥1,108——與泰航 TG664 同一班，TG664 本尊 ¥1,222，代碼共享便宜 ¥114</li>
+              <li>上航 FM842 09:50 → 15:25（攜程時刻表），單獨價未查到，同 FM 系參考 ¥1,195 底價</li>
+              <li>預算：春秋 9C7286 18:40 → 23:05，¥656；南航 CZ 到虹橋 ¥980 是 <b>2/7 日期核實價</b>（HappyFares）</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="avoid" style="margin-top:14px"><b>避開這些航班：</b>紅眼班——吉祥 HO1363／東航 MU3973（20:15 → 00:30+1）、春秋 9C8979（19:55 → 00:55+1）、回程東航 MU548（02:10 出發）、上航 FM840（21:55 → 03:20+1）、春秋 9C8756（01:15）、吉祥 HO1358（01:50 → 06:25+1，底價 ¥987）、越捷 VZ3524（19:10 → 00:30+1，底價 ¥651）。長輩同行不適合半夜抵達或凌晨出發。泰航 TG662 時刻兩個來源互相衝突，未核實，不列入推薦。</div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">逐段多渠道比價（同航班，不同渠道價不同）</h3>
+        <p class="sec-sub" style="margin-bottom:10px">第一段 上海 PVG → 清邁 CNX（2/1 或 2/2）</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>直飛／中轉</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <tbody>
+              <tr><td><b>東航 MU205</b> <span class="badge first">方案 A</span></td><td>10:10 → 14:20</td><td>直飛 5h10m</td><td>Airpaz</td><td class="num">¥1,424</td><td>2 月月度底價</td></tr>
+              <tr><td>東航 MU205</td><td>同上</td><td>直飛</td><td>12go</td><td class="num">¥1,212</td><td>指示價（日期未註明）</td></tr>
+              <tr><td>東航 MU205</td><td>同上</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,422</td><td>1 月月度底價</td></tr>
+              <tr><td><b>春秋 9C8511</b> <span class="badge first">方案 B／C</span></td><td>16:15 → 20:15</td><td>直飛</td><td>Airpaz</td><td class="num">¥545</td><td>2 月月度底價</td></tr>
+              <tr><td>春秋 9C8511</td><td>同上</td><td>直飛</td><td>Skyscanner</td><td class="num">¥558–623</td><td>日期核實：2/16、2/17（節後價）</td></tr>
+              <tr><td>吉祥 HO1363</td><td>20:15 → 00:30+1</td><td>直飛 · 紅眼</td><td>Airpaz</td><td class="num">¥767</td><td>2 月月度底價 · 不建議</td></tr>
+              <tr><td>南航 CZ3549–CZ3033</td><td>06:35 → 18:50</td><td>廣州中轉約 7h</td><td>12go</td><td class="num">¥1,661</td><td>指示價 · 比直飛貴</td></tr>
+              <tr><td>東航系 FM9451–MU9619</td><td>09:15 → 16:25</td><td>昆明中轉約 3h，當日達</td><td>12go</td><td class="num">¥1,604</td><td>指示價 · 比直飛貴</td></tr>
+              <tr><td>東航系 MU8505／MU5437–MU9639</td><td>上午出發 → 次日 10:05</td><td>昆明中轉 · 次日到</td><td>12go</td><td class="num">¥1,147–1,297</td><td>指示價 · 不可用</td></tr>
+              <tr><td>亞航長途 XJ 經吉隆坡</td><td>01:35 出發，全程 14h35m</td><td>KUL 中轉 5h55m</td><td>AirAsia MOVE 日曆</td><td class="num">2/2 ¥2,624</td><td>日期核實 · 比直飛貴一倍以上</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sec-sub" style="margin:18px 0 10px">第二段 清邁 CNX → 曼谷（2/4 週四）</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>到達機場</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <tbody>
+              <tr><td><b>曼谷航空 PG216</b> <span class="badge first">方案 A</span></td><td>10:10 → 11:35</td><td>BKK</td><td>曼谷航空官網促銷頁</td><td class="num">¥456</td><td>月度底價</td></tr>
+              <tr><td>曼谷航空 PG216</td><td>同上</td><td>BKK</td><td>Omio</td><td class="num">¥615</td><td>指示價（樣本價）</td></tr>
+              <tr><td>曼谷航空 PG（最低單程）</td><td>—</td><td>BKK</td><td>Trip.com TW</td><td class="num">¥172</td><td>指示價（疑似促銷／近期價）</td></tr>
+              <tr><td><b>泰航 TG103</b> <span class="badge first">方案 B</span></td><td>09:30 → 10:55</td><td>BKK</td><td>Airpaz</td><td class="num">¥383</td><td>月度底價</td></tr>
+              <tr><td>泰航 TG103／TG101</td><td>09:30／08:05 出發</td><td>BKK</td><td>Omio</td><td class="num">¥429</td><td>指示價</td></tr>
+              <tr><td>泰航 TG（往返推算）</td><td>TG107 14:05 → 15:25 等</td><td>BKK</td><td>泰航官網</td><td class="num">約 ¥470</td><td>往返 ฿4,700 起推算單程，適用期含 2/4</td></tr>
+              <tr><td><b>亞航 FD4101</b> <span class="badge first">方案 C</span></td><td>08:55 → 10:10</td><td>BKK</td><td>Airpaz</td><td class="num">¥215</td><td><b>日期核實：2 月 4 日</b></td></tr>
+              <tr><td>飛鳥 Nok Air DD</td><td>—</td><td>DMK 廊曼</td><td>Skyscanner SG</td><td class="num">¥294</td><td>日期核實：2/4 · 到 DMK 不便</td></tr>
+              <tr><td>越捷 VZ115／VZ</td><td>09:40 → 11:00</td><td>BKK</td><td>Omio／AirAsia MOVE</td><td class="num">¥248–651</td><td>月度底價／11 月樣本</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="sec-sub" style="margin:18px 0 10px">第三段 曼谷 BKK → 上海（2/7 或 2/8）</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>航空公司／航班</th><th>時刻</th><th>直飛／中轉</th><th>渠道／來源</th><th class="num">每人價</th><th>標籤</th></tr></thead>
+            <tbody>
+              <tr><td><b>上航 FM854／東航 MU8614</b> <span class="badge first">方案 A</span></td><td>11:50 → 17:10 · 每週 4 班</td><td>直飛 4h20m</td><td>Airpaz</td><td class="num">¥1,195</td><td>2 月月度底價</td></tr>
+              <tr><td><b>曼谷航空 PG4841</b>（TG664 代碼共享）<span class="badge first">方案 B</span></td><td>10:35 → 15:50</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,108</td><td>2 月月度底價</td></tr>
+              <tr><td>泰航 TG664（同班本尊）</td><td>10:35 → 15:50</td><td>直飛</td><td>Airpaz</td><td class="num">¥1,222</td><td>2 月月度底價</td></tr>
+              <tr><td>東航 MU（BKK→PVG 最低）</td><td>—</td><td>直飛</td><td>Airpaz</td><td class="num">¥858</td><td>月度底價（航班未指定）</td></tr>
+              <tr><td>東航 MU（BKK→SHA 最低）</td><td>—</td><td>直飛</td><td>Trip.com TW</td><td class="num">¥665</td><td>指示價</td></tr>
+              <tr><td>南航 CZ（到虹橋 SHA）</td><td>—</td><td>直飛</td><td>HappyFares</td><td class="num">¥980</td><td><b>日期核實：2 月 7 日</b></td></tr>
+              <tr><td><b>春秋 9C7286</b> <span class="badge warn">方案 C</span></td><td>18:40 → 23:05</td><td>直飛 · 晚到</td><td>Airpaz</td><td class="num">¥656</td><td>2 月月度底價</td></tr>
+              <tr><td>春秋 9C（BKK→PVG）</td><td>—</td><td>直飛</td><td>Skyscanner SG</td><td class="num">¥1,007</td><td>日期核實：2/5 除夕（偏高）</td></tr>
+              <tr><td>東航 MU 促銷（往返）</td><td>—</td><td>直飛往返</td><td>東航泰國 FB 促銷帖</td><td class="num">約 ¥1,939 往返</td><td>含稅 23kg，旅行期至 2027 年 3 月（含春節），作開口程比價錨點</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">中轉方案評估（不一定要直飛——但這次中轉不划算）</h3>
+        <div class="card">
+          <ul class="tight" style="margin-top:0">
+            <li><b>廣州中轉</b>（南航 CZ，12go ¥1,661）：中轉約 7 小時、06:35 一早出發，比 MU205 直飛底價還貴 ¥237——不選。</li>
+            <li><b>昆明中轉當日達</b>（東航系 FM9451–MU9619，12go ¥1,604）：中轉約 3 小時、當日 16:25 到，比直飛貴 ¥180——只有直飛售罄時才考慮。</li>
+            <li><b>昆明中轉次日到</b>（¥1,147–1,297）、<b>曼谷 DMK 中轉 17 小時</b>（XJ761 ¥798）、<b>吉隆坡中轉</b>（XJ 2/2 ¥2,624）：便宜的要浪費一整天，貴的比直飛貴一倍——全部不可用。</li>
+            <li><b>結論：</b>去程只有 MU205 與 9C8511 兩個直飛是可用選項；中轉不省錢還折騰長輩，本頁不推薦。若日後直飛漲價超過中轉 ¥500 以上，再重新評估昆明當日達方案。</li>
+          </ul>
+        </div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">鄰近日期比價（有證據的部分才寫數字）</h3>
+        <div class="grid c2">
+          <div class="card">
+            <h3>去程：哪天出發較便宜？</h3>
+            <ul class="tight">
+              <li>AirAsia MOVE 日曆（XJ 經吉隆坡，日期核實）：2/2 ¥2,624 ＜ 2/9 ¥2,515（節後）＜ 2/6 ¥3,183 ＜ <b>2/4 ¥3,278 最貴</b>；2/16 ¥564 是全月最低（節後）</li>
+              <li>方向性證據：價格峰值在 2/4–2/6（除夕前後），<b>2/1–2/2（週一、二）應便宜於 2/3</b>——與本行程 2/1 出發的安排吻合</li>
+              <li>但 MU205／9C8511 在 1/31、2/1、2/2、2/3 的逐日價<b>未查到</b>，無法給出這兩班的具體差價數字</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>回程：2/6、2/7、2/8 哪天便宜？</h3>
+            <ul class="tight">
+              <li>LowCost.Club 分檔（日期核實）：2/4 約 ¥1,080；<b>2/5–2/16 同檔約 ¥1,267——2/6、2/7、2/8、2/9 在此來源上無差價</b></li>
+              <li>Skyscanner 日曆：DMK → PVG 2 月最便宜日是 <b>2/6（六，初一）</b>；FindMyFlight 亦顯示 2/6 起價約 ¥847（9C）</li>
+              <li>結論：回程 2/6 略便宜只有微弱證據；<b>2/7、2/8、2/9 之間無已核實差價</b>，不必為改期折騰行程——照原計劃 2/8 回即可</li>
+              <li>國內段 2/4 是週四工作日，AirAsia MOVE 指工作日通常比週末便宜，無需改期</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="calc" style="margin-top:18px">
+          <h3>機票組合試算（自己搭配，即時合計）</h3>
+          <p class="meta" style="color:var(--ink2);margin:0">預設已選方案 B（本頁推薦）。換任何一段即時重算；價格為底價口徑，廉航段不含托運費。實際下單價以指定日期實查為準。</p>
+          <div class="grid c3" style="gap:10px">
+            <div>
+              <label for="f-leg1">第一段 上海 → 清邁</label>
+              <select id="f-leg1">
+                <option value="1424">東航 MU205 直飛 — ¥1,424（方案 A）</option>
+                <option value="545" selected>春秋 9C8511 直飛 — ¥545（方案 B／C · 廉航）</option>
+                <option value="767">吉祥 HO1363 紅眼 — ¥767（不建議）</option>
+                <option value="1604">東航系昆明中轉當日達 — ¥1,604（指示價）</option>
+              </select>
+            </div>
+            <div>
+              <label for="f-leg2">第二段 清邁 → 曼谷</label>
+              <select id="f-leg2">
+                <option value="615">曼谷航空 PG216 — ¥615（方案 A · Omio 樣本）</option>
+                <option value="456">曼谷航空 PG216 — ¥456（官網促銷底價）</option>
+                <option value="383" selected>泰航 TG103 — ¥383（方案 B）</option>
+                <option value="215">亞航 FD4101 — ¥215（方案 C · 2/4 核實價）</option>
+              </select>
+            </div>
+            <div>
+              <label for="f-leg3">第三段 曼谷 → 上海</label>
+              <select id="f-leg3">
+                <option value="1195">上航 FM854 — ¥1,195（方案 A）</option>
+                <option value="1108" selected>曼谷航空 PG4841 — ¥1,108（方案 B）</option>
+                <option value="1222">泰航 TG664 — ¥1,222（與 PG4841 同班）</option>
+                <option value="980">南航 CZ 到虹橋 — ¥980（2/7 核實價）</option>
+                <option value="656">春秋 9C7286 — ¥656（方案 C · 23:05 到）</option>
+              </select>
+            </div>
+          </div>
+          <div class="out">
+            <div class="row"><span>每人合計（地板價）</span><b id="f-per">¥2,036</b></div>
+            <div class="row"><span>5 張來回票合計</span><b id="f-five">¥10,180</b></div>
+            <div class="row"><span>若 7 人都買（參考）</span><b id="f-seven">¥14,252</b></div>
+            <div style="margin-top:8px">春節高峰提醒：方案 B 現實區間約每人 ¥2,800–3,500，5 人預算抓 <span class="big" style="font-size:1.15rem">¥14,000–17,500</span>；若改走方案 A 則抓 ¥19,000–22,500。</div>
+          </div>
+          <ul class="tight">
+            <li>3 位長輩：國際線未核實到東航老人折扣，不要按「長者票價」抓預算。</li>
+            <li>輪椅協助一般可免費申請，訂票時備註，以航司確認為準。</li>
+            <li>MU8614／FM854 每週只飛 4 班：訂票時先確認 2/7 或 2/8 當天有班，再鎖其他段。</li>
+            <li>春秋 9C 的托運行李費在 2027-02 日期未核實到報價，訂票頁以官網為準——5 人各托 1 件時，先把托運費加回去再判斷方案 B 是否仍划算。</li>
+            <li>其餘 2 位成員行程待定——本頁只按已確認的 5 張來回票計算，不假設另外 2 人的航段。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ 酒店 ============ -->
+      <section id="hotels">
+        <div class="sec-head"><h2>酒店比價</h2><span class="tag">7 人 · 4 間房／別墅</span></div>
+        <p class="sec-sub">清邁住 Chang Klan 夜市一帶（吃飯、按摩、逛街都在步行範圍）；曼谷優先湄南河畔（除夕團聚氣氛好、有接駁船避開塞車）。本區順序：酒店選項 → <b>同酒店多渠道比價</b> → <b>Airbnb 整套專區</b>（全家住一起、評分與距離）→ 環境打分與性價比排名在下一區。全部附長輩要點：電梯、樓層、噪音、接駁台階先講清楚。</p>
+        <div class="honest"><b>價格誠實標註（2026-11-11 01:49 CST 實查更新）：</b>以下 7 間酒店已逐渠道輸入指定日期實查——清邁 2027-02-01 入住、02-04 退房（3 晚，4 間房、7 位成人）；曼谷 02-04 入住、02-08 退房（4 晚，7 位成人）。每格標明渠道、原幣別總價、折合人民幣、含稅、含早與免費取消截止日；人民幣按 USD 6.67／SGD 5.15／THB 0.20 換算，下單以原幣別頁面為準。<b>Booking.com 七間全部無房</b>，本次行程不可用。<b>Marriott 官網一次最多訂 3 間房</b>，4 間房須分開預訂或電話訂房，官網格只列 3 間房參考價。<b>清邁首選更正：</b>香格里拉 Deluxe 實質售罄（Trip.com 僅剩 3 間、其餘渠道全無房），首選改為<b>清邁萬豪</b>；曼谷首選維持 <b>Grande Centre Point</b>（官網實查 ¥16,500 最便宜）。房價與房況為查詢當下即時價，可能變動。</div>
+
+        <div class="chips" role="group" aria-label="切換城市">
+          <button class="chip-btn" id="tab-cm" aria-pressed="true">清邁（入住 2/1 或 2/2 · 退房 2/4）</button>
+          <button class="chip-btn" id="tab-bkk" aria-pressed="false">曼谷（入住 2/4 · 退房 2/7 或 2/8）</button>
+        </div>
+
+        <div id="pane-cm" class="grid c2">
+          <div class="card rec">
+            <span class="badge first">CM-1 首選 ★ 實查可訂</span>
+            <h3 style="margin-top:8px">清邁萬豪 Chiang Mai Marriott Hotel</h3>
+            <p class="meta">Chang Klan 路 · 夜市心臟地帶 · 連鎖酒店 · 4×Deluxe King City View（2+2+2+1）</p>
+            <div class="price">¥22,444 起 <small>／3 晚 · 4 間合計 · 指定日期實查價</small></div>
+            <ul class="tight">
+              <li>Agoda SGD 4,358（含稅）≈ ¥22,444；Trip.com US$3,392（含稅）≈ ¥22,625——兩渠道接近、皆可訂，免費取消至 2027-01-31</li>
+              <li>不含早餐（Agoda 每人另加 S$75；Trip.com 可加 US$22.77）</li>
+              <li>每人每晚約 ¥1,069–1,078；Booking.com 無房；官網一次最多訂 3 間房（3 間參考：會員彈性價 ฿9,021／間／晚含稅）</li>
+              <li>長輩要點：電梯直達；訂高樓層山景房，避開臨街低樓層（夜市噪音）</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">CM-2 Deluxe 實質售罄</span>
+            <h3 style="margin-top:8px">清邁香格里拉 Shangri-La Chiang Mai</h3>
+            <p class="meta">Chang Klan 路南端 · 連鎖酒店 · 4×Deluxe 房</p>
+            <div class="price">¥20,884 <small>／3 晚 · 僅 Trip.com 剩 3 間 · 實查價</small></div>
+            <ul class="tight">
+              <li>Trip.com US$3,131（含稅）≈ ¥20,884，每人每晚約 ¥994——但頁面標示僅剩 3 間，全家要 4 間，不夠</li>
+              <li>Agoda 已售罄無房；Booking.com 無房；官網 Deluxe 顯示 Unavailable（改查 1 間房／2 位成人亦無房）</li>
+              <li>官網 4 間房條件下最低可訂改為 Premier Room：SGD 293／晚（未含稅），免費取消至 2027-01-31 18:00；Deluxe Pool View 1 間房 SGD 273／晚（未含稅）</li>
+              <li>結論：環境雖好，但指定日期訂不到 4 間 Deluxe——首選改為萬豪，本間只在接受拆房型（Premier）或只訂到 3 間時考慮</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">CM-3 河畔度假</span>
+            <h3 style="margin-top:8px">安納塔拉 Anantara Chiang Mai Resort</h3>
+            <p class="meta">湄平河畔 · 高檔度假村</p>
+            <div class="price">¥40,860 起 <small>／3 晚 · 4 間合計 · 實查價（不可退檔）</small></div>
+            <ul class="tight">
+              <li>Trip.com US$6,126（含稅）≈ ¥40,860，含早、最優價不可退款；Agoda SGD 8,432 ≈ ¥43,425（不可退），可退改版 SGD 9,697 ≈ ¥49,940（免費取消至 2027-01-18）</li>
+              <li>官網 SGD 8,247.64（含稅）≈ ¥42,475，含每日早餐，免費取消至 2027-01-18 16:00；DISCOVERY 會員價 SGD 7,677.95 ≈ ¥39,541（須登入會員）</li>
+              <li>每人每晚約 ¥1,946–2,378，約為萬豪的 2 倍；Booking.com 無房</li>
+              <li>長輩要點：低層建築，要求地面層或近大堂房；僅 84 間房、每房上限 2 成人</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">CM-4 別墅舊錨點</span>
+            <h3 style="margin-top:8px">4 房私人泳池別墅（Santitham 區）</h3>
+            <p class="meta">距古城約 10 分鐘車程 · Airbnb 類整棟出租</p>
+            <div class="price">無檔期 <small>清邁 Airbnb 指定日期不可行</small></div>
+            <ul class="tight">
+              <li>2026-11-11 實查：清邁 4 間已核實 Airbnb 整套在 2027-02-01–04 <b>全部無檔期</b>，清邁這段走酒店，不列 Airbnb 選項</li>
+              <li>逐間檔期、評分實查值與預訂連結見下方 <a href="#airbnb">Airbnb 專區</a></li>
+              <li>舊錨點起價 $117／晚與「春節 ¥2,000–3,000／晚」均未核實，不要按舊錨點抓預算</li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="pane-bkk" class="grid c2" hidden>
+          <div class="card">
+            <span class="badge gold">BKK-1 河畔套房</span>
+            <h3 style="margin-top:8px">曼谷千禧希爾頓 Millennium Hilton Bangkok</h3>
+            <p class="meta">湄南河西岸 · 免費接駁船到 BTS／IconSiam · 連鎖酒店</p>
+            <div class="price">¥27,058 起 <small>／4 晚 · 2 間 Family Suite 合計 · 實查價（不可退檔）</small></div>
+            <ul class="tight">
+              <li>Agoda SGD 5,254（含稅）≈ ¥27,058，含早、不可退款；Trip.com US$4,283 ≈ ¥28,568（含早、不可退）；官網 ฿137,963（含稅）≈ ¥27,593，含每日早餐、不可退、需預付全額訂金</li>
+              <li>要免費取消須加價：Agoda 可退改版 SGD 5,621 ≈ ¥28,948（早餐每人另計）至含早版 SGD 6,126 ≈ ¥31,549，免費取消至 2027-02-04；官網 Flexible Rate（不含早）兩間合計 ฿34,514／晚，2027-02-03 前可免費取消／更改</li>
+              <li>每人每晚約 ¥966–1,020；Booking.com 無房</li>
+              <li>長輩要點：套房有客廳，除夕全家團聚最合適；要求低樓層河景套房；接駁船有台階，攙扶留意</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">BKK-2 河畔經典</span>
+            <h3 style="margin-top:8px">曼谷香格里拉 Shangri-La Bangkok</h3>
+            <p class="meta">湄南河東岸 · 近 Saphan Taksin BTS 站 · 連鎖酒店</p>
+            <div class="price">¥20,272 起 <small>／4 晚 · 4 間合計 · 官網實查最便宜</small></div>
+            <ul class="tight">
+              <li>官網約 SGD 3,936（含稅）≈ ¥20,272 最便宜：Shangri-La Wing Deluxe 房 SGD 246／間／晚含稅，免費取消至 2027-02-03 18:00、到店付款（會員價 SGD 228／間／晚含稅）；Deluxe River View 標準價 SGD 271／會員價 SGD 252／間／晚</li>
+              <li>Trip.com US$3,374 ≈ ¥22,505（Deluxe River View King，不含早，免費取消至 2027-02-03 18:00）；Agoda SGD 4,336 ≈ ¥22,330（本站僅剩 3 間）</li>
+              <li>每人每晚約 ¥724–804；Booking.com 無房</li>
+              <li>長輩要點：Krungthep 翼較安靜；訂低樓層河景房。除夕首選餐廳香宮就在這間酒店 3 樓，住這裡最方便</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">BKK-3 最抵河畔</span>
+            <h3 style="margin-top:8px">皇家蘭花喜來登 Royal Orchid Sheraton Riverside</h3>
+            <p class="meta">湄南河東岸 · 每間保證河景 · 連鎖酒店（共 726 間房）</p>
+            <div class="price">¥23,180 起 <small>／4 晚 · 4 間合計 · 實查價</small></div>
+            <ul class="tight">
+              <li>Agoda SGD 4,501（含稅）≈ ¥23,180（本站僅剩 5 間，免費取消至 2027-02-04，可延至 02-02 再付款）；Trip.com US$3,503 ≈ ¥23,365（免費取消至 2027-02-03 23:59、到店付款）</li>
+              <li>均不含早（Agoda 含早版 SGD 5,078 ≈ ¥26,152）；每人每晚約 ¥828–834</li>
+              <li>官網一次最多訂 3 間房：3 間參考會員彈性價 ฿6,988／間／晚含稅，免費取消至 2027-02-03 23:59；Booking.com 無房</li>
+              <li>長輩要點：房量大（726 間）、每間保證河景；要求低樓層近電梯；12 歲以上加床 ฿1,766／人／晚。酒店 2026-11 傳出被收購（฿53 億），對價格影響未定，僅作標記</li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge first">BKK-4 首選 ★ 實查最便宜</span>
+            <h3 style="margin-top:8px">Grande Centre Point Ploenchit</h3>
+            <p class="meta">Ploenchit BTS 站旁 · 市中心 · 服務式公寓</p>
+            <div class="price">¥16,500 <small>／4 晚 · 兩間套房合併總價 · 官網實查</small></div>
+            <ul class="tight">
+              <li>官網合併總價 ฿82,500（含稅）≈ ¥16,500：Two-Bedroom Balcony Suite ฿11,000／晚（4 晚 ฿44,000）＋Family One Bedroom ฿9,625／晚（4 晚 ฿38,500），皆 Special Discount - Room Only 最優價（原價五折）</li>
+              <li>免費取消至 2027-01-31（退款扣 3% 銀行手續費、需 100% 預付）；含早方案：Family ฿11,125／晚、Two-Bedroom ฿12,500／晚</li>
+              <li>每人每晚約 ¥589——曼谷 4 間酒店實查最便宜；Trip.com／Agoda 未取得兩房型合併總價（單房型價見渠道比價表）；Booking.com 無房</li>
+              <li>長輩要點：帶廚房、洗衣機適合長住；BTS 在門口；無河景；要求高樓層安靜房，避開 BTS 側</li>
+            </ul>
+          </div>
+        </div>
+
+        <h3 style="margin:26px 0 10px;font-size:1.2rem">組合總價比較（清邁 3 晚＋曼谷 4 晚 · 指定日期實查價）</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>組合</th><th>內容（渠道口徑）</th><th class="num">總價（實查價）</th><th class="num">每人每晚</th><th>適合</th></tr></thead>
+            <tbody>
+              <tr><td><b>雙首選線</b> <span class="badge first">可訂＋可取消＋長輩友善</span></td><td>清邁萬豪（Agoda 實查 ¥22,444）＋Grande Centre Point（官網實查 ¥16,500）</td><td class="num">¥38,944</td><td class="num">¥795</td><td>兩間皆可訂、皆免費取消至 1/31；環境分 4.00＋4.50</td></tr>
+              <tr><td><b>酒店＋Airbnb 混合線</b></td><td>清邁萬豪（Agoda ¥22,444）＋曼谷 Airbnb BK-3 Melody Villa（實查 ¥12,814）</td><td class="num">¥35,258</td><td class="num">¥720</td><td>比雙首選省 ¥3,686，但 BK-3 四層樓未提電梯＋7 人附加費是否已含未確認（總價或至 ¥35,978），長輩扣分；BK-2 合計僅 ¥28,594 但環境分最低 3.00，不推薦</td></tr>
+              <tr><td><b>萬豪＋曼谷香格里拉線</b></td><td>清邁萬豪（Agoda ¥22,444）＋曼谷香格里拉（官網實查 ¥20,272）</td><td class="num">¥42,716</td><td class="num">¥872</td><td>官網最便宜＋免費取消＋到店付款；除夕香宮同棟最省力</td></tr>
+              <tr><td><b>萬豪＋喜來登線</b></td><td>清邁萬豪（Agoda ¥22,444）＋皇家蘭花喜來登（Agoda 實查 ¥23,180）</td><td class="num">¥45,624</td><td class="num">¥931</td><td>保證河景、房量大；喜來登 Agoda 僅剩 5 間</td></tr>
+              <tr><td><b>萬豪＋希爾頓套房線</b></td><td>清邁萬豪（Agoda ¥22,444）＋千禧希爾頓（Agoda 實查 ¥27,058，不可退檔）</td><td class="num">¥49,502</td><td class="num">¥1,010</td><td>套房客廳除夕團聚最佳；要免費取消再加約 ¥1,890–4,491</td></tr>
+              <tr><td><b>安納塔拉＋Grande 線</b></td><td>安納塔拉（Trip.com 實查 ¥40,860）＋Grande Centre Point（官網 ¥16,500）</td><td class="num">¥57,360</td><td class="num">¥1,171</td><td>最貴組合，性價比最低，不推薦</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">以上為 2026-11-11 指定日期實查價（含稅口徑逐格見酒店卡與渠道比價表）；房價與房況會變動，下單前以同一渠道重新確認。渠道分類：連鎖酒店走酒店官網／Trip.com／Agoda 比價（逐格明細在下方渠道比價區）；Booking.com 本次七間全無房；Airbnb 走房源頁查價。</p>
+
+        <div class="calc" style="margin-top:18px">
+          <h3>酒店組合試算</h3>
+          <div class="grid c2" style="gap:10px">
+            <div>
+              <label for="h-cm">清邁住宿</label>
+              <select id="h-cm">
+                <option value="7481.33" selected>萬豪 4 間 — ¥7,481／晚（Agoda 實查 · 清邁首選）</option>
+                <option value="7541.67">萬豪 4 間 — ¥7,542／晚（Trip.com 實查）</option>
+                <option value="6961.33">香格里拉 4 間 — ¥6,961／晚（Trip.com 實查 · 僅剩 3 間，不夠 4 間）</option>
+                <option value="13620">安納塔拉 4 間 — ¥13,620／晚（Trip.com 實查 · 不可退）</option>
+              </select>
+              <label for="h-cmn">清邁晚數</label>
+              <select id="h-cmn"><option value="2">2 晚</option><option value="3" selected>3 晚</option></select>
+            </div>
+            <div>
+              <label for="h-bkk">曼谷住宿</label>
+              <select id="h-bkk">
+                <option value="4125" selected>Grande Centre Point 兩套房 — ¥4,125／晚（官網實查 · 曼谷首選）</option>
+                <option value="5068">曼谷香格里拉 4 間 — ¥5,068／晚（官網實查）</option>
+                <option value="5795">皇家蘭花喜來登 4 間 — ¥5,795／晚（Agoda 實查）</option>
+                <option value="6764.5">千禧希爾頓 2 間套房 — ¥6,765／晚（Agoda 實查 · 不可退）</option>
+              </select>
+              <label for="h-bkkn">曼谷晚數</label>
+              <select id="h-bkkn"><option value="3">3 晚（2/7 回）</option><option value="4" selected>4 晚（2/8 回）</option></select>
+            </div>
+          </div>
+          <div class="out">
+            <div class="row"><span>住宿總計（實查價）</span><b id="h-total">¥38,944</b></div>
+            <div class="row"><span>平均每人每晚</span><b id="h-ppn">¥795</b></div>
+            <div style="margin-top:6px;font-size:.9rem">預設為雙首選組合（清邁萬豪 Agoda 實查＋Grande Centre Point 官網實查）。以上是 2026-11-11 指定日期實查價、已含稅，不是估算；但房價與房況會變動，下單前以同一渠道重新確認價格與取消政策。Airbnb 未納入試算：清邁全無檔期；曼谷 BK-2／BK-3 實查總價 ¥6,150／¥12,814（4 晚）可自行與曼谷酒店段換算比較。</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 渠道比價 ============ -->
+      <section id="channels">
+        <div class="sec-head"><h2>渠道比價</h2><span class="tag">同一酒店 · 不同渠道</span></div>
+        <p class="sec-sub">同一間酒店，官網、Trip.com、Agoda 的實查價與取消條款都不同。以下為 2026-11-11 逐渠道輸入指定日期（清邁 2/1–2/4、曼谷 2/4–2/8）實查的房型頁價格：原幣別總價＋折合人民幣＋含稅／含早／免費取消截止日逐格標明。重點結論：<b>Booking.com 七間全部無房</b>；<b>Marriott 官網一次最多訂 3 間房</b>；最便宜的那格常附帶不可退款，連取消條款一起看。</p>
+
+        <h3 style="margin:14px 0 10px;font-size:1.2rem">清邁（3 晚 · 4 間房合計）</h3>
+        <div class="tbl-wrap">
+          <table>
+<thead><tr><th>酒店</th><th>渠道</th><th class="num">總價（原幣別）</th><th class="num">折合人民幣</th><th>含早</th><th>免費取消</th><th>備註</th></tr></thead>
+            <tbody>
+              <tr><td rowspan="4"><b>清邁萬豪</b><br />4 間 × 3 晚</td><td>Agoda</td><td class="num">SGD 4,358（含稅）</td><td class="num">¥22,444</td><td>否（每人另加 S$75）；含早版 SGD 4,848</td><td>2027-01-31</td><td>Deluxe King City View；與 Trip.com 價接近，皆可訂</td></tr>
+              <tr><td>Trip.com</td><td class="num">US$3,392（含稅）</td><td class="num">¥22,625</td><td>否（可加 US$22.77）</td><td>2027-01-31 23:59</td><td>Deluxe King - City View；到店付款</td></tr>
+              <tr><td>官網 marriott.com</td><td class="num">未查到（4 間房）</td><td class="num">—</td><td>—</td><td>—</td><td>官網一次最多訂 3 間房。3 間參考：會員彈性價 ฿9,021／間／晚含稅（不含早，免費取消至 01-31）；含早版 ฿10,036／間／晚</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>所選日期內該住宿在該網站暫無空房</td></tr>
+              <tr><td rowspan="4"><b>清邁香格里拉</b><br />4 間 × 3 晚</td><td>Trip.com</td><td class="num">US$3,131（含稅）</td><td class="num">¥20,884</td><td>否（可加 US$21.43）；含早同房型 US$243／間／晚</td><td>2027-01-31 18:00</td><td>Deluxe Twin Pool View；頁面標示僅剩 3 間——要 4 間不夠；線上預付</td></tr>
+              <tr><td>Agoda</td><td class="num">無房（已售罄）</td><td class="num">—</td><td>—</td><td>—</td><td>「此房型已售罄」，且無其他可訂房型</td></tr>
+              <tr><td>官網 shangri-la.com</td><td class="num">Deluxe 無房</td><td class="num">—</td><td>—</td><td>—</td><td>改查 1 間房亦無房。4 間房條件最低可訂 Premier Room SGD 293／晚（未含稅），免費取消至 01-31 18:00；Deluxe Pool View 1 間房 SGD 273／晚（未含稅）</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>同上</td></tr>
+              <tr><td rowspan="4"><b>安納塔拉清邁</b><br />4 間 × 3 晚</td><td>Trip.com</td><td class="num">US$6,126（含稅）</td><td class="num">¥40,860</td><td>是（2 客）</td><td><b>無</b>（最優價不可退款）</td><td>Deluxe Garden View；列表頁泛稱免費取消，以房型詳情卡為準</td></tr>
+              <tr><td>Agoda</td><td class="num">SGD 8,432（含稅）</td><td class="num">¥43,425</td><td>是</td><td><b>無</b>（不可退）；可退改版 SGD 9,697 ≈ ¥49,940</td><td>可退改版免費取消至 2027-01-18</td></tr>
+              <tr><td>官網 anantara.com</td><td class="num">SGD 8,247.64（含稅）</td><td class="num">¥42,475</td><td>是（每日早餐）</td><td>2027-01-18 16:00</td><td>Best Flexible with Breakfast；DISCOVERY 會員價 SGD 7,677.95 ≈ ¥39,541（須登入）</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>同上</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin:22px 0 10px;font-size:1.2rem">曼谷（4 晚 · 7 人全套合計）</h3>
+        <div class="tbl-wrap">
+          <table>
+<thead><tr><th>酒店</th><th>渠道</th><th class="num">總價（原幣別）</th><th class="num">折合人民幣</th><th>含早</th><th>免費取消</th><th>備註</th></tr></thead>
+            <tbody>
+              <tr><td rowspan="4"><b>Grande Centre Point</b> <span class="badge first">曼谷首選</span><br />兩房型 × 4 晚</td><td>官網</td><td class="num">฿82,500（含稅）</td><td class="num">¥16,500</td><td>否（Room Only）；含早方案 Family ฿11,125／晚、Two-Bed ฿12,500／晚</td><td>2027-01-31</td><td>唯一取得的兩房型合併總價（官網 Booking Summary）：Two-Bed ฿11,000／晚＋Family ฿9,625／晚；退款扣 3% 銀行手續費、100% 預付</td></tr>
+              <tr><td>Trip.com</td><td class="num">合併總價未查到</td><td class="num">—</td><td>依方案</td><td>依方案</td><td>Two-Bed US$244／間／晚（不可退）至 US$295（含早＋免費取消至 02-01）；Family One Bedroom US$214／間／晚（2 間 × 4 晚 US$2,016 ≈ ¥13,447）；無指定組合合併總價，未自行加總</td></tr>
+              <tr><td>Agoda</td><td class="num">合併總價未查到</td><td class="num">—</td><td>否（每人 S$122 另加）</td><td>2027-02-01</td><td>Two-Bed 約 SGD 383／間／晚；Family 1-Bedroom SGD 2,665 ≈ ¥13,725 起；另有 3-Bedroom Suite SGD 2,960 起 ≈ ¥15,244</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>所選日期暫無空房</td></tr>
+              <tr><td rowspan="4"><b>曼谷香格里拉</b><br />4 間 × 4 晚</td><td>官網</td><td class="num">SGD 3,936（含稅）</td><td class="num">¥20,272</td><td>否</td><td>2027-02-03 18:00</td><td>最便宜＋可取消＋到店付款；Deluxe SGD 246／間／晚含稅，會員價 SGD 228；Deluxe River View 標準 SGD 271／會員 SGD 252</td></tr>
+              <tr><td>Trip.com</td><td class="num">US$3,374（含稅）</td><td class="num">¥22,505</td><td>否（可加 US$38.69）</td><td>2027-02-03 18:00</td><td>Deluxe River View King（最優價房型）</td></tr>
+              <tr><td>Agoda</td><td class="num">SGD 4,336（含稅）</td><td class="num">¥22,330</td><td>否（每人 S$199 另加）</td><td>2027-02-03</td><td>Deluxe River View King；本站僅剩 3 間；可延至 02-01 再付款</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>同上</td></tr>
+              <tr><td rowspan="4"><b>皇家蘭花喜來登</b><br />4 間 × 4 晚</td><td>Agoda</td><td class="num">SGD 4,501（含稅）</td><td class="num">¥23,180</td><td>否（每人 S$112 另加）；含早版 SGD 5,078 ≈ ¥26,152</td><td>2027-02-04</td><td>Deluxe River View；本站僅剩 5 間；可延至 02-02 再付款</td></tr>
+              <tr><td>Trip.com</td><td class="num">US$3,503（含稅）</td><td class="num">¥23,365</td><td>否（可加 US$19.29）</td><td>2027-02-03 23:59</td><td>Deluxe King River View；到店付款</td></tr>
+              <tr><td>官網 marriott.com</td><td class="num">未查到（4 間房）</td><td class="num">—</td><td>—</td><td>—</td><td>官網一次最多訂 3 間房。3 間參考：會員彈性價 ฿6,988／間／晚含稅（不含早，免費取消至 02-03 23:59）；含早版 ฿7,882／間／晚</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>同上</td></tr>
+              <tr><td rowspan="4"><b>千禧希爾頓</b><br />2 間套房 × 4 晚</td><td>Agoda</td><td class="num">SGD 5,254（含稅）</td><td class="num">¥27,058</td><td>是</td><td><b>無</b>（不可退）；可退改版 SGD 5,621 ≈ ¥28,948／含早版 SGD 6,126 ≈ ¥31,549</td><td>Family Suite；可退改版免費取消至 2027-02-04</td></tr>
+              <tr><td>官網 hilton.com</td><td class="num">฿137,963（含稅）</td><td class="num">¥27,593</td><td>是（每日早餐）</td><td><b>無</b>（不可退、預付全額）</td><td>Family Suite 最優價；Flexible Rate（不含早）兩間合計 ฿34,514／晚，02-03 前可免費取消／更改</td></tr>
+              <tr><td>Trip.com</td><td class="num">US$4,283（含稅）</td><td class="num">¥28,568</td><td>是（4 客）</td><td><b>無</b>（不可退款）</td><td>Family Suite；線上預付</td></tr>
+              <tr><td>Booking.com</td><td class="num">無房</td><td class="num">—</td><td>—</td><td>—</td><td>同上</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">渠道結論：清邁訂萬豪（Agoda／Trip.com 價接近、皆可免費取消至 1/31）；曼谷 Grande Centre Point 走官網（唯一合併總價、最便宜、免費取消至 1/31）、曼谷香格里拉走官網（最便宜＋可取消＋到店付款）；希爾頓三渠道不可退價接近，要免費取消選 Agoda 可退改版；Booking.com 本次七間全無房，不要在那裡找。幣別注意：Trip.com 為 USD、Agoda 為 SGD、官網為 THB／SGD，人民幣為換算參考，下單以原幣別頁面為準。</p>
+      </section>
+
+      <!-- ============ Airbnb 整套 ============ -->
+      <section id="airbnb">
+        <div class="sec-head"><h2>Airbnb 整套專區</h2><span class="tag">全家住一起 · 7 人</span></div>
+        <p class="sec-sub">酒店要 4 間房才住得下 7 人；Airbnb 整套一棟住全家，有客廳、廚房，長輩不用分樓層跑。以下 8 間已於 2026-11-11 逐間點開房源頁、選指定日期＋7 位房客實查：檔期、實價（有檔期者）、評分實查值、免費取消截止日、距離、隱藏收費與長輩條件全部照實查寫明，附原始預訂連結。頭號結論：清邁 4 間全部無檔期，曼谷僅 2 間有檔期。</p>
+        <div class="photo-gap"><b>實查結果與照片缺口：</b>價格缺口已部分補齊——清邁 4 間在 2027-02-01–04 <b>全部無檔期</b>（無價可報）；曼谷 BK-2、BK-3 有檔期有實價（見各卡），BK-1、BK-4 無檔期。照片直連仍未取得：8 間房源的照片在房源頁以圖片形式顯示，實查未能取得圖片原始網址，本頁不猜網址、不貼假照片——看照片請點各房源的預訂連結進房源頁。</div>
+
+        <h3 style="margin:14px 0 10px;font-size:1.2rem">清邁（3 晚 · 2027-02-01–04）</h3>
+        <div class="grid c2">
+          <div class="card">
+            <span class="badge warn">CM-1 · 指定日期無檔期</span>
+            <h3 style="margin-top:8px">Entire 4BR Villa · Rooftop（DEJA HOME）</h3>
+            <p class="meta">Wat Ket 河畔舊區 · 整套 4 房 3 衛 2 客廳 · 住 9 人</p>
+            <div class="price">4.84 ★ <small>／5 · 19 則評價 · 2/1–2/4 無檔期</small></div>
+            <ul class="tight">
+              <li>距離：塔佩門／古城 5 分鐘、夜市 5 分鐘（房源原文，未註明步行或車程）</li>
+              <li>實查檔期：2/6–9 不可訂、2/10 起才可訂——指定日期 2/1–2/4 無檔期；免費取消至 1/31 前；房東 Kimberly；4 房 5 床 3 衛、住 9 人</li>
+              <li>設施：屋頂露台、自助入住、免費停車、全套廚房</li>
+              <li>長輩：兩層樓——臥室是否有一間在一樓，須向房東確認後才可訂</li>
+              <li><a href="https://www.airbnb.com.sg/rooms/1510602982459902913" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">CM-3 · 指定日期無檔期</span>
+            <h3 style="margin-top:8px">Sclass HOME Private, Central Old City</h3>
+            <p class="meta">古城中心 · Wat Phra Singh 旁 · 整棟 4 層 townhouse</p>
+            <div class="price">4.79 ★ <small>／5 · 261 則評價（實查更正）· 2/1–2/4 無檔期</small></div>
+            <ul class="tight">
+              <li>房型（實查）：3 房 4 床 3 衛、住 8 人</li>
+              <li>距離：步行 2 分鐘到週日步行街；步行 15 分鐘到塔佩門；夜市車程 7 分鐘</li>
+              <li>實查檔期：2/5–19 不可訂、2/20 起才可訂——指定日期無檔期；免費取消至 1/18 前</li>
+              <li>設施：免費清潔、免費洗衣；押金 2,000 泰銖</li>
+              <li>長輩：4 層樓梯負擔大、部分衛浴共用——扣分項</li>
+              <li><a href="https://www.airbnb.com/rooms/37341781" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">CM-2 · 無檔期＋長輩不建議</span>
+            <h3 style="margin-top:8px">Old City Family House – 4BR + Local Breakfast</h3>
+            <p class="meta">古城中心 · 4 房 4 床 3 衛 · 住 7 人（實查）</p>
+            <div class="price">4.94 ★ <small>／5 · 134 則評價（實查）· 2/1–2/4 無檔期</small></div>
+            <ul class="tight">
+              <li>距離：步行 5 分鐘到週日步行街；塔佩門同在古城內步行可達</li>
+              <li>實查檔期：2/5–19 不可訂、2/20 起才可訂，最少住 3 晚——指定日期無檔期；免費取消至 1/2 前</li>
+              <li>設施：每日泰式早餐免費；房東住同棟夾層／底樓，屬分層整租（非獨棟）</li>
+              <li>長輩硬傷：上 2 樓約 20 級台階、3 樓再 20 級，<b>無電梯</b>——3 位長輩同行不建議，不論價格</li>
+              <li><a href="https://www.airbnb.com.sg/rooms/34429808" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">CM-4 · 指定日期無檔期</span>
+            <h3 style="margin-top:8px">Doreena Villa, Nimman Road</h3>
+            <p class="meta">寧曼路商圈 · 整套 4 房 3.5 衛 · 住 8 人（5 張床）</p>
+            <div class="price">4.79 ★ <small>／5 · 19 則評價（實查更正）· 無檔期</small></div>
+            <ul class="tight">
+              <li>實查檔期：2 月及 3 月日曆全部不可訂——指定日期無檔期；免費取消至 1/2 前；4 房 5 床 3 衛、住 9 人</li>
+              <li>設施：全新裝修、免費停車、自助入住</li>
+              <li>距離：到古城／夜市均未查到；樓層結構未查到</li>
+              <li>判斷：指定日期無檔期，清邁 Airbnb 整體不可行，本間僅作記錄</li>
+              <li><a href="https://www.airbnb.com.au/rooms/868606858127346912" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">已排除：Hillmont Villa（頁面 403）；San Phi Suea 4BR（泳池是小區會所共用，非私人泳池）；Pa Phai 私人泳池別墅（4.78 ★，但距寧曼 30 分鐘車程）。</p>
+
+        <h3 style="margin:22px 0 10px;font-size:1.2rem">曼谷（4 晚 · 2027-02-04–08）</h3>
+        <div class="grid c2">
+          <div class="card">
+            <span class="badge warn">BK-1 · 指定日期無檔期</span>
+            <h3 style="margin-top:8px">Baan Ake · Luxury Home for 11 Guests @ Chatuchak</h3>
+            <p class="meta">Chatuchak／Phaya Thai · 整棟 2 層獨棟 · 4 房 4 床 4 衛 · 住 11 人（實查）</p>
+            <div class="price">4.96 ★ <small>／5 · 167 則評價（實查）· 2/4–2/8 無檔期</small></div>
+            <ul class="tight">
+              <li>設施：中文服務、蒸汽房、按摩椅、投影、1Gbps Wi-Fi</li>
+              <li>長輩：<b>3 號臥室在 1 樓，長輩免爬樓</b>——曼谷 4 間中長輩條件最友善之一</li>
+              <li>實查檔期：2/6–7 及 2/9–10 已被佔，2/11–17 才可訂——指定日期無檔期；免費取消至 1/5 前</li>
+              <li>距離：最近 BTS／MRT 只寫「near」，站名與分鐘數未查到；位置在北區，離河畔較遠</li>
+              <li><a href="https://www.airbnb.com/rooms/1092064426048094911" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge warn">BK-4 · 無檔期 · 唯一有私人電梯</span>
+            <h3 style="margin-top:8px">Lavish Pool Club Villa in Thonglor &amp; Phrom Phong BTS</h3>
+            <p class="meta">Thonglor · Sukhumvit 49 · 600㎡ 獨棟別墅 · 4 房 6 床 5 衛 · 住 10 人（實查）</p>
+            <div class="price">4.97 ★ <small>／5 · 59 則評價 · 2/4–2/8 無檔期</small></div>
+            <ul class="tight">
+              <li>實查檔期：2/11–16 不可訂、2/17–19 才可訂——指定日期無檔期；免費取消至 1/21 前</li>
+              <li>設施：私人泳池、免費早餐＋接機、每日女傭、屋頂酒廊；押金 ฿5,000；每日用電 50 kWh 內含，超額每 kWh ฿5</li>
+              <li>長輩：<b>全棟私人電梯</b>——曼谷 4 間中唯一明確有電梯的</li>
+              <li>距離：步行 800 米（約 10 分鐘）到 Thonglor 及 Phrom Phong 站</li>
+              <li>判斷：環境條件最好，但指定日期無檔期，本次不可行，僅作記錄</li>
+              <li><a href="https://www.airbnb.co.za/rooms/1239172174998888874" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">BK-2 · 有檔期有實價 · 無電梯</span>
+            <h3 style="margin-top:8px">Private Hideaway 4BR Townhouse @ BTS ONNUT</h3>
+            <p class="meta">Khlong Toei · Sukhumvit 一帶 · 整套 3 層 townhouse · 300㎡ · 住 8 人</p>
+            <div class="price">4.95 ★ <small>／5 · 142 則評價（實查）· 4 晚實查總價 SGD 1,194 ≈ ¥6,150</small></div>
+            <ul class="tight">
+              <li>距離：步行 15 分鐘到 BTS On Nut；車程 10 分鐘到 Ekkamai／Thonglor</li>
+              <li><b>實查價：</b>每晚 SGD 336.04 × 4 晚，經早鳥折扣與 Airbnb 折扣後總計 SGD 1,194.22 ≈ ¥6,150（每人每晚約 ¥220），免費取消至 1/30 前；清潔費、服務費未單獨列出</li>
+              <li><b>隱藏收費：</b>超過 6 人每人每晚加收 ฿600——7 人每晚多 ฿600、4 晚 ฿2,400 ≈ ¥480；頁面稱價格包含所有附加費用，該筆是否已含未確認，總價可能為 ¥6,150–6,630</li>
+              <li>長輩：三層無電梯、臥室全在樓上——不建議</li>
+              <li><a href="https://www.airbnb.co.in/rooms/1109008333696848433" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+          <div class="card">
+            <span class="badge gold">BK-3 · 有檔期有實價 · 四層樓</span>
+            <h3 style="margin-top:8px">Spacious 4BR Home, Thonglor（Melody Villa）</h3>
+            <p class="meta">Thonglor · 4 房 8 床 4 衛 · 住 12 人（實查）</p>
+            <div class="price">4.89 ★ <small>／5 · 40 則評價（實查更正）· 4 晚實查總價 SGD 2,488 ≈ ¥12,814</small></div>
+            <ul class="tight">
+              <li>設施：110 吋投影、1.5Gbps Wi-Fi、屋頂露台；機場接送另收費（麵包車 1,500 泰銖／5–8 人）</li>
+              <li><b>實查價：</b>每晚 SGD 637.97 × 4 晚，經 Airbnb 折扣後總計 SGD 2,488.07 ≈ ¥12,814（每人每晚約 ¥458），免費取消至 1/29 前；可現在付全款，或現在付 0、2027-01-22 收款；清潔費、服務費未單獨列出</li>
+              <li><b>隱藏收費：</b>超過 5 人每人每晚加收 ฿450——7 人每晚多 ฿900、4 晚 ฿3,600 ≈ ¥720，是否已含未確認，總價可能為 ¥12,814–13,534</li>
+              <li>距離：步行 10 分鐘到 Charn Issara 碼頭（接駁河遊船）；最近 BTS 站名與分鐘數未查到</li>
+              <li>長輩：四層樓，未提電梯——扣分</li>
+              <li><a href="https://www.airbnb.com/rooms/1331144281742945183" target="_blank" rel="noopener">在 Airbnb 看照片與房源頁 →</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">其他備選：The Lodge Bangkok Poolvilla（4.85 ★／53 則，車程 5 分鐘到 Thonglor-Ekkamai、30 分鐘內到大皇宮／IconSiam；房源頁曾顯示 2027-02-03–08 有檔期，價格未查到）；Serviced 4 Bed Pool Villa（Ekkamai／Thonglor，4.71 ★／204 則，未找到房源編號，未列入）。清邁舊錨點的 Santitham 別墅不是本輪逐間核實的房源，其起價已不作準。</p>
+      </section>
+
+      <!-- ============ 性價比分析 ============ -->
+      <section id="value">
+        <div class="sec-head"><h2>性價比分析</h2><span class="tag">三口徑＋長輩友善</span></div>
+        <p class="sec-sub">同一個數字換三種口徑看：總價（抓預算）、每人每晚（比住宿）、環境打分（比位置／安靜／設施／長輩友善）。環境打分是按已核實事實（位置、樓層／電梯、設施清單、噪音來源）打的主觀評分，1–5 分，不是房源自稱；酒店與 Airbnb 價格均為 2026-11-11 指定日期實查價，無檔期者標明並退出價格排名。</p>
+
+        <h3 style="margin:14px 0 6px;font-size:1.15rem">住宿組合總價（實查價 · 越短越省）</h3>
+        <div class="card">
+          <div class="bar-row"><span>酒店＋Airbnb 混合（萬豪＋BK-3）</span><div class="bar-track"><div class="bar-fill" style="width:61%"></div></div><span class="bar-val">¥35,258</span></div>
+          <div class="bar-row"><span>萬豪＋Grande（雙首選）</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="bar-val">¥38,944</span></div>
+          <div class="bar-row"><span>萬豪＋曼谷香格里拉</span><div class="bar-track"><div class="bar-fill gold" style="width:74%"></div></div><span class="bar-val">¥42,716</span></div>
+          <div class="bar-row"><span>萬豪＋喜來登</span><div class="bar-track"><div class="bar-fill gold" style="width:80%"></div></div><span class="bar-val">¥45,624</span></div>
+          <div class="bar-row"><span>萬豪＋希爾頓套房</span><div class="bar-track"><div class="bar-fill gold" style="width:86%"></div></div><span class="bar-val">¥49,502</span></div>
+          <div class="bar-row"><span>安納塔拉＋Grande</span><div class="bar-track"><div class="bar-fill red" style="width:100%"></div></div><span class="bar-val">¥57,360</span></div>
+          <p class="meta" style="color:var(--ink2);font-size:.86rem;margin:8px 0 0">清邁 3 晚＋曼谷 4 晚，2026-11-11 指定日期實查價（含稅口徑見各卡）。混合線最便宜但 BK-3 長輩條件扣分；雙首選是可訂＋可取消＋長輩友善的最穩組合。</p>
+        </div>
+
+        <h3 style="margin:22px 0 6px;font-size:1.15rem">環境打分總表（位置距離／環境安靜／設施／長輩友善）</h3>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>選項</th><th>城市</th><th class="num">位置</th><th class="num">安靜</th><th class="num">設施</th><th class="num">長輩</th><th class="num">平均</th><th class="num">每人每晚</th><th>一句理由</th></tr></thead>
+            <tbody>
+              <tr><td><b>清邁萬豪</b> <span class="badge first">清邁首選</span></td><td>清邁</td><td class="num">5</td><td class="num">3</td><td class="num">4</td><td class="num">4</td><td class="num env-avg">4.00</td><td class="num">¥1,069–1,078</td><td>出門即夜市、步行 15 分鐘到塔佩門／臨街低樓層有噪音／383 間房最易一次訂到 4 間；實查 Agoda ¥22,444、Trip.com ¥22,625，皆可訂、免費取消至 1/31</td></tr>
+              <tr><td>清邁香格里拉</td><td>清邁</td><td class="num">4</td><td class="num">5</td><td class="num">5</td><td class="num">4</td><td class="num env-avg">4.50</td><td class="num">¥994</td><td>環境分最高、大花園最安靜，但 Deluxe 指定日期實質售罄：Trip.com 僅剩 3 間（¥20,884）、其餘渠道全無房——環境再好也訂不到 4 間，退出首選</td></tr>
+              <tr><td>安納塔拉清邁</td><td>清邁</td><td class="num">3</td><td class="num">5</td><td class="num">4</td><td class="num">3</td><td class="num env-avg">3.75</td><td class="num">¥1,946–2,378</td><td>河畔最安靜、50㎡ 大房，但約為前兩家 2 倍價，僅 84 間房、園區步行距離長</td></tr>
+              <tr><td>Airbnb CM-1 DEJA HOME（4.84 ★）</td><td>清邁</td><td class="num">5</td><td class="num">4</td><td class="num">3</td><td class="num">3</td><td class="num env-avg">3.75</td><td class="num">無檔期</td><td>步行級位置：古城＋夜市各 5 分鐘／河畔舊區安靜／2 客廳全套廚房、無泳池；但指定日期無檔期（2/10 起才可訂），清邁 Airbnb 不可行，僅作記錄</td></tr>
+              <tr><td>Airbnb CM-3 Sclass（4.79 ★／261 則）</td><td>清邁</td><td class="num">5</td><td class="num">4</td><td class="num">3</td><td class="num">2</td><td class="num env-avg">3.50</td><td class="num">無檔期</td><td>Wat Phra Singh 旁、步行 2 分鐘步行街／免費清潔洗衣；4 層樓梯扣分；指定日期無檔期</td></tr>
+              <tr><td>Airbnb CM-4 Doreena（4.79 ★／19 則）</td><td>清邁</td><td class="num">4</td><td class="num">4</td><td class="num">3</td><td class="num">3</td><td class="num env-avg">3.50</td><td class="num">無檔期</td><td>寧曼商圈全新裝修；2–3 月日曆全部不可訂，指定日期無檔期</td></tr>
+              <tr><td>Airbnb CM-2 Family House（4.94 ★／134 則）</td><td>清邁</td><td class="num">5</td><td class="num">4</td><td class="num">3</td><td class="num">1</td><td class="num env-avg">3.25</td><td class="num">無檔期</td><td>古城中心＋每日早餐免費，但 40 級台階無電梯是硬傷——長者團不建議；且指定日期無檔期</td></tr>
+              <tr><td><b>Grande Centre Point Ploenchit</b> <span class="badge first">曼谷首選</span></td><td>曼谷</td><td class="num">5</td><td class="num">3</td><td class="num">5</td><td class="num">5</td><td class="num env-avg">4.50</td><td class="num">¥589</td><td>BTS 站旁、Siam 商圈／廚房＋洗衣機最適合住 4 晚／分臥互不干擾；須訂高樓層避 BTS 側。官網實查合併總價 ¥16,500／4 晚、免費取消至 1/31，曼谷實查最便宜；無河景</td></tr>
+              <tr><td>曼谷香格里拉</td><td>曼谷</td><td class="num">5</td><td class="num">4</td><td class="num">4</td><td class="num">4</td><td class="num env-avg">4.25</td><td class="num">¥724–804</td><td>河東岸 BTS 步行可達、無障礙完善、除夕香宮同棟；官網實查 ¥20,272 最便宜且可免費取消、到店付款</td></tr>
+              <tr><td>Airbnb BK-1 Baan Ake（4.96 ★／167 則）</td><td>曼谷</td><td class="num">3</td><td class="num">4</td><td class="num">5</td><td class="num">5</td><td class="num env-avg">4.25</td><td class="num">無檔期</td><td>北區住宅區安靜、離河遠／中文服務＋蒸汽房按摩椅／一樓有臥室免爬樓——但指定日期無檔期，本次不可行</td></tr>
+              <tr><td>Airbnb BK-4 Lavish Villa（4.97 ★／59 則）</td><td>曼谷</td><td class="num">4</td><td class="num">4</td><td class="num">5</td><td class="num">5</td><td class="num env-avg">4.50</td><td class="num">無檔期</td><td>Thonglor 步行 10 分鐘到 BTS／私人泳池＋早餐接機＋每日女傭／全棟私人電梯；環境分並列最高，但指定日期無檔期，本次不可行</td></tr>
+              <tr><td>千禧希爾頓家庭套房</td><td>曼谷</td><td class="num">3</td><td class="num">4</td><td class="num">5</td><td class="num">4</td><td class="num env-avg">4.00</td><td class="num">¥966–1,020</td><td>河西岸去市區須船＋BTS／套房客廳最適合除夕團聚；接駁船台階留意。若全家要河景＋客廳團聚，改選此間</td></tr>
+              <tr><td>皇家蘭花喜來登</td><td>曼谷</td><td class="num">4</td><td class="num">3</td><td class="num">4</td><td class="num">4</td><td class="num env-avg">3.75</td><td class="num">¥828–834</td><td>保證河景、726 間房量大好訂；酒店較老、早餐高峰擁擠。實查 Agoda ¥23,180／Trip.com ¥23,365，Agoda 僅剩 5 間</td></tr>
+              <tr><td>Airbnb BK-3 Melody Villa（4.89 ★／40 則）</td><td>曼谷</td><td class="num">4</td><td class="num">4</td><td class="num">4</td><td class="num">2</td><td class="num env-avg">3.50</td><td class="num">¥458</td><td>Thonglor、步行 10 分鐘到河碼頭／投影＋屋頂露台；實查總價 ¥12,814／4 晚（附加費是否已含未確認，或至 ¥13,534）；四層樓未提電梯扣分</td></tr>
+              <tr><td>Airbnb BK-2 On Nut Townhouse（4.95 ★／142 則）</td><td>曼谷</td><td class="num">3</td><td class="num">4</td><td class="num">3</td><td class="num">2</td><td class="num env-avg">3.00</td><td class="num">¥220</td><td>BTS On Nut 步行 15 分鐘／300㎡ 大餐桌；實查總價 ¥6,150／4 晚是全表最便宜（附加費是否已含未確認，或至 ¥6,630），但三層無電梯、臥室全在樓上——長輩不建議</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 style="margin:22px 0 6px;font-size:1.15rem">每城首選結論</h3>
+        <div class="grid c2">
+          <div class="card rec">
+            <h3>清邁首選：清邁萬豪（實查更正）</h3>
+            <p style="margin:4px 0;font-size:.93rem">原首選香格里拉 Deluxe 在指定日期實質售罄（Trip.com 僅剩 3 間、Agoda／Booking／官網全無房），訂不到 4 間——首選改為萬豪：Agoda 實查 SGD 4,358 ≈ ¥22,444、Trip.com US$3,392 ≈ ¥22,625，兩渠道皆可訂、含稅、免費取消至 2027-01-31（不含早）。執行要點：先在 Agoda／Trip.com 比當下價再下單，備註高樓層山景房避臨街噪音；官網一次最多訂 3 間房，不要在官網湊 4 間。香格里拉只在接受 Premier Room 拆房型時考慮。</p>
+          </div>
+          <div class="card rec">
+            <h3>曼谷首選：Grande Centre Point Ploenchit（維持）</h3>
+            <p style="margin:4px 0;font-size:.93rem">環境分最高（4.50），且實查後仍是曼谷最便宜：官網兩房型合併總價 ฿82,500（含稅）≈ <b>¥16,500／4 晚</b>，每人每晚約 ¥589，免費取消至 2027-01-31（退款扣 3% 銀行手續費、需 100% 預付、Room Only 不含早）。執行要點：走官網訂（Trip.com／Agoda 沒有合併總價），要求高樓層避 BTS 側安靜房。若全家想要河景＋除夕客廳團聚，改選千禧希爾頓 2 間 Family Suite（Agoda 實查 ¥27,058 起、不可退；可退改版 ¥28,948 起，環境 4.00）。</p>
+          </div>
+        </div>
+
+        <h3 style="margin:22px 0 6px;font-size:1.15rem">機票三方案對比（每人 · 底價口徑）</h3>
+        <div class="card">
+          <div class="bar-row"><span>方案 C 預算／人</span><div class="bar-track"><div class="bar-fill" style="width:44%"></div></div><span class="bar-val">¥1,416</span></div>
+          <div class="bar-row"><span>方案 B 均衡／人 ★推薦</span><div class="bar-track"><div class="bar-fill" style="width:63%"></div></div><span class="bar-val">¥2,036</span></div>
+          <div class="bar-row"><span>方案 A 全服務／人</span><div class="bar-track"><div class="bar-fill gold" style="width:100%"></div></div><span class="bar-val">¥3,234</span></div>
+          <p style="margin:8px 0 0;font-size:.93rem">B 比 A 每人省 ¥1,198（5 人 ¥5,990），且三段同樣全直飛、全白天、無紅眼無中轉——對 3 位長輩的友善度與 A 基本同級，差別只在去程春秋無免費托運。C 比 B 再省 ¥620／人，但回程 23:05 到上海＋兩段托運費另計，實際節省有限。<b>本頁結論：主方案用 B；9C8511 實查價高於 ¥1,000 就切回 A。</b>底價口徑，as-of 2026-11-11。</p>
+        </div>
+      </section>
+
+            <!-- ============ 優惠看板 ============ -->
+      <section id="deals">
+        <div class="sec-head"><h2>優惠與待辦看板</h2><span class="tag">性價比優先排序</span></div>
+        <p class="sec-sub">排序原則：能省最多、且對長輩最友善的排最前。每條都寫明來源、適用條件、隱藏條件、優惠價值與狀態。2027 年春節的餐廳套餐與酒店確切報價目前<b>尚未公布／未取得</b>——這類項目以「監測中」列示，不編造優惠碼或折扣數字。</p>
+        <div class="chips" role="group" aria-label="篩選類別">
+          <button class="chip-btn" data-filter="all" aria-pressed="true">全部</button>
+          <button class="chip-btn" data-filter="flight" aria-pressed="false">機票</button>
+          <button class="chip-btn" data-filter="hotel" aria-pressed="false">酒店</button>
+          <button class="chip-btn" data-filter="dining" aria-pressed="false">餐廳</button>
+          <button class="chip-btn" data-filter="todo" aria-pressed="false">訂票訂房待辦</button>
+        </div>
+
+        <div class="grid c2" id="deal-grid">
+          <article class="card deal" data-cat="flight">
+            <span class="status st-ok">實查完成</span>
+            <h3 style="margin-top:8px">指定日期實查機票價（2026-11-11 攜程實查）</h3>
+            <p style="margin:4px 0;font-size:.93rem">MU205 上海浦東→清邁：2/1 含稅 ¥3,129、2/2 含稅 ¥3,629；PG216 清邁→曼谷：2/4 含稅 ¥441；MU8614／FM854 曼谷→上海：2/7 含稅 ¥1,783、2/8 含稅 ¥1,783。以上皆為 1 位成人經濟艙單程含稅實時價。</p>
+            <div class="dl">
+              <span>來源：攜程 flights.ctrip.com（查詢時間 2026-11-11 09:43–09:47 CST）</span>
+              <span>價值對照：三段合計（2/1 出＋2/8 回）每人 ¥5,353、5 人 ¥26,765；錨點地板合計每人 ¥3,088，實查價高出約 73%，且高於先前春節峰值預估（每人 ¥3,800–4,500）；2/1 比 2/2 便宜 ¥500／人，回程 2/7 與 2/8 同價</span>
+              <span>適用條件：東航／上航優先、全服務含托運</span>
+              <span>隱藏條件：錨點是 2 月地板價、不是指定日期價，實查價隨售隨變，下單前再查一次；PG216 僅 ¥441，比錨點 ¥456 只低 3.3%，未達 5% 門檻，不算有性價比</span>
+              <span>狀態：實查完成</span>
+            </div>
+          </article>
+          <article class="card deal soon" data-cat="hotel">
+            <span class="status st-soon">限時促銷 · 2026-11-17 截止預訂</span>
+            <h3 style="margin-top:8px">Agoda 11.11 超級特賣（限時）</h3>
+            <p style="margin:4px 0;font-size:.93rem">指定住宿額外 85 折，預訂至 2026 年 11 月 17 日，入住日期至 2027 年 2 月 14 日，覆蓋春節檔期。</p>
+            <div class="dl">
+              <span>來源：Agoda 11.11 促銷（經兩個優惠彙整站交叉核實）</span>
+              <span>適用條件：僅限標示適用的指定住宿與房型，需線上立即付款，到店付款無法套用</span>
+              <span>隱藏條件：折扣只計房費、不含稅金與服務費；追蹤中的酒店（清邁萬豪、曼谷千禧希爾頓等）是否在指定名單內尚未核實，須在 Agoda 上按指定日期逐間確認；訂單滿額門檻與代碼疊加規則以結帳頁為準</span>
+              <span>狀態：限時促銷，2026-11-17 截止預訂</span>
+            </div>
+          </article>
+          <article class="card deal wait" data-cat="hotel">
+            <span class="status st-wait">監測中 · 待實查</span>
+            <h3 style="margin-top:8px">香格里拉清邁：住 2 晚 85 折含早餐（待實查春節價）</h3>
+            <p style="margin:4px 0;font-size:.93rem">連住 2 晚享彈性房價 85 折、含 2 人每日自助早餐；入住期 2027 年 1 月 1 日至 12 月 31 日；官網標示 from USD 159／晚（平均價）。</p>
+            <div class="dl">
+              <span>來源：香格里拉官網優惠頁</span>
+              <span>適用條件：連住 2 晚</span>
+              <span>隱藏條件：from 價是起價、不是 2/1–2/4 春節日期實價，春節日期房價須在官網按日期實查後才能算節省金額，不可把 from 價寫成已確認的春節價；錨點 ¥1,520／間／晚僅供對照</span>
+              <span>狀態：監測中，待實查</span>
+            </div>
+          </article>
+          <article class="card deal" data-cat="flight">
+            <span class="status st-ok">可執行 · 底價口徑</span>
+            <h3 style="margin-top:8px">① 機票方案 B（均衡）¥2,036／人</h3>
+            <p style="margin:4px 0;font-size:.93rem">春秋 9C8511＋泰航 TG103＋曼谷航空 PG4841，三段全直飛、全白天。5 人合計 ¥10,180（底價口徑），比全服務方案 A 省 ¥5,990／5 人。</p>
+            <div class="dl">
+              <span>來源：Airpaz／航司官網價（2026-11-11 機票矩陣調研）</span>
+              <span>優惠價值：比方案 A 每人省 ¥1,198；春節峰值預估每人 ¥2,800–3,500</span>
+              <span>適用條件：去程 2/1 或 2/2、國內段 2/4、回程 2/7 或 2/8；5 人同訂單</span>
+              <span>隱藏條件：9C 去程無免費托運，托運費另計（2 月費率未核實）；決策規則——9C 實查價逾 ¥1,000／人即改選方案 A</span>
+              <span>截止：票價隨售隨變，無固定截止日——以指定日期實查價為準</span>
+            </div>
+          </article>
+                    <article class="card deal soon" data-cat="hotel">
+            <span class="status st-soon">實查完成 · 清邁全無檔期</span>
+            <h3 style="margin-top:8px">② Airbnb 整套 8 間（全家住一起）</h3>
+            <p style="margin:4px 0;font-size:.93rem">2026-11-11 指定日期實查結論：清邁 4 間全部無檔期，Airbnb 在清邁不可行；曼谷僅 BK-2（¥6,150／4 晚）與 BK-3（¥12,814／4 晚）有檔期有實價，但 BK-2 三層無電梯（環境分 3.00）、BK-3 四層樓未提電梯，長輩條件都不過關——兩間都不取代酒店首選，僅作預算備選。</p>
+            <div class="dl">
+              <span>來源：Airbnb 房源頁逐間實查（2026-11-11 01:10 CST，指定日期＋7 位房客）</span>
+              <span>優惠價值：BK-2 每人每晚約 ¥220、BK-3 約 ¥458，都比曼谷酒店便宜；省下的錢要扣長輩爬樓成本</span>
+              <span>適用條件：僅曼谷段可考慮 BK-2／BK-3；清邁段直接訂酒店</span>
+              <span>隱藏條件：BK-2 超 6 人每晚加收 ฿600、BK-3 超 5 人每晚加收 ฿900，是否已含在總價內未確認（總價或至 ¥6,630／¥13,534）；照片直連仍未取得，看照片點房源連結</span>
+              <span>關鍵日期：BK-2 免費取消至 2027-01-30、BK-3 至 01-29；無檔期的 6 間不再追蹤</span>
+            </div>
+          </article>
+                    <article class="card deal" data-cat="hotel">
+            <span class="status st-ok">實查完成 · 可訂</span>
+            <h3 style="margin-top:8px">③ 喜來登實查價 ¥23,180 起（4 晚 · 4 間）</h3>
+            <p style="margin:4px 0;font-size:.93rem">指定日期實查：Agoda SGD 4,501 ≈ ¥23,180、Trip.com US$3,503 ≈ ¥23,365（4 晚 4 間合計、含稅、不含早），每人每晚約 ¥828–834。舊錨點 ¥900／間早已作廢，不再引用。保證河景＋房量大是它的優勢，但總價高於 Grande（¥16,500）與曼谷香格里拉（¥20,272），排名第三。</p>
+            <div class="dl">
+              <span>來源：Agoda／Trip.com 指定日期實查（2026-11-11 01:49 CST）</span>
+              <span>優惠價值：無折扣可言——價值在房量大、保證河景、4 間同日好訂</span>
+              <span>適用條件：4×Deluxe River View，下單備註低樓層近電梯；Agoda 僅剩 5 間，要訂趁早</span>
+              <span>隱藏條件：不含早（Agoda 含早版 SGD 5,078 ≈ ¥26,152）；Booking.com 無房；官網一次最多訂 3 間房；12 歲以上加床 ฿1,766／人／晚；酒店傳出被收購，價格影響未定</span>
+              <span>免費取消：Agoda 至 2027-02-04（可延至 02-02 付款）、Trip.com 至 2027-02-03 23:59</span>
+            </div>
+          </article>
+                    <article class="card deal" data-cat="flight">
+            <span class="status st-soon">比價下限 · 謹慎選</span>
+            <h3 style="margin-top:8px">④ 機票方案 C（預算）¥1,416／人</h3>
+            <p style="margin:4px 0;font-size:.93rem">春秋＋亞航拼湊的最低組合（5 人 ¥7,080），只作比價下限參考；回程 23:05 到上海，不建議作長輩主組合。</p>
+            <div class="dl">
+              <span>來源：廉航官網地板價（2026-11-11 調研）</span>
+              <span>優惠價值：比全服務每人省約 ¥1,600，但行李費另計</span>
+              <span>適用條件：輕裝、能接受晚班機與分開出票</span>
+              <span>隱藏條件：無免費托運；分段出票銜接風險自擔；退改幾乎不可行</span>
+              <span>截止：廉航促銷艙位售完即止</span>
+            </div>
+          </article>
+          <article class="card deal wait" data-cat="dining">
+            <span class="status st-wait">監測中 · 尚未公布</span>
+            <h3 style="margin-top:8px">⑤ 除夕餐廳 2027 春節套餐</h3>
+            <p style="margin:4px 0;font-size:.93rem">5 間候選餐廳的春節套餐截至 2026-11-11 均未公布，酒店一般 12 月–1 月推出。12 月初就要訂位。</p>
+            <div class="dl">
+              <span>來源：餐廳／酒店官網（待公布）</span>
+              <span>優惠價值：未定——先訂位鎖包廂，再談套餐價</span>
+              <span>適用條件：7 人圓桌／包廂；訂位時問清套餐總價含不含「++」、訂金與取消政策</span>
+              <span>隱藏條件：常規菜單價不等於春節套餐價；Blue Elephant 2025 跨年套餐曾售 6,800++ 泰銖，特別活動務必先確認總價</span>
+              <span>關鍵日期：2026 年 12 月初開始訂位</span>
+            </div>
+          </article>
+          <article class="card deal wait" data-cat="todo">
+            <span class="status st-wait">待辦 · 旺季必搶</span>
+            <h3 style="margin-top:8px">⑥ 大象自然公園 Elephant Nature Park</h3>
+            <p style="margin:4px 0;font-size:.93rem">2/3 全日遊，約 2,500–3,500 泰銖／人（含接送＋素食午餐），只觀察不騎乘。旺季要提前數週訂。</p>
+            <div class="dl">
+              <span>來源：官網 elephantnaturepark.org（以官網價為準）</span>
+              <span>適用條件：體力一般者改半日遊；長輩量力而行</span>
+              <span>隱藏條件：第三方平台同名行程品質不一，只認官網</span>
+              <span>關鍵日期：建議 2026 年 12 月內訂妥</span>
+            </div>
+          </article>
+          <article class="card deal wait" data-cat="todo">
+            <span class="status st-wait">待辦 · 出發前 3 天</span>
+            <h3 style="margin-top:8px">⑦ TDAC 泰國數位入境卡（免費）</h3>
+            <p style="margin:4px 0;font-size:.93rem">全家 7 人起飛前 3 天內在 tdac.immigration.go.th 提交，免費辦理。</p>
+            <div class="dl">
+              <span>來源：泰國移民局官網</span>
+              <span>隱藏條件：只認官方網站——收費代辦站都是假冒，不要付費</span>
+              <span>關鍵日期：2027-01-29 起可提交（2/1 出發計）</span>
+            </div>
+          </article>
+          <article class="card deal" data-cat="archived">
+            <span class="status st-arch">已過期歸檔</span>
+            <h3 style="margin-top:8px">歸檔區</h3>
+            <p style="margin:4px 0;font-size:.93rem">截至上次檢查（2026-11-11），沒有已過期的優惠需要歸檔。日後到期的項目會自動移到這裡，不再佔據排行位置。</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ 自動檢查工作流 ============ -->
+      <section id="workflow">
+        <div class="sec-head"><h2>自動檢查工作流</h2><span class="tag">狀態如實標示</span></div>
+        <p class="sec-sub">你要求的每日自動檢查、去重、有效性判斷、截止日期提取、資格與隱藏條件識別、優惠價值計算、過期歸檔、性價比優先展示——分工如下，哪些已在本頁實現、哪些靠站外排程、哪些目前做不到，逐項講清楚，不假裝。</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>工作流項目</th><th>狀態</th><th>說明</th></tr></thead>
+            <tbody>
+              <tr><td>性價比優先展示、優惠價值計算</td><td><span class="status st-ok">本頁已實現</span></td><td>上方看板已按性價比排序，每條附價值換算（總價／每人／每晚三口徑）</td></tr>
+              <tr><td>資格要求與隱藏條件識別</td><td><span class="status st-ok">本頁已實現</span></td><td>每條優惠與每個酒店選項都附適用條件與隱藏條件欄</td></tr>
+              <tr><td>截止日期提取、過期自動歸檔</td><td><span class="status st-ok">本頁已實現</span></td><td>關鍵日期寫入每條項目；歸檔區已設，目前無過期項目（as-of 2026-11-11）</td></tr>
+              <tr><td>每日自動檢查新訊息</td><td><span class="status st-wait">站外排程執行</span></td><td>由 Muse 的每日排程任務負責檢查並重建本頁；<b>本頁本身不會自動爬取</b>。上次檢查：2026-11-11（指定日期機票實查價＋Agoda 特賣＋香格里拉促銷已入頁）；下次檢查：2026-11-12</td></tr>
+              <tr><td>重複優惠識別、不重複推送</td><td><span class="status st-wait">站外排程執行</span></td><td>去重在每日檢查時按「渠道＋航段／酒店＋價格」比對，本頁只展示去重後的結果</td></tr>
+              <tr><td>酒店指定日期實時價（7 間 × 各渠道）</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 01:49 CST 逐渠道輸入指定日期實查完畢（清邁 2/1–2/4、曼谷 2/4–2/8），實查價已取代指示價（見酒店卡與渠道比價表）。剩餘限制：Booking.com 七間全無房；Marriott 官網一次最多訂 3 間房；Grande 的 Trip.com／Agoda 兩房型合併總價未查到（官網合併總價 ¥16,500 已取得）；房價房況會變動，下單前重查</td></tr>
+              <tr><td>Airbnb 指定日期檔期與實價</td><td><span class="status st-ok">已完成實查</span></td><td>2026-11-11 01:10 CST 逐間實查完畢：清邁 4 間全部無檔期；曼谷 BK-2（SGD 1,194 ≈ ¥6,150）、BK-3（SGD 2,488 ≈ ¥12,814）有檔期有實價，BK-1、BK-4 無檔期；評分已按實查值更正。剩餘缺口：照片直連未取得（房源頁未提供圖片原始網址），看照片請點房源連結；BK-2／BK-3 清潔費、服務費未單獨列出</td></tr>
+              <tr><td>機票逐日價（1/31–2/3、2/7 vs 2/8）</td><td><span class="status st-soon">待 live 瀏覽器補齊</span></td><td>三方案與多渠道底價、鄰近日期方向性證據已齊（見機票區）；MU205／9C8511 逐日價所有渠道只給月度底價，須按日期實查後才能給出確切差價</td></tr>
+              <tr><td>攜程／飛豬／去哪兒即時庫存價</td><td><span class="status st-soon">需要人工實查</span></td><td>這些平台沒有開放給本頁的連接器或 API，無法自動抓取即時價；下單前用瀏覽器按指定日期實查，或請主對話代查後更新本頁</td></tr>
+              <tr><td>多人登入的雲端需求系統</td><td><span class="status st-soon">尚未實現</span></td><td>公開靜態頁面存不了別人的輸入。下方需求表是「每人自己裝置填寫＋匯出彙整」的替代方案；真正的多人共用需另建共用表單（見需求區說明）</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ 每日行程 ============ -->
+      <section id="itinerary">
+        <div class="sec-head"><h2>每日行程</h2><span class="tag">慢節奏 · 長輩優先</span></div>
+        <p class="sec-sub">每天最多 2 個重點景點；13:00–15:00 回酒店午休；門票為外國人票價參考，出發前 1–2 週再複核。</p>
+
+        <h3 style="margin:16px 0 12px;font-size:1.25rem">清邁 · 2/1 – 2/4</h3>
+        <article class="day">
+          <img src="assets/wat-phra-singh.jpg" alt="清邁古城帕辛寺金色佛塔" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/1（一）· 抵達日</div>
+            <h3>抵達清邁＋夜市輕逛</h3>
+            <ul>
+              <li>MU205 14:20 抵達，包車接機直接送酒店，先休息</li>
+              <li>傍晚清邁夜市 Night Bazaar（Chang Klan Road，18:00–24:00，免費入場）</li>
+              <li>只逛 1–1.5 小時就回酒店，第一天不排滿</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/hero-doi-suthep.jpg" alt="素帖山雙龍寺金塔與清邁市景" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/2（二）· 寺廟日</div>
+            <h3>素帖山雙龍寺＋古城雙寺</h3>
+            <ul>
+              <li>07:00–09:30 素帖山 Wat Phra That Doi Suthep（門票約 30–50 泰銖）——306 級階梯長輩<b>必坐纜車</b>（約 20–50 泰銖）</li>
+              <li>10:00–12:00 古城 Wat Phra Singh＋Wat Chedi Luang（步行相距約 10 分鐘，門票約 20–50 泰銖）</li>
+              <li><span class="rest">13:00–15:00 午休</span></li>
+              <li>15:30–17:30 Warorot 市場（Kad Luang）買伴手禮、吃小吃</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/elephants.jpg" alt="清邁大象保護園區的大象群" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/3（三）· 大象日</div>
+            <h3>Elephant Nature Park 大象自然公園</h3>
+            <ul>
+              <li>08:00–17:00 全日遊，含接送＋素食午餐，約 2,500–3,500 泰銖／人（以官網 elephantnaturepark.org 為準）</li>
+              <li>倫理型園區：只觀察、餵食，不騎乘</li>
+              <li>旺季提前數週訂；體力一般的家人可改半日遊，當天分組行動</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/wat-arun.jpg" alt="曼谷昭披耶河畔鄭王廟黃昏景色" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/4（四）· 移動日</div>
+            <h3>泰式廚藝課 → 飛曼谷</h3>
+            <ul>
+              <li>08:30–13:30 泰式廚藝課半日＋市場導覽（約 1,000–1,500 泰銖／人；報名時註明 3 位長輩安排坐著備料）</li>
+              <li>下午飛曼谷：若想廚藝課後從容出發，選泰航 TG107 14:05 → 15:25（同價族 ¥383–470）；趕早到曼谷則選上午 PG216／TG103</li>
+              <li>晚上 ICONSIAM 河畔散步＋晚餐，早休息迎接除夕</li>
+              <li>若改 2/2 才抵達清邁：2/3 上午素帖山＋古城、下午 Warorot；2/4 在大象園半日遊與廚藝課中二選一——建議優先保證 2/1 到</li>
+            </ul>
+          </div>
+        </article>
+        <p class="meta" style="color:var(--ink2);font-size:.9rem">小提醒：清邁花卉節預計 2027-02-05–07 舉行，但屆時全家已在曼谷，看不到，不建議為此改行程。</p>
+
+        <h3 style="margin:24px 0 12px;font-size:1.25rem">曼谷 · 2/5 – 2/8</h3>
+        <article class="day">
+          <img src="assets/grand-palace.jpg" alt="曼谷大皇宮與玉佛寺黃昏全景" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/5（五）· 除夕</div>
+            <h3>大皇宮＋臥佛寺 → 除夕團圓飯</h3>
+            <ul>
+              <li>08:30–12:00 大皇宮＋玉佛寺（外國人 500 泰銖，08:30–16:30，售票至 15:30）——全泰著裝最嚴格：肩膀、膝蓋、腳趾都不能露</li>
+              <li>接著臥佛寺 Wat Pho（約 300 泰銖，08:00–18:30）</li>
+              <li><span class="rest">12:00–15:00 午休</span></li>
+              <li>18:00 除夕團圓飯（餐廳見下方專區）</li>
+              <li>飯後可選車遊 Yaowarat 唐人街看燈飾——長輩建議坐車上看，不下車久留</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/wat-arun.jpg" alt="鄭王廟與昭披耶河遊船" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/6（六）· 初一</div>
+            <h3>恰圖恰市場＋河船鄭王廟</h3>
+            <ul>
+              <li>09:00–11:00 恰圖恰週末市場（只週六日全場開放，09:00–18:00，免費）——09:00 到、11:00 前離開避開人潮與熱浪</li>
+              <li>下午昭披耶河遊船＋鄭王廟 Wat Arun（外國人 200 泰銖，08:00–18:00）</li>
+              <li>鄭王廟主塔階梯極陡，長輩只到平台層拍照，不登塔</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/yaowarat.jpg" alt="曼谷唐人街耀華力路夜間街景與小吃攤" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/7（日）· 初二</div>
+            <h3>唐人街白天遊＋暹羅商圈</h3>
+            <ul>
+              <li>上午 Yaowarat 唐人街：龍蓮寺 Wat Mangkon Kamalawat 拜年、Sampeng Lane 邊走邊吃</li>
+              <li>下午暹羅商圈 Siam Paragon、CentralWorld 買伴手禮</li>
+              <li>晚上：2/7 回程的家人送機；留到 2/8 的家人吃送別晚餐</li>
+            </ul>
+          </div>
+        </article>
+        <article class="day">
+          <img src="assets/grand-palace.jpg" alt="曼谷大皇宮金色建築" loading="lazy" />
+          <div class="body">
+            <div class="d-date">2/8（一）· 初三</div>
+            <h3>返程回上海</h3>
+            <ul>
+              <li>上航 FM854 11:50 起飛 → 17:10 抵達上海 PVG（現行時刻；每週 4 班，出發前再確認當天有班）</li>
+              <li>市區到素萬那普機場預留 1–1.5 小時車程，建議 08:30 前出發、09:45 前抵達機場</li>
+              <li>退房前檢查護照、藥品、伴手禮易碎品隨身帶</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- ============ 除夕團圓飯 ============ -->
+      <section id="dinner">
+        <div class="sec-head"><h2>除夕團圓飯</h2><span class="tag">2/5（五）18:00 · 曼谷 · 7 人</span></div>
+        <p class="sec-sub">以粵菜為主（合長輩口味、有圓桌與包廂），加一間泰國宮廷菜作特色之選。2027 春節套餐尚未公布，下表是常規菜單價——<b>12 月初就要訂位</b>，訂位時問清：7 人圓桌／包廂、春節套餐總價含不含「++」、訂金與取消政策。</p>
+        <div class="tbl-wrap">
+          <table>
+            <thead><tr><th>餐廳</th><th>地區</th><th>菜系</th><th class="num">人均（約）</th><th>訂位要點</th></tr></thead>
+            <tbody>
+              <tr><td><b>Shang Palace 香宮</b>（Shangri-La Bangkok）<span class="badge first">首選</span></td><td>河畔 Bang Rak，3 樓</td><td>粵菜點心</td><td class="num">¥300–510</td><td>電話 0 2236 7777；有包廂；電梯、輪椅可達；點心屬曼谷前十水準</td></tr>
+              <tr><td><b>The China House by Chef Fei</b>（Mandarin Oriental）</td><td>河畔 Bang Rak</td><td>潮州＋粵菜，米其林指南</td><td class="num">¥510–815</td><td>SevenRooms 線上訂位；品嚐套餐 ¥1,382／¥1,585；烤鴨、乳豬須提前 24 小時預訂；最搶手，先訂這間</td></tr>
+              <tr><td><b>Summer Palace</b>（InterContinental Bangkok）<span class="badge gold">包廂首選</span></td><td>Phloen Chit，夾層</td><td>粵菜，烤鴨乳豬點心</td><td class="num">¥245–405</td><td>有 10 間包廂，最適合 7 人家庭；可問 7 人春節套餐</td></tr>
+              <tr><td><b>Bai Yun 白雲</b>（Banyan Tree Bangkok）</td><td>Sathon，59 樓</td><td>粵菜點心</td><td class="num">¥305–510</td><td>59 樓全景夜景；提早訂窗邊位；特別活動先確認總價</td></tr>
+              <tr><td><b>Saneh Jaan</b>（米其林一星 2026）</td><td>Wireless Rd</td><td>泰國宮廷菜</td><td class="num">¥732++</td><td>TableCheck 線上訂位；晚餐品嚐套餐 3,600++ 泰銖；唯一泰式選擇，套餐制、辣度可調</td></tr>
+              <tr><td>Blue Elephant Sathorn（後備）</td><td>Sathon</td><td>泰式套餐</td><td class="num">¥508–569</td><td>2025 跨年套餐曾售 6,800++ 泰銖；春節套餐未核實，訂前先問總價</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="meta" style="color:var(--ink2);font-size:.88rem;margin-top:8px">「++」＝另加 10% 服務費＋7% 增值稅。若全家住曼谷香格里拉，香宮就在同棟 3 樓，除夕吃完直接回房，是對長輩最省力的組合。</p>
+      </section>
+
+      <!-- ============ 實用資訊 ============ -->
+      <section id="tips">
+        <div class="sec-head"><h2>實用資訊</h2><span class="tag">2026-11-11 核查 · 出行前 1–2 週再複核</span></div>
+        <div class="grid c2">
+          <div class="card"><h3>簽證與入境</h3><ul class="tight">
+            <li>中泰互免簽證（2024-03-01 生效）：中國普通護照每次入境可停留 30 天，180 天內累計不超過 90 天</li>
+            <li>TDAC 數位入境卡免費，起飛前 3 天內在 tdac.immigration.go.th 提交，只認官網</li>
+            <li>護照有效期須 6 個月以上——現在就檢查全家 7 本護照</li>
+          </ul></div>
+          <div class="card"><h3>天氣與衣著</h3><ul class="tight">
+            <li>清邁 2 月：白天 30–33°C、夜間 15–17°C，早晚涼，帶薄外套</li>
+            <li>曼谷 2 月：白天 32–34°C、夜間 23–25°C</li>
+            <li>清邁 2 月中起有燒荒煙霧，2 月初較好；曼谷 2 月是 PM2.5 全年最差月份之一，敏感長輩備口罩</li>
+            <li>寺廟日穿著：遮肩、過膝；大皇宮連腳趾都不能露</li>
+          </ul></div>
+          <div class="card"><h3>交通</h3><ul class="tight">
+            <li>首選包車＋司機全日：曼谷 8–10 小時約 2,000–4,500 泰銖／車，訂車問清含不含油費、過路費；超時約 300–500 泰銖／小時</li>
+            <li>短途用 Grab／GrabXL（7 人要叫大車）</li>
+            <li>清邁雙條車約 30 泰銖／人</li>
+          </ul></div>
+          <div class="card"><h3>錢、電話卡、保險</h3><ul class="tight">
+            <li>泰銖現金為主，小店與市集多不收卡</li>
+            <li>AIS／TrueMove H 旅客 SIM 8 天約 299 泰銖；2025 年 8 月起買卡須護照＋現場人臉核驗</li>
+            <li>旅遊保險要含醫療運送與行程取消</li>
+            <li>長輩常用藥分兩處放，另備英文藥名清單</li>
+            <li>泰國插座與中國相同，不用轉接頭</li>
+          </ul></div>
+          <div class="card"><h3>緊急電話</h3><ul class="tight">
+            <li>旅遊警察 <b>1155</b> · 救護車 <b>1669</b> · 警察 <b>191</b> · 火警 <b>199</b></li>
+            <li>中國駐泰使館領事保護熱線：<b>未核實</b>，出行前到外交部領事司官網查詢後補上</li>
+          </ul></div>
+          <div class="card"><h3>尚未核實清單（不要當已確認）</h3><ul class="tight">
+            <li>所有機票的指定日期實時價（酒店指定日期價已於 2026-11-11 實查，見酒店區）</li>
+            <li>酒店最短住宿要求；實查價為 2026-11-11 當下價，房價與房況可能變動（退改條款已逐格實查標明）</li>
+            <li>Airbnb 照片直連（未取得）；BK-2／BK-3 的 7 人附加費是否已含在總價內（未確認）；無檔期的 6 間無價可報</li>
+            <li>Booking.com 7 間酒店價格（實查為全部無房，本次不可用）；Grande 的 Trip.com／Agoda 兩房型合併總價未查到；喜來登舊錨點 ¥900 已證偽，勿再引用</li>
+            <li>MU205／9C8511 在 1/31–2/3 的逐日價；FM854 在 2/7 與 2/8 的逐日價差</li>
+            <li>2027 春節餐廳套餐內容與總價（未公布）</li>
+            <li>東航長者折扣（未核實到，不按此抓預算）</li>
+            <li>泰航 TG662 時刻（兩來源衝突，已剔除）</li>
+            <li>其餘 2 位成員的航段安排（行程待定）</li>
+          </ul></div>
+        </div>
+      </section>
+
+      <!-- ============ 需求輸入 ============ -->
+      <section id="requests">
+        <div class="sec-head"><h2>家人需求輸入</h2><span class="tag">每人填自己的</span></div>
+        <div class="honest"><b>先講清楚能力邊界：</b>這是公開靜態頁面，<b>沒有</b>多人登入、也<b>沒有</b>雲端同步——做不到的事不假裝。用法是：每位家人在自己手機／電腦填好後，按「匯出」把檔案傳給彙整人（或按「複製摘要」貼到家庭群），彙整人用「匯入」合併大家的需求。資料只存在你目前開啟的這個頁面裡，關閉頁面即清除，請記得先匯出。若要真正的多人共用即時編輯，請在主對話告訴 Tony，另建一張共用表單（Google 表單／試算表）後把連結補到這裡。</div>
+        <div class="grid c2">
+          <div class="card">
+            <form class="req" id="req-form">
+              <div class="f-row"><label for="r-name">你的名字</label><input id="r-name" required placeholder="例：Tony／媽媽／Fion" /></div>
+              <div class="f-row"><label for="r-cat">需求類別</label>
+                <select id="r-cat">
+                  <option>機票（日期／航班／座位）</option>
+                  <option>酒店（房型／樓層／同住安排）</option>
+                  <option>行程與景點</option>
+                  <option>餐廳與飲食忌口</option>
+                  <option>長輩照護（輪椅／藥品／行動）</option>
+                  <option>預算與分帳</option>
+                  <option>其他</option>
+                </select></div>
+              <div class="f-row"><label for="r-text">需求內容</label><textarea id="r-text" rows="4" required placeholder="例：媽媽膝蓋不好，酒店要低樓層近電梯；回程想坐上午的班機"></textarea></div>
+              <div class="f-row"><label for="r-prio">優先級</label>
+                <select id="r-prio"><option>必須</option><option selected>希望</option><option>都可以</option></select></div>
+              <button class="btn primary" type="submit" style="width:100%">加入需求清單</button>
+            </form>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px">
+              <button class="btn ghost" id="btn-export" type="button">匯出 JSON</button>
+              <button class="btn ghost" id="btn-copy" type="button">複製摘要</button>
+              <label class="btn ghost" for="file-import" style="cursor:pointer">匯入合併</label>
+              <input type="file" id="file-import" accept=".json,application/json" hidden />
+            </div>
+            <p class="meta" style="color:var(--ink2);font-size:.85rem;margin-top:10px" id="req-msg" role="status"></p>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem;margin-bottom:10px">已收集需求（<span id="req-count">0</span> 條）</h3>
+            <div id="req-list"><div class="empty">尚無需求。左邊填好第一條，這裡就會出現。</div></div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p><b>資料口徑：</b>本頁價格與資訊來自 2026-11-11 調研：機票比價矩陣（多航司 × 多渠道＋三方案＋鄰近日期證據）、酒店多渠道比價＋指定日期實查（7 間酒店逐渠道，01:49 CST）、Airbnb 逐間核實＋指定日期實查（8 間，01:10 CST，含環境打分）、行程與餐廳底稿。酒店與 Airbnb 每格註明渠道、原幣別、含稅／含早／免費取消截止日；機票每格註明渠道與標籤（月度底價／指示價／日期核實），指定日期實時價未查到的部分均已在頁內標明，不以估算冒充。Airbnb 照片直連未取得。付款／訂位前請按具體日期實查。匯率：1 泰銖 ≈ ¥0.20、US$1 ≈ ¥6.67（2026-11-10/11 中間價）。照片：清邁素帖山雙龍寺、帕辛寺、大象自然公園、曼谷大皇宮、鄭王廟、唐人街實景照片；Airbnb 房源照片請點房源連結查看。</p>
+        <p>FU family 2027 春節泰國之旅 · 清邁 2/1–2/4 · 曼谷 2/4–2/8 · 除夕 2/5</p>
+      </footer>
+    </main>
+
+    <script>
+      // 倒數：距離 2027-02-01 出發
+      (function(){
+        var target = new Date('2027-02-01T10:10:00+08:00').getTime();
+        var el = document.getElementById('cd-d');
+        function tick(){
+          var diff = target - Date.now();
+          if (diff <= 0) { el.textContent = '0'; return; }
+          el.textContent = Math.ceil(diff / 86400000);
+        }
+        tick(); setInterval(tick, 3600000);
+      })();
+
+      // 機票試算
+      (function(){
+        var ids = ['f-leg1','f-leg2','f-leg3'];
+        function fmt(n){ return '¥' + n.toLocaleString('zh-Hans-CN'); }
+        function calc(){
+          var per = ids.reduce(function(s,id){ return s + Number(document.getElementById(id).value); }, 0);
+          document.getElementById('f-per').textContent = fmt(per);
+          document.getElementById('f-five').textContent = fmt(per*5);
+          document.getElementById('f-seven').textContent = fmt(per*7);
+        }
+        ids.forEach(function(id){ document.getElementById(id).addEventListener('change', calc); });
+        calc();
+      })();
+
+      // 酒店試算
+      (function(){
+        function fmt(n){ return '¥' + Math.round(n).toLocaleString('zh-Hans-CN'); }
+        function calc(){
+          var cm = Number(document.getElementById('h-cm').value) * Number(document.getElementById('h-cmn').value);
+          var bkk = Number(document.getElementById('h-bkk').value) * Number(document.getElementById('h-bkkn').value);
+          var total = cm + bkk;
+          var nights = Number(document.getElementById('h-cmn').value) + Number(document.getElementById('h-bkkn').value);
+          document.getElementById('h-total').textContent = fmt(total);
+          document.getElementById('h-ppn').textContent = fmt(total / 7 / nights);
+        }
+        ['h-cm','h-cmn','h-bkk','h-bkkn'].forEach(function(id){ document.getElementById(id).addEventListener('change', calc); });
+        calc();
+      })();
+
+      // 酒店城市分頁
+      (function(){
+        var tcm = document.getElementById('tab-cm'), tbkk = document.getElementById('tab-bkk');
+        var pcm = document.getElementById('pane-cm'), pbkk = document.getElementById('pane-bkk');
+        function show(cm){
+          pcm.hidden = !cm; pbkk.hidden = cm;
+          tcm.setAttribute('aria-pressed', cm ? 'true' : 'false');
+          tbkk.setAttribute('aria-pressed', cm ? 'false' : 'true');
+        }
+        tcm.addEventListener('click', function(){ show(true); });
+        tbkk.addEventListener('click', function(){ show(false); });
+      })();
+
+      // 優惠看板篩選
+      (function(){
+        var btns = document.querySelectorAll('[data-filter]');
+        var cards = document.querySelectorAll('#deal-grid .deal');
+        btns.forEach(function(b){
+          b.addEventListener('click', function(){
+            btns.forEach(function(x){ x.setAttribute('aria-pressed','false'); });
+            b.setAttribute('aria-pressed','true');
+            var f = b.getAttribute('data-filter');
+            cards.forEach(function(c){
+              c.style.display = (f === 'all' || c.getAttribute('data-cat') === f || c.getAttribute('data-cat') === 'archived' && f === 'all') ? '' : 'none';
+              if (f !== 'all' && c.getAttribute('data-cat') === 'archived') c.style.display = 'none';
+            });
+          });
+        });
+      })();
+
+      // 需求輸入（記憶體保存＋匯出／匯入；無雲端同步，見頁面說明）
+      (function(){
+        var reqs = [];
+        var list = document.getElementById('req-list');
+        var count = document.getElementById('req-count');
+        var msg = document.getElementById('req-msg');
+        function esc(s){ return String(s).replace(/[&<>"']/g, function(ch){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]; }); }
+        function render(){
+          count.textContent = reqs.length;
+          if (!reqs.length){ list.innerHTML = '<div class="empty">尚無需求。左邊填好第一條，這裡就會出現。</div>'; return; }
+          list.innerHTML = reqs.map(function(r, i){
+            return '<div class="req-item"><span class="who">' + esc(r.name) + '</span> · ' + esc(r.cat) +
+              ' · <span class="badge gold">' + esc(r.prio) + '</span>' +
+              '<div style="margin-top:4px">' + esc(r.text) + '</div>' +
+              '<button class="btn danger" data-del="' + i + '" style="margin-top:8px;padding:6px 12px">刪除這條</button></div>';
+          }).join('');
+          list.querySelectorAll('[data-del]').forEach(function(b){
+            b.addEventListener('click', function(){ reqs.splice(Number(b.getAttribute('data-del')), 1); render(); });
+          });
+        }
+        document.getElementById('req-form').addEventListener('submit', function(e){
+          e.preventDefault();
+          reqs.push({
+            name: document.getElementById('r-name').value.trim(),
+            cat: document.getElementById('r-cat').value,
+            text: document.getElementById('r-text').value.trim(),
+            prio: document.getElementById('r-prio').value
+          });
+          e.target.reset();
+          document.getElementById('r-prio').value = '希望';
+          msg.textContent = '已加入清單。記得按「匯出」把檔案傳給彙整人。';
+          render();
+        });
+        document.getElementById('btn-export').addEventListener('click', function(){
+          if (!reqs.length){ msg.textContent = '清單是空的，先加入至少一條需求。'; return; }
+          var blob = new Blob([JSON.stringify(reqs, null, 2)], { type: 'application/json' });
+          var a = document.createElement('a');
+          a.href = URL.createObjectURL(blob);
+          a.download = 'fu-family-2027-需求.json';
+          a.click();
+          URL.revokeObjectURL(a.href);
+          msg.textContent = '已匯出 JSON 檔，把它傳給彙整人合併即可。';
+        });
+        document.getElementById('btn-copy').addEventListener('click', function(){
+          if (!reqs.length){ msg.textContent = '清單是空的，先加入至少一條需求。'; return; }
+          var txt = reqs.map(function(r, i){ return (i+1) + '. [' + r.cat + '][' + r.prio + '] ' + r.name + '：' + r.text; }).join('\n');
+          if (navigator.clipboard && navigator.clipboard.writeText){
+            navigator.clipboard.writeText('FU family 2027 泰國之旅需求\n' + txt).then(function(){ msg.textContent = '摘要已複製，貼到家庭群即可。'; }, function(){ msg.textContent = '複製失敗，請改用匯出 JSON。'; });
+          } else { msg.textContent = '此瀏覽器不支援一鍵複製，請改用匯出 JSON。'; }
+        });
+        document.getElementById('file-import').addEventListener('change', function(e){
+          var file = e.target.files[0];
+          if (!file) return;
+          var reader = new FileReader();
+          reader.onload = function(){
+            try {
+              var data = JSON.parse(reader.result);
+              if (!Array.isArray(data)) throw new Error('bad');
+              var added = 0;
+              data.forEach(function(r){
+                if (r && r.name && r.text){ reqs.push({ name: String(r.name), cat: String(r.cat || '其他'), text: String(r.text), prio: String(r.prio || '希望') }); added++; }
+              });
+              msg.textContent = '已合併匯入 ' + added + ' 條需求。';
+              render();
+            } catch(err){ msg.textContent = '匯入失敗：檔案格式不正確。'; }
+          };
+          reader.readAsText(file);
+          e.target.value = '';
+        });
+        render();
+      })();
+    </script>
+  </body>
+</html>
